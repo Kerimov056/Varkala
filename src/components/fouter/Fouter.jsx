@@ -44,13 +44,13 @@ const Fouter = () => {
             </div>
             <div className='foutertwo'>
                 <div className='foutertwo_in'>
-                    <div>
-                        <h3></h3>
-                        <p></p>
+                    <div className='left'>
+                        <h3>Be in touch</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/> At itaque temporibus.</p>
                         <input type='text' placeholder='Your Email Address'></input>
                         <span><SlEnvolopeLetter /></span>
                     </div>
-                    <div>
+                    <div className='right'>
                         <div>
                             <b>Shop</b>
                             <ul>
