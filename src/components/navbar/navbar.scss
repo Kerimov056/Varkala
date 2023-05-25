@@ -372,10 +372,40 @@ input[type="search"]::placeholder {
 }
 
 
+
+//Docs DropDown
+
+.docs{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 395px;
+    width: 170px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>div{
+        width: 80%;
+        height: 92%;
+
+        &>ul{
+            &>li{
+                margin-top: 12px;
+                font-weight: 300;
+                
+            }
+        }
+    }
+}
+
+
 li{
     list-style: none;
     color: #7a7a7a;
     font-size: 16px;
+    cursor: pointer;
 
     &:hover{
         color: black;

@@ -230,16 +230,16 @@ const Navbar = () => {
                                         <div className='oneLine'>
                                             <b>Blog</b>
                                             <ul>
-                                                <li>Blog</li>
-                                                <li>Blog - Masonry</li>
+                                             <Link to="/blog" className='link'><li>Blog</li></Link>
+                                             <Link to="/blog" className='link'><li>Blog - Masonry</li></Link>
                                                 <li>Post</li>
                                             </ul>
                                         </div>
                                         <div className='twoline'>
                                             <ul>
                                                 <b>Pages</b>
-                                                <li>About - Company </li>
-                                                <li>About v.2 - Person </li>
+                                              <Link to="/about" className='link'><li>About - Company </li></Link>
+                                              <Link to="/about" className='link'><li>About v.2 - Person </li></Link>
                                                 <li>F.A.Q.</li>
                                                 <li>Contact</li>
                                                 <li>Privacy policy</li>
