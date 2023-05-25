@@ -296,3 +296,42 @@ input[type="search"]::placeholder {
         }
     }
 }
+
+
+//pages dropdown
+
+
+.pages{
+    width: 1260px;
+    height: 700px;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    &>div{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        
+        &>div{
+            width: 270px;
+            height: 100%;
+            
+            .pages_in_img{
+                width: 100%;
+                height: 200px;
+
+                &>img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

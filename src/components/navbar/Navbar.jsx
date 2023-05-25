@@ -170,11 +170,11 @@ const Navbar = () => {
                             {pages && <div className='pages'>
                                 <div className='pages_in'>
                                     <div>
-                                        <div>
+                                        <div className='pages_in_img'>
                                             <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"></img>
                                         </div>
                                         <div>
-                                            <b></b>
+                                            <b>Homepage</b>
                                             <ul>
                                                 <li>Home 1 - Fashion</li>
                                                 <li>Home 2 - Fashion</li>
@@ -184,83 +184,83 @@ const Navbar = () => {
                                         </div>
                                         <div>
                                             <ul>
-                                                <b></b>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
+                                                <b>Category</b>
+                                                <li>Full width</li>
+                                                <li>Full width with category menu</li>
+                                                <li>Full width with big products</li>
+                                                <li>Fixed width</li>
+                                                <li>Fixed width & sidebar</li>
+                                                <li>Fixed width & masonry layout</li>
+                                                <li>Subcategories</li>
                                             </ul>
                                         </div>
                                     </div>
 
 
                                     <div>
-                                        <div>
-                                            <img src=""></img>
+                                        <div className='pages_in_img'>
+                                            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"></img>
                                         </div>
                                         <div>
-                                            <b></b>
+                                            <b>Order process</b>
                                             <ul>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
+                                                <li>Shopping cart</li>
+                                                <li>Checkout - Five steps</li>
+                                                <li>Checkout - Single-page</li>
+                                                <li>Checkout - confirmed</li>
+                                                <li>Wishlist</li>
                                             </ul>
                                         </div>
                                         <div>
                                             <ul>
-                                                <b></b>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div>
-                                        <div>
-                                            <img src=""></img>
-                                        </div>
-                                        <div>
-                                            <b></b>
-                                            <ul>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <ul>
-                                                <b></b>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
+                                                <b>Product</b>
+                                                <li>Product with sticky info</li>
+                                                <li>Product with background</li>
+                                                <li>Product standard</li>
                                             </ul>
                                         </div>
                                     </div>
 
 
                                     <div>
+                                        <div className='pages_in_img'> 
+                                            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"></img>
+                                        </div>
                                         <div>
-                                            <img src=""></img>
+                                            <b>Blog</b>
+                                            <ul>
+                                                <li>Blog</li>
+                                                <li>Blog - Masonry</li>
+                                                <li>Post</li>
+                                            </ul>
                                         </div>
                                         <div>
                                             <ul>
-                                                <b></b>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
+                                                <b>Pages</b>
+                                                <li>About - Company </li>
+                                                <li>About v.2 - Person </li>
+                                                <li>F.A.Q.</li>
+                                                <li>Contact</li>
+                                                <li>Privacy policy</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <div className='pages_in_img'>
+                                            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/photo-1534126511673-b6899657816a.jpg"></img>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <b>Customer</b>
+                                                <li>Login/sign up</li>
+                                                <li>Orders</li>
+                                                <li>Order detail </li>
+                                                <li>Order tracking </li>
+                                                <li>Addresses </li>
+                                                <li>Profile </li>
+                                                <li>Wishlist </li>
                                             </ul>
                                         </div>
                                     </div>
