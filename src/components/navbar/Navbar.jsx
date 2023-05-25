@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './navbar.scss'
 import { Link } from "react-router-dom";
 import { FaFacebookF } from 'react-icons/fa';
-import { FaTshirt } from 'react-icons/fa';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { AiOutlineHeart } from 'react-icons/ai';
@@ -17,7 +16,9 @@ import { BsEraserFill } from 'react-icons/bs';
 import { FiChevronDown } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GiTrousers } from 'react-icons/gi';
+import { GiShorts } from 'react-icons/gi';
 import { GiUnderwearShorts } from 'react-icons/gi';
+import { GiMonclerJacket } from 'react-icons/gi';
 import { GiSleevelessJacket } from 'react-icons/gi';
 import { GiPoloShirt } from 'react-icons/gi';
 import { GiBilledCap } from 'react-icons/gi';
@@ -51,6 +52,7 @@ const Navbar = () => {
     const [home, setHome] = useState(false)
     const [shop, setShop] = useState(false)
     const [icon, setIcon] = useState(false)
+    const [pages, setPages] = useState(false)
 
 
     return (
@@ -131,34 +133,140 @@ const Navbar = () => {
                                 </div>
                             </div>}
                             <li onClick={() => setIcon((prev) => !prev)}>Icons
-                            {icon ? (
+                                {icon ? (
                                     <BsChevronUp />
                                 ) : (
                                     <FiChevronDown />
                                 )}
                             </li>
                             {icon && <div className='icon'>
-                                    <div className='icon_up'>
-                                        <div className='icon_up_in'>
-                                            <span><GiTrousers/></span>
-                                            <span><GiSleevelessJacket/></span>
-                                            <span><FaTshirt/></span>
-                                            <span><TbShirtSport/></span>
-                                            <span><GiPoloShirt/></span>
-                                            <span><BsEraserFill/></span>
-                                            <span><GiUnderwearShorts/></span>
-                                            <span><GiUnderwearShorts/></span>
-                                            <span><BsWatch/></span>
-                                            <span><BsFillBagFill/></span>
-                                            <span><GiBilledCap/></span>
-                                            <span><AiOutlineAppstoreAdd/></span>
+                                <div className='icon_up'>
+                                    <div className='icon_up_in'>
+                                        <h3><div><GiTrousers className='iconss' /></div><div>Trousers</div></h3>
+                                        <h3><div><GiSleevelessJacket className='iconss' /></div><div>Jackets</div></h3>
+                                        <h3><div><TbShirtSport className='iconss' /></div><div>T-Shirts</div></h3>
+                                        <h3><div><GiPoloShirt className='iconss' /></div><div>Pullovers</div></h3>
+                                        <h3><div><BsEraserFill className='iconss' /></div><div>Scarfs</div></h3>
+                                        <h3><div><GiUnderwearShorts className='iconss' /></div><div>Shorts</div></h3>
+                                        <h3><div><GiShorts className='iconss' /></div><div>Underwear</div></h3>
+                                        <h3><div><BsWatch className='iconss' /></div><div>Watches</div></h3>
+                                        <h3><div><GiMonclerJacket className='iconss' /></div><div>Trousers</div></h3>
+                                        <h3><div><BsFillBagFill className='iconss' /></div><div>Bags</div></h3>
+                                        <h3><div><GiBilledCap className='iconss' /></div><div>TrouCapssers</div></h3>
+                                        <h3><div><AiOutlineAppstoreAdd className='iconss' /></div><div>Accessories</div></h3>
+                                    </div>
+                                </div>
+                                <div className='icon_low'>
+                                    <h3>Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15!</h3>
+                                </div>
+                            </div>}
+                            <li onClick={() => setPages((prev) => !prev)}>Pages
+                                {pages ? (
+                                    <BsChevronUp />
+                                ) : (
+                                    <FiChevronDown />
+                                )}
+                            </li>
+                            {pages && <div className='pages'>
+                                <div className='pages_in'>
+                                    <div>
+                                        <div>
+                                            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"></img>
+                                        </div>
+                                        <div>
+                                            <b></b>
+                                            <ul>
+                                                <li>Home 1 - Fashion</li>
+                                                <li>Home 2 - Fashion</li>
+                                                <li>Home 3 - Design</li>
+                                                <li>Home 4 - Design</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <b></b>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div className='icon_low'>
-                                        <h3>Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15!</h3>
+
+
+                                    <div>
+                                        <div>
+                                            <img src=""></img>
+                                        </div>
+                                        <div>
+                                            <b></b>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <b></b>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
                                     </div>
+
+
+                                    <div>
+                                        <div>
+                                            <img src=""></img>
+                                        </div>
+                                        <div>
+                                            <b></b>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <b></b>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <div>
+                                            <img src=""></img>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <b></b>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>}
-                            <li>Pages<FiChevronDown /></li>
                             <li>Docs<FiChevronDown /></li>
                         </ul>
                     </div>
