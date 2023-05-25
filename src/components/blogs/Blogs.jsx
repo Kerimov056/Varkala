@@ -2,6 +2,8 @@ import React,{useState, useEffect} from 'react'
 import axios from 'axios';
 import './blogs.scss'
 import Cartblog from './Cartblog'
+import { BsChevronRight } from 'react-icons/bs';
+import { BsChevronLeft } from 'react-icons/bs';
 
 const Blogs = () => {
 
@@ -33,15 +35,21 @@ const Blogs = () => {
             </div>
             <div className='carts'>
                     <div className='carts_in'>
-                        {
+                       <div className='carts_in_in'>
+                       {
                             info.map((item)=>{
                                 return <Cartblog key={item.id} imgurl={item.imgurl} name={item.name}/>
                             })
                         }
+                       </div>
+                        <div className='low'>
+                            <button className='Older'><span><BsChevronLeft/></span>Older posts</button>
+                            <button className='Newer'>Newer posts<span><BsChevronRight/></span></button>
+                        </div>
                     </div>
             </div>
         </>
     )
 }
 
-export default Blogs
+export default Blogs 
