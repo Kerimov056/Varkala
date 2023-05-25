@@ -108,7 +108,9 @@
             &>input {
                 width: 260px;
                 height: 40px;
-                border: none;
+                border-top:none;
+                border-left: none;
+                border-right: none;
                 border-bottom: 1px solid gray;
             }
 
