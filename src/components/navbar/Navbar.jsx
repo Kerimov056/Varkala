@@ -67,10 +67,13 @@ const Navbar = () => {
                             </li>
                             {open && <div className='open'>
                                 {homeList.map((item, i) => (
-                                    <div className='open_in'>
-                                        <h3>{item.home}</h3>
-                                        <h3>{item.style}</h3>
-                                    </div>
+                                    <Link to="/">
+                                        <div className='open_in'>
+                                            <h3 className='h11'>{item.home}</h3>
+                                            <span>-</span>
+                                            <h3 className='h12'>{item.style}</h3>
+                                        </div>
+                                    </Link>
                                 ))}
                             </div>}
                             <li>Shop<FiChevronDown /></li>
