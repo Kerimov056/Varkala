@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div className='navbar2_in'>
                     <div className='left2'>
                         <ul>
-                            <li><Link to="/Varkala">Varkala</Link></li>
+                            <li><Link to="/Varkala" className='link'>Varkala</Link></li>
                             <li onClick={() => setOpen((prev) => !prev)}>Home
                                 {open ? (
                                     <BsChevronUp />
@@ -67,7 +67,7 @@ const Navbar = () => {
                             </li>
                             {open && <div className='open'>
                                 {homeList.map((item, i) => (
-                                    <Link to="/">
+                                    <Link to="/" className='link'>
                                         <div className='open_in'>
                                             <h3 className='h11'>{item.home}</h3>
                                             <span>-</span>
@@ -76,7 +76,13 @@ const Navbar = () => {
                                     </Link>
                                 ))}
                             </div>}
-                            <li>Shop<FiChevronDown /></li>
+                            <li onClick={() => setOpen((prev) => !prev)}>Shop
+                            {open ? (
+                                    <BsChevronUp />
+                                ) : (
+                                    <FiChevronDown />
+                                )}
+                            </li>
                             <li>Icons<FiChevronDown /></li>
                             <li>Pages<FiChevronDown /></li>
                             <li>Docs<FiChevronDown /></li>
@@ -97,6 +103,3 @@ const Navbar = () => {
 
 export default Navbar
 
-
-{/* <Link to="/Varkala"> */ }
-// import { Link } from 'react-router-dom/cjs/react-router-dom.min'
