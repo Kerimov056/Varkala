@@ -142,6 +142,8 @@ input[type="search"]::placeholder {
     font-size: 19px;
 }
 
+
+// Home DropDown menu
 .open {
     position: absolute;
     margin-top: 50px;
@@ -183,4 +185,56 @@ input[type="search"]::placeholder {
 
 .link {
     text-decoration: none;
+}
+
+// Shop DropDown menu
+
+.shop{
+    width: 750px;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 110px;
+
+    .leftt{
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .leftt_in{
+            margin-top: 60px;
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: space-between;
+            
+            li{
+                list-style: none;
+                margin-bottom: 12px;
+                color: #4c4c4c;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .firstt{
+                color: black;
+            }
+        }
+    }
+
+    .rightt{
+        width: 250px;
+        height: 100%;
+
+        &>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
