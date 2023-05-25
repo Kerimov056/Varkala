@@ -79,7 +79,7 @@
         color: black;
 
         .left2 {
-            
+
             &>ul {
                 display: flex;
 
@@ -91,48 +91,48 @@
                     font-size: 17px;
                     font-weight: 600;
 
-                    &>svg{
+                    &>svg {
                         position: absolute;
                         margin-left: 50px;
-                        margin-top:5px;
+                        margin-top: 5px;
 
                     }
                 }
             }
         }
 
-        &>span{
+        &>span {
             margin-left: 300px;
             position: relative;
 
-            &>input{
+            &>input {
                 width: 260px;
                 height: 40px;
                 border: none;
                 border-bottom: 1px solid gray;
             }
 
-            &>svg{
+            &>svg {
                 position: absolute;
                 width: 28px;
                 height: 28px;
                 margin-left: -30px;
                 margin-top: 5px;
             }
-            
+
         }
 
-        .right2{
-            
-            &>span{
+        .right2 {
+
+            &>span {
                 margin-right: 20px;
 
-                &>svg{
+                &>svg {
                     width: 28px;
                     height: 28px;
                     color: #4c4c4c;
                 }
-            }   
+            }
         }
     }
 }
@@ -140,4 +140,17 @@
 input[type="search"]::placeholder {
     color: gray;
     font-size: 19px;
+}
+
+.open {
+    .open_in {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>h3 {
+            
+        }
+    }
 }
