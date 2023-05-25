@@ -17,7 +17,7 @@ const Blogs = () => {
                 </div>
             </div>
             <div className=''>
-                as
+                
             </div>
         </>
     )
