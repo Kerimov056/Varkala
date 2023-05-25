@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './navbar.scss'
 import { Link } from "react-router-dom";
+// import { AOS } from 'aos';
+// import "aos/dist/aos.css";
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
@@ -55,7 +57,7 @@ const Navbar = () => {
     const [pages, setPages] = useState(false)
     const [docs, setDocs] = useState(false)
 
-
+  
     return (
         <>
             <div className='navbar'>
@@ -88,7 +90,7 @@ const Navbar = () => {
                             </li>
                             {home && <div className='open'>
                                 {homeList.map((item, i) => (
-                                    <Link to="/" className='link'>
+                                    <Link onClick={() => setHome((prev) => !prev)} to="/" className='link'>
                                         <div className='open_in'>
                                             <h3 className='h11'>{item.home}</h3>
                                             <span>-</span>
@@ -224,22 +226,22 @@ const Navbar = () => {
 
 
                                     <div>
-                                        <div className='pages_in_img'> 
+                                        <div className='pages_in_img'>
                                             <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"></img>
                                         </div>
                                         <div className='oneLine'>
                                             <b>Blog</b>
                                             <ul>
-                                             <Link to="/blog" className='link'><li>Blog</li></Link>
-                                             <Link to="/blog" className='link'><li>Blog - Masonry</li></Link>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li>Blog</li></Link>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li>Blog - Masonry</li></Link>
                                                 <li>Post</li>
                                             </ul>
                                         </div>
                                         <div className='twoline'>
                                             <ul>
                                                 <b>Pages</b>
-                                              <Link to="/about" className='link'><li>About - Company </li></Link>
-                                              <Link to="/about" className='link'><li>About v.2 - Person </li></Link>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About - Company </li></Link>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About v.2 - Person </li></Link>
                                                 <li>F.A.Q.</li>
                                                 <li>Contact</li>
                                                 <li>Privacy policy</li>
@@ -268,8 +270,8 @@ const Navbar = () => {
 
                                 </div>
                             </div>}
-                            <li onClick={()=>setDocs((prev)=>!prev)}>Docs
-                            {docs ? (
+                            <li onClick={() => setDocs((prev) => !prev)}>Docs
+                                {docs ? (
                                     <BsChevronUp />
                                 ) : (
                                     <FiChevronDown />
@@ -302,7 +304,9 @@ const Navbar = () => {
             </div>
         </>
     )
+
 }
+
 
 export default Navbar
 

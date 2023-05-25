@@ -3,6 +3,8 @@ import Navbar from './components/navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/home/Home'
 import Varkala from './components/varkala/Varkala'
+import Abouts from './components/abouts/Abouts';
+import Blogs from './components/blogs/Blogs';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/Varkala' element={<Varkala/>}/>
+            <Route path='/blog' element={<Blogs/>}/>
+            <Route path='/about' element={<Abouts/>}/>
         </Routes>
       </Router>
     </>
