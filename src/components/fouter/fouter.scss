@@ -51,7 +51,9 @@
         align-items: center;
 
         .left{
+            margin-top: -20px;
             width: 40%;
+
             &>p{
                 margin-top: 20px;
                 color: rgb(130, 128, 128);
@@ -70,6 +72,23 @@
                     height: 30px;
                     margin-left: -36px;
                     margin-top: 10px;
+                }
+            }
+        }
+
+        .right{
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            &>div{
+                ul{
+                    display: block;
+                    margin-top: 19px;
+                    li{
+                        margin-top: 12px;
+                    }
                 }
             }
         }
