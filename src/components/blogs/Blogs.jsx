@@ -1,9 +1,24 @@
-import React from 'react'
-// import Paralax from '../paralax/paralax'
+import React,{useState, useEffect} from 'react'
+import axios from 'axios';
 import './blogs.scss'
+import Cartblog from './Cartblog'
 
 const Blogs = () => {
 
+    const [info, setInfo] = useState([])
+
+    useEffect(()=>{
+        try{
+            const getAll = async () =>{
+                const response = await axios.get('http://localhost:3001/products')
+                setInfo(response.data)
+            }
+            getAll()
+        }
+        catch(error){
+            console.error(error)
+        }
+    })
 
     return (
         <>
@@ -16,8 +31,14 @@ const Blogs = () => {
                     </div>
                 </div>
             </div>
-            <div className=''>
-                
+            <div className='carts'>
+                    <div className='carts_in'>
+                        {
+                            info.map((item)=>{
+                                return <Cartblog key={item.id} imgurl={item.imgurl} name={item.name}/>
+                            })
+                        }
+                    </div>
             </div>
         </>
     )
