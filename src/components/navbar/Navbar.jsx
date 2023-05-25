@@ -53,6 +53,7 @@ const Navbar = () => {
     const [shop, setShop] = useState(false)
     const [icon, setIcon] = useState(false)
     const [pages, setPages] = useState(false)
+    const [docs, setDocs] = useState(false)
 
 
     return (
@@ -173,7 +174,7 @@ const Navbar = () => {
                                         <div className='pages_in_img'>
                                             <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"></img>
                                         </div>
-                                        <div>
+                                        <div className='oneLine'>
                                             <b>Homepage</b>
                                             <ul>
                                                 <li>Home 1 - Fashion</li>
@@ -182,7 +183,7 @@ const Navbar = () => {
                                                 <li>Home 4 - Design</li>
                                             </ul>
                                         </div>
-                                        <div>
+                                        <div className='twoline'>
                                             <ul>
                                                 <b>Category</b>
                                                 <li>Full width</li>
@@ -201,7 +202,7 @@ const Navbar = () => {
                                         <div className='pages_in_img'>
                                             <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"></img>
                                         </div>
-                                        <div>
+                                        <div className='oneLine'>
                                             <b>Order process</b>
                                             <ul>
                                                 <li>Shopping cart</li>
@@ -211,7 +212,7 @@ const Navbar = () => {
                                                 <li>Wishlist</li>
                                             </ul>
                                         </div>
-                                        <div>
+                                        <div className='twoline'>
                                             <ul>
                                                 <b>Product</b>
                                                 <li>Product with sticky info</li>
@@ -226,7 +227,7 @@ const Navbar = () => {
                                         <div className='pages_in_img'> 
                                             <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"></img>
                                         </div>
-                                        <div>
+                                        <div className='oneLine'>
                                             <b>Blog</b>
                                             <ul>
                                                 <li>Blog</li>
@@ -234,7 +235,7 @@ const Navbar = () => {
                                                 <li>Post</li>
                                             </ul>
                                         </div>
-                                        <div>
+                                        <div className='twoline'>
                                             <ul>
                                                 <b>Pages</b>
                                                 <li>About - Company </li>
@@ -251,7 +252,7 @@ const Navbar = () => {
                                         <div className='pages_in_img'>
                                             <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/photo-1534126511673-b6899657816a.jpg"></img>
                                         </div>
-                                        <div>
+                                        <div className='oneLine'>
                                             <ul>
                                                 <b>Customer</b>
                                                 <li>Login/sign up</li>
@@ -267,7 +268,27 @@ const Navbar = () => {
 
                                 </div>
                             </div>}
-                            <li>Docs<FiChevronDown /></li>
+                            <li onClick={()=>setDocs((prev)=>!prev)}>Docs
+                            {docs ? (
+                                    <BsChevronUp />
+                                ) : (
+                                    <FiChevronDown />
+                                )}
+                            </li>
+                            {docs && <div className='docs'>
+                                <div>
+                                    <ul>
+                                        <li>Introduction</li>
+                                        <li>Directory structure</li>
+                                        <li>Gulp</li>
+                                        <li>Customizing CSS</li>
+                                        <li>Creadits</li>
+                                        <li>Changelog</li>
+                                        <li>Bootstrap</li>
+                                        <li>Theme</li>
+                                    </ul>
+                                </div>
+                            </div>}
                         </ul>
                     </div>
                     <span><input type="search" placeholder='   Search' /><AiOutlineSearch /></span>

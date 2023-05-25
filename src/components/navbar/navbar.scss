@@ -172,7 +172,7 @@ input[type="search"]::placeholder {
             color: #7a7a7a;
             font-size: 16px;
 
-            &:hover{
+            &:hover {
                 color: black;
             }
         }
@@ -189,7 +189,7 @@ input[type="search"]::placeholder {
 
 // Shop DropDown menu
 
-.shop{
+.shop {
     width: 750px;
     height: 380px;
     background-color: white;
@@ -199,43 +199,43 @@ input[type="search"]::placeholder {
     margin-top: 50px;
     margin-left: 110px;
 
-    .leftt{
+    .leftt {
         width: 500px;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .leftt_in{
+        .leftt_in {
             margin-top: 60px;
             width: 90%;
             height: 90%;
             display: flex;
             justify-content: space-between;
-            
-            li{
+
+            li {
                 list-style: none;
                 margin-bottom: 12px;
                 color: #7a7a7a;
                 font-size: 16px;
                 font-weight: 600;
 
-                &:hover{
+                &:hover {
                     color: black;
                 }
             }
 
-            .firstt{
+            .firstt {
                 color: black;
             }
         }
     }
 
-    .rightt{
+    .rightt {
         width: 250px;
         height: 100%;
 
-        &>img{
+        &>img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -246,34 +246,34 @@ input[type="search"]::placeholder {
 
 //icon dropdown
 
-.icon{
+.icon {
     width: 750px;
     height: 380px;
     position: absolute;
     margin-top: 50px;
     background-color: rgb(255, 255, 255);
     margin-left: 240px;
-    
-    .icon_up{
+
+    .icon_up {
         width: 100%;
         height: 330px;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        &>div{
+        &>div {
             width: 90%;
             height: 90%;
             display: grid;
             grid-template-columns: auto auto auto auto auto auto;
 
-            &>h3{
+            &>h3 {
                 display: block;
                 font-weight: 700;
                 margin-left: 7px;
                 text-align: center;
 
-                .iconss{
+                .iconss {
                     width: 50px;
                     height: 80px;
                 }
@@ -282,7 +282,7 @@ input[type="search"]::placeholder {
         }
     }
 
-    .icon_low{
+    .icon_low {
         width: 100%;
         height: 50px;
         display: flex;
@@ -290,7 +290,7 @@ input[type="search"]::placeholder {
         align-items: center;
         background-color: #bcac76;
 
-        &>h3{
+        &>h3 {
             color: black;
             font-size: 16px;
         }
@@ -301,37 +301,83 @@ input[type="search"]::placeholder {
 //pages dropdown
 
 
-.pages{
-    width: 1260px;
-    height: 700px;
+.pages {
+    width: 1280px;
+    height: 650px;
     position: absolute;
     margin-left: 55px;
     margin-top: 50px;
-    background-color: red;
+    background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 
-    &>div{
-        width: 90%;
-        height: 90%;
+    &>div {
+        width: 92%;
+        height: 88%;
         display: flex;
         justify-content: space-between;
-        
-        &>div{
-            width: 270px;
-            height: 100%;
-            
-            .pages_in_img{
-                width: 100%;
-                height: 200px;
 
-                &>img{
+        &>div {
+            width: 275px;
+            height: 100%;
+
+            .pages_in_img {
+                width: 100%;
+                height: 188px;
+
+                &>img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
             }
+
+            .oneLine {
+                margin-top: 20px;
+
+                &>b {
+                    margin-top: 80px;
+                }
+
+                &>ul {
+                    display: block;
+
+                    &>li {
+                        margin-top: 5px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .twoline{
+                margin-top: 40px;
+
+                &>b {
+                    margin-top: 80px;
+                }
+
+                &>ul {
+                    display: block;
+
+                    &>li {
+                        margin-top: 5px;
+                        font-weight: 500;
+                    }
+                }
+
+            }
         }
+    }
+}
+
+
+li{
+    list-style: none;
+    color: #7a7a7a;
+    font-size: 16px;
+
+    &:hover{
+        color: black;
     }
 }
