@@ -42,6 +42,7 @@ const Fouter = () => {
 
                 </div>
             </div>
+
             <div className='foutertwo'>
                 <div className='foutertwo_in'>
                     <div className='left'>
@@ -84,7 +85,20 @@ const Fouter = () => {
                     </div>
                 </div>
             </div>
-            <div></div>
+
+            <div className='fouterthree'>
+                <div className='fouterthree_in'>
+                    <h5>© 2020 Your company. All rights reserved.</h5>
+                    <div>
+                        <ul>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy & cookies</li>
+                            <li>Accessibility</li>
+                            <li>Customer Data Promise</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
