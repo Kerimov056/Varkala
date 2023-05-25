@@ -8,7 +8,7 @@ const Cartblog = ({imgurl,name}) => {
 
     useEffect(() => {
         AOS.init({
-            offset: 630,
+            offset: 30,
             duration: 500,
             delay: 60,
         });
@@ -17,7 +17,7 @@ const Cartblog = ({imgurl,name}) => {
 
   return (
     <>
-        <div data-aos="zoom-in" className='cart'>
+        <div data-aos="zoom-in-down" className='cart'>
             <div className='cart_img'>
                 <img src={imgurl}></img>
             </div>

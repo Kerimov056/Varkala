@@ -26,9 +26,19 @@ import { GiPoloShirt } from 'react-icons/gi';
 import { GiBilledCap } from 'react-icons/gi';
 import { TbShirtSport } from 'react-icons/tb';
 
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 30,
+            duration: 500,
+            delay: 60,
+        });
+        AOS.refresh();
+    }, []);
 
     const homeList = [
         {
@@ -88,7 +98,7 @@ const Navbar = () => {
                                     <FiChevronDown />
                                 )}
                             </li>
-                            {home && <div className='open'>
+                            {home && <div data-aos="fade-up" className='open'>
                                 {homeList.map((item, i) => (
                                     <Link onClick={() => setHome((prev) => !prev)} to="/" className='link'>
                                         <div className='open_in'>
@@ -106,7 +116,7 @@ const Navbar = () => {
                                     <FiChevronDown />
                                 )}
                             </li>
-                            {shop && <div className='shop'>
+                            {shop && <div data-aos="fade-up" className='shop'>
                                 <div className='leftt'>
                                     <div className='leftt_in'>
                                         <div>
@@ -142,7 +152,7 @@ const Navbar = () => {
                                     <FiChevronDown />
                                 )}
                             </li>
-                            {icon && <div className='icon'>
+                            {icon && <div data-aos="fade-up" className='icon'>
                                 <div className='icon_up'>
                                     <div className='icon_up_in'>
                                         <h3><div><GiTrousers className='iconss' /></div><div>Trousers</div></h3>
@@ -170,7 +180,7 @@ const Navbar = () => {
                                     <FiChevronDown />
                                 )}
                             </li>
-                            {pages && <div className='pages'>
+                            {pages && <div data-aos="fade-up" className='pages'>
                                 <div className='pages_in'>
                                     <div>
                                         <div className='pages_in_img'>
@@ -277,7 +287,7 @@ const Navbar = () => {
                                     <FiChevronDown />
                                 )}
                             </li>
-                            {docs && <div className='docs'>
+                            {docs && <div data-aos="fade-up" className='docs'>
                                 <div>
                                     <ul>
                                         <li>Introduction</li>
