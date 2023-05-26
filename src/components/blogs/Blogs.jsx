@@ -12,7 +12,7 @@ const Blogs = () => {
     useEffect(()=>{
         try{
             const getAll = async () =>{
-                const response = await axios.get('http://localhost:3001/products')
+                const response = await axios.get('http://localhost:3003/products')
                 setInfo(response.data)
             }
             getAll()

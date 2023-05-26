@@ -241,3 +241,195 @@
         }
     }
 }
+
+
+//2ci hisessi
+
+.people{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    &>div{
+        width: 80%;
+        height: auto;
+
+        .samsa{
+            width: 100%;
+            height: 630px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .samsa_up{
+                width: 44%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &>div{
+                    width: 340px;
+                    height: 340px;
+                    border-radius: 50%;
+
+                    &>img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+            }  
+            
+            .samsa_low{
+                width: 56%;
+
+                &>div{
+                    width: 80%;
+
+                    &>h5{
+                        margin-top: 12px;
+                        font-size: 26px;
+                        font-weight: -200;
+                        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        word-spacing: 3px;
+                    }
+
+                    &>h2{
+                        margin-top: 27px;
+                        color: #bcac76;
+                    }
+
+                    &>p{
+                        margin-top: 30px;
+                        font-size: 19px;
+                        color: #868e96;
+                        word-spacing: 2px;
+                    }
+                }
+            }
+        }
+
+        .team{
+            width: 100%;
+            height: 900px;
+            display: flex;
+            
+            .line{
+                width: 20%;
+                height: 100%;
+
+                &>p{
+                    margin-top: 18px;
+                    margin-left: 44px;
+                    width: 90px;
+                    height: 1px;
+                    background-color: black;
+                }
+            }
+
+            .ourteam{
+                width: 80%;
+                height: 100%;
+
+                .ourteam_info{
+                    width: 100%;
+                    height: 260px;
+
+                    &>h2{
+                        color: #bcac76;
+                        letter-spacing: 8px;
+                    }
+
+                    &>h1{
+                        margin-top: 5px;
+                        font-size: 70px;
+                        font-weight: 700;
+                    }
+
+                    &>p{
+                        margin-top: 27px;
+                        color: #868e96;
+                        font-size: 17px;
+                    }
+                }
+
+                .jobs{
+                    width: 100%;
+                    height: 640px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .jobs_in{
+                        width: 100%;
+                        height: 95%;
+                        display: grid;
+                        grid-template-columns: auto auto auto auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//4cu hisse
+
+.sponsor{
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    
+    .sponsor_in{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+}
+
+
+
+
+
+
+//isci carti scss
+
+.jobb{
+    width: 180px;
+    height: 250px;
+
+    .jobb_img{
+        width: 100%;
+        height: 180px;
+
+        &>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .jobb_text{
+        margin-top: 10px;
+        width: 100%;
+        height: 25%;
+        text-align: center;
+
+        &>h2{
+            font-size: 19px;
+        }
+
+        &>h3{
+            font-size: 15px;
+            color: #868e96;
+        }
+    }
+}

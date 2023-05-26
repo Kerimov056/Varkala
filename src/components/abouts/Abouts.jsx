@@ -1,7 +1,22 @@
 import React from 'react'
 import './about.scss'
+import { homeList } from '../Helpers/List'
+import Aboutapi from './aboutapi'
+import "react-alice-carousel/lib/scss/alice-carousel.scss";
+import AliceCarousel from 'react-alice-carousel';
+
+
+const handleDragStart = (e) => e.preventDefault();
+
+const items = [
+  <img style={{width: "95%", height: "230px", objectFit: "contain"}} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
+  <img style={{width: "95%", height: "230px", objectFit: "contain"}} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
+  <img style={{width: "95%", height: "230px", objectFit: "contain"}} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
+];
 
 const Abouts = () => {
+
+
   return (
     <>
       <div className='about'>
@@ -82,6 +97,57 @@ const Abouts = () => {
           </div>
         </div>
       </div>
+
+      <div className='people'>
+        <div className='people_in'>
+          <div className='samsa'>
+            <div className='samsa_up'>
+              <div>
+                <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-0.jpg'></img>
+              </div>
+            </div>
+            <div className='samsa_low'>
+              <div>
+                <h5>Samsa was a travelling salesman - and</h5><h5> above it there hung a picture that he had</h5><h5> recently cut out of an illustrated magazine</h5><h5>and housed in a nice, gilded frame.</h5>
+                <h2>— FRANKIE KAFKA, FOUNDER</h2>
+                <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className='team'>
+            <div className='line'>
+              <p></p>
+            </div>
+            <div className='ourteam'>
+              <div className='ourteam_info'>
+                <h2>OUR TEAM</h2>
+                <h1>People</h1>
+                <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
+              </div>
+              <div className='jobs'>
+                <div className='jobs_in'>
+                  {
+                    homeList.map((item) => {
+                      return <Aboutapi imgurl={item.img} name={item.name} job={item.job} />
+                    })
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/*  <div className='sponsor'>
+        <div className='sponsor_in'>
+          <AliceCarousel mouseTracking items={items} />
+        </div>
+      </div>
+ */}
+
+      
     </>
   )
 }
