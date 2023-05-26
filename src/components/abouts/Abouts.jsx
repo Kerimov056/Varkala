@@ -140,12 +140,11 @@ const Abouts = () => {
         </div>
       </div>
 
-      {/*  <div className='sponsor'>
+      <div className='sponsor'>
         <div className='sponsor_in'>
           <AliceCarousel mouseTracking items={items} />
         </div>
       </div>
- */}
 
       
     </>
