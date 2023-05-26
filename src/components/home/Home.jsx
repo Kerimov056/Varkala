@@ -86,35 +86,32 @@ const Home = () => {
 
           <div className='twoimg towtwo'>
             <div className='Norwegg'>
-              <div className='Norwegg_text'>
+              <div style={{marginRight: "6px", width: "46%"}} className='Norwegg_text'>
                 <div>
                   <h1>
-                    Norwegg
-                    design
-                    chair
-                    $139.90
+                    Sunn
+                    Clock
                   </h1>
-                  <p>$139.90</p>
+                  <p>$89.90</p>
                   <h3>SHOP NOW</h3>
                 </div>
               </div>
-              <div className='Norwegg_img'>
+              <div style={{width: "90%"}} className='Norwegg_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock-sq.jpg'></img>
               </div>
             </div>
 
-            <div style={{marginTop: "120px"}} className='Furniture'>
+            <div style={{ marginTop: "120px" }} className='Furniture'>
               <div className='Furniture_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/box-sq.jpg'></img>
               </div>
               <div className='Furniture_text'>
                 <div>
                   <h1>
-                    Furniture
-                    source
-                    book
+                    Accessory
+                    boxes
                   </h1>
-                  <p>$39.90</p>
+                  <p> $39.90</p>
                   <h3>SHOP NOW</h3>
                 </div>
               </div>
@@ -122,37 +119,35 @@ const Home = () => {
           </div>
 
 
-          <div className='twoimg towthree'>
-            <div className='Furniture'>
-              <div style={{width: "250px",height: "280px",marginLeft: "140px"}} className='Furniture_img'>
+          <div style={{marginBottom: "70px", marginTop: "120px"}} className='twoimg towthree'>
+            <div style={{marginLeft: "-30px",marginTop: "-80px"}} className='Furniture'>
+              <div style={{ width: "250px", height: "280px", marginLeft: "70px" }} className='Furniture_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock2-sq.jpg'></img>
               </div>
-              <div className='Furniture_text'>
+              <div style={{ marginLeft: "40px", marginTop: "-22px" }} className='Furniture_text'>
                 <div>
                   <h1>
-                    Furniture
-                    source
-                    book
+                    Swiss
+                    Minutes
+                    Black
                   </h1>
-                  <p>$39.90</p>
+                  <p>$149.90</p>
                   <h3>SHOP NOW</h3>
                 </div>
               </div>
             </div>
             <div className='Norwegg'>
-              <div className='Norwegg_text'>
-                <div>
+              <div style={{width: "70px",marginRight: "200px"}} className='Norwegg_text'>
+                <div style={{width: "100px"}}>
                   <h1>
-                    Norwegg
-                    design
-                    chair
-                    $139.90
+                    Korona
+                    room chair
                   </h1>
-                  <p>$139.90</p>
+                  <p>$39.90</p>
                   <h3>SHOP NOW</h3>
                 </div>
               </div>
-              <div className='Norwegg_img'>
+              <div style={{height: "120%", width: "100%"}} className='Norwegg_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair3-3-sq.jpg'></img>
               </div>
             </div>
