@@ -1,9 +1,45 @@
 import React from 'react';
 import './home.scss'
 import Carousel from 'react-bootstrap/Carousel';
+import { useSpring, animated } from "react-spring"
 
 
 const Home = () => {
+
+
+  function Number({ n }) {
+    const { number } = useSpring({
+      from: { number: 0 },
+      number: n,
+      delay: 300,
+      config: { mass: 1, tension: 20, friction: 10 },
+    });
+  
+    return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+  }
+  
+  function Number1({ n }) {
+    const { number } = useSpring({
+      from: { number: 0 },
+      number: n,
+      delay: 700,
+      config: { mass: 1, tension: 20, friction: 10 },
+    });
+  
+    return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+  }
+  
+  function Number2({ n }) {
+    const { number } = useSpring({
+      from: { number: 0 },
+      number: n,
+      delay: 1000,
+      config: { mass: 1, tension: 20, friction: 10 },
+    });
+  
+    return <animated.div>{number.to((n) => (n/10).toFixed(1))}</animated.div>;
+  }
+  
 
   return (
     <>
@@ -166,6 +202,7 @@ const Home = () => {
                 <h1>Black and white Nordegg chairs</h1>
                 <p><span className='onespan'>$129.00</span><span>$79.00</span></p>
                 <button>$50 off</button>
+
               </div>
             </div>
           </div>
