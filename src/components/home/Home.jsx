@@ -37,7 +37,18 @@ const Home = () => {
       config: { mass: 1, tension: 20, friction: 10 },
     });
   
-    return <animated.div>{number.to((n) => (n/10).toFixed(1))}</animated.div>;
+    return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+  }
+  
+  function Number3({ n }) {
+    const { number } = useSpring({
+      from: { number: 0 },
+      number: n,
+      delay: 1000,
+      config: { mass: 1, tension: 20, friction: 10 },
+    });
+  
+    return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
   }
   
 
@@ -202,7 +213,24 @@ const Home = () => {
                 <h1>Black and white Nordegg chairs</h1>
                 <p><span className='onespan'>$129.00</span><span>$79.00</span></p>
                 <button>$50 off</button>
-
+                <div>
+                    <div>
+                      <h4><Number n={220} /></h4>
+                      <p>days</p>
+                    </div>
+                    <div>
+                      <h4><Number1 n={220} /></h4>
+                      <p>Hours</p>
+                    </div>
+                    <div>
+                      <h4><Number2 n={220} /></h4>
+                      <p>minutes</p>
+                    </div>
+                    <div>
+                      <h4><Number3 n={220} /></h4>
+                      <p>seconds</p>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
