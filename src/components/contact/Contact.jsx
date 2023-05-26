@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './contact.scss'
 import { city } from '../Helpers/City'
 import Contactcart from './Contactcart'
@@ -6,6 +6,8 @@ import GoogleMapReact from 'google-map-react';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
+import { Loginn } from './Loginn';
+import { Registerr } from './Register';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -18,6 +20,8 @@ const Contact = () => {
         },
         zoom: 11
     };
+
+    const [form, setForm] = useState("login")
 
     return (
         <>
@@ -96,7 +100,9 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='login'>
-
+                            {
+                                form === "login" ? <Loginn/> : <Registerr/>
+                            }
                     </div>
                 </div>
             </div>
