@@ -90,7 +90,7 @@ const Navbar = () => {
                 <div className='navbar2_in'>
                     <div className='left2'>
                         <ul>
-                            <li><Link to="/Varkala" className='link'>Varkala</Link></li>
+                            <li><Link to="/Varkala" className='link not'>Varkala</Link></li>
                             <li onClick={() => setHome((prev) => !prev)}>Home
                                 {home ? (
                                     <BsChevronUp />
