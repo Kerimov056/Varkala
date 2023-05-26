@@ -89,14 +89,14 @@ const Contact = () => {
                         <div>
                             <div className='getinTouch_name'>Get in touch</div>
                             <div className='sosial'>
-                                <FaFacebookF className='sosial_sebeke'/>
+                                <FaFacebookF className='sosial_sebeke firstt'/>
                                 <FaTwitter  className='sosial_sebeke'/>
                                 <BsInstagram  className='sosial_sebeke'/>
                             </div>
                         </div>
                     </div>
                     <div className='login'>
-                            
+
                     </div>
                 </div>
             </div>
