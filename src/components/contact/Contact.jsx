@@ -3,6 +3,9 @@ import './contact.scss'
 import { city } from '../Helpers/City'
 import Contactcart from './Contactcart'
 import GoogleMapReact from 'google-map-react';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { BsInstagram } from 'react-icons/bs';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -76,6 +79,24 @@ const Contact = () => {
                                 })
                             }
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='logIn'>
+                <div>
+                    <div className='getinTouch'>
+                        <div>
+                            <div className='getinTouch_name'>Get in touch</div>
+                            <div className='sosial'>
+                                <FaFacebookF className='sosial_sebeke'/>
+                                <FaTwitter  className='sosial_sebeke'/>
+                                <BsInstagram  className='sosial_sebeke'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='login'>
+                            
                     </div>
                 </div>
             </div>

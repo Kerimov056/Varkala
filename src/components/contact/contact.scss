@@ -85,7 +85,7 @@ p{
     }
 }
 
-//2ci hisse
+//2ci hisse map
 
 .contact_two{
     width: 100%;
@@ -130,7 +130,56 @@ p{
 }
 
 
+//3cu hisse login
 
+.logIn{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+
+    &>div{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .getinTouch{
+            width: 50%;
+            height: 100%;
+            background-color: white;
+
+            &>div{
+                width: 300px;
+                height: 300px;
+                background-color: cadetblue;
+                margin-top: 80px;
+
+                .getinTouch_name{
+                    text-align: center;
+                    font-size: 80px;
+                    font-weight: 700;
+                }
+
+                .sosial{
+                    
+                    .sosial_sebeke{
+                        width: 38px;
+                        height: 38px;
+                        color: #bcac76;
+                    }
+                }
+            }
+        }
+
+        .login{
+            background-color: black;
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
 
 
 
