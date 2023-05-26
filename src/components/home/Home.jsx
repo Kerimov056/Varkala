@@ -231,6 +231,8 @@ const Home = () => {
                       <p>seconds</p>
                     </div>
                 </div>
+
+                <button id='btn'>SHOP NOW</button>
               </div>
             </div>
           </div>
