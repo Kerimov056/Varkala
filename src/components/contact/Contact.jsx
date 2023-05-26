@@ -21,7 +21,7 @@ const Contact = () => {
         zoom: 11
     };
 
-    const [form, setForm] = useState("login")
+    const [form, setForm] = useState("register")
 
     const Form = (forName) =>{
         setForm(forName);
