@@ -66,10 +66,98 @@ const Home = () => {
               </div>
             </div>
             <div className='Norwegg'>
-              {/* <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair-2-sq.jpg'></img> */}
+              <div className='Norwegg_text'>
+                <div>
+                  <h1>
+                    Norwegg
+                    design
+                    chair
+                    $139.90
+                  </h1>
+                  <p>$139.90</p>
+                  <h3>SHOP NOW</h3>
+                </div>
+              </div>
+              <div className='Norwegg_img'>
+                <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair-2-sq.jpg'></img>
+              </div>
             </div>
           </div>
-          
+
+          <div className='twoimg towtwo'>
+            <div className='Norwegg'>
+              <div className='Norwegg_text'>
+                <div>
+                  <h1>
+                    Norwegg
+                    design
+                    chair
+                    $139.90
+                  </h1>
+                  <p>$139.90</p>
+                  <h3>SHOP NOW</h3>
+                </div>
+              </div>
+              <div className='Norwegg_img'>
+                <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock-sq.jpg'></img>
+              </div>
+            </div>
+
+            <div style={{marginTop: "120px"}} className='Furniture'>
+              <div className='Furniture_img'>
+                <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/box-sq.jpg'></img>
+              </div>
+              <div className='Furniture_text'>
+                <div>
+                  <h1>
+                    Furniture
+                    source
+                    book
+                  </h1>
+                  <p>$39.90</p>
+                  <h3>SHOP NOW</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className='twoimg towthree'>
+            <div className='Furniture'>
+              <div style={{width: "250px",height: "280px",marginLeft: "140px"}} className='Furniture_img'>
+                <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock2-sq.jpg'></img>
+              </div>
+              <div className='Furniture_text'>
+                <div>
+                  <h1>
+                    Furniture
+                    source
+                    book
+                  </h1>
+                  <p>$39.90</p>
+                  <h3>SHOP NOW</h3>
+                </div>
+              </div>
+            </div>
+            <div className='Norwegg'>
+              <div className='Norwegg_text'>
+                <div>
+                  <h1>
+                    Norwegg
+                    design
+                    chair
+                    $139.90
+                  </h1>
+                  <p>$139.90</p>
+                  <h3>SHOP NOW</h3>
+                </div>
+              </div>
+              <div className='Norwegg_img'>
+                <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair3-3-sq.jpg'></img>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </>
