@@ -86,7 +86,7 @@ const Home = () => {
 
           <div className='twoimg towtwo'>
             <div className='Norwegg'>
-              <div style={{marginRight: "6px", width: "46%"}} className='Norwegg_text'>
+              <div style={{ marginRight: "6px", width: "46%" }} className='Norwegg_text'>
                 <div>
                   <h1>
                     Sunn
@@ -96,7 +96,7 @@ const Home = () => {
                   <h3>SHOP NOW</h3>
                 </div>
               </div>
-              <div style={{width: "90%"}} className='Norwegg_img'>
+              <div style={{ width: "90%" }} className='Norwegg_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock-sq.jpg'></img>
               </div>
             </div>
@@ -119,8 +119,8 @@ const Home = () => {
           </div>
 
 
-          <div style={{marginBottom: "70px", marginTop: "120px"}} className='twoimg towthree'>
-            <div style={{marginLeft: "-30px",marginTop: "-80px"}} className='Furniture'>
+          <div style={{ marginBottom: "70px", marginTop: "120px" }} className='twoimg towthree'>
+            <div style={{ marginLeft: "-30px", marginTop: "-80px" }} className='Furniture'>
               <div style={{ width: "250px", height: "280px", marginLeft: "70px" }} className='Furniture_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock2-sq.jpg'></img>
               </div>
@@ -137,8 +137,8 @@ const Home = () => {
               </div>
             </div>
             <div className='Norwegg'>
-              <div style={{width: "70px",marginRight: "200px"}} className='Norwegg_text'>
-                <div style={{width: "100px"}}>
+              <div style={{ width: "70px", marginRight: "200px" }} className='Norwegg_text'>
+                <div style={{ width: "100px" }}>
                   <h1>
                     Korona
                     room chair
@@ -147,12 +147,28 @@ const Home = () => {
                   <h3>SHOP NOW</h3>
                 </div>
               </div>
-              <div style={{height: "120%", width: "100%"}} className='Norwegg_img'>
+              <div style={{ height: "120%", width: "100%" }} className='Norwegg_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair3-3-sq.jpg'></img>
               </div>
             </div>
           </div>
 
+        </div>
+      </div>
+
+      <div className='time'>
+        <div>
+          <img src='https://scontent.fgyd20-2.fna.fbcdn.net/v/t39.30808-6/347553610_251744430842981_5232660935622061645_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=X5EgbWAQf2YAX8u9XJD&_nc_ht=scontent.fgyd20-2.fna&oh=00_AfBM4SH802_GnjfvEhFruUtoAk71z5bP--IvIlvXmQ1Fng&oe=6475CBD6'></img>
+          <div className='time_in'>
+            <div>
+              <div>
+                <h2>DEAL OF THE WEEK</h2>
+                <h1>Black and white Nordegg chairs</h1>
+                <p><span className='onespan'>$129.00</span><span>$79.00</span></p>
+                <button>$50 off</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
