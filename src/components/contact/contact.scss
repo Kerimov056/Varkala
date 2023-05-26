@@ -25,13 +25,15 @@
         align-items: center;
 
         &>div {
+            margin-top: 60px;
             width: 74%;
             height: 100%;
             text-align: center;
 
             &>h1 {
-                font-size: 50px;
+                font-size: 58px;
                 font-weight: 700;
+                opacity: 0.9;
             }
         }
     }

@@ -69,7 +69,8 @@
     height: 90px;
     display: flex;
     justify-content: center;
-    background: none;
+    background-color: transparent !important;
+    // background-color: red;
 
     .navbar2_in {
         width: 92%;
@@ -78,7 +79,6 @@
         justify-content: space-between;
         align-items: center;
         color: black;
-        background: none;
 
         .left2 {
 
