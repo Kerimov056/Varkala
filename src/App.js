@@ -6,6 +6,7 @@ import Varkala from './components/varkala/Varkala'
 import Abouts from './components/abouts/Abouts';
 import Blogs from './components/blogs/Blogs';
 import Fouter from './components/fouter/Fouter'
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/Varkala' element={<Varkala />} />
           <Route path='/blog' element={<Blogs />} />
           <Route path='/about' element={<Abouts />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <Fouter />
       </Router>

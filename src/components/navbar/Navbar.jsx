@@ -253,7 +253,7 @@ const Navbar = () => {
                                                 <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About - Company </li></Link>
                                                 <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About v.2 - Person </li></Link>
                                                 <li>F.A.Q.</li>
-                                                <li>Contact</li>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/contact" className='link'><li>Contact</li></Link>
                                                 <li>Privacy policy</li>
                                             </ul>
                                         </div>
