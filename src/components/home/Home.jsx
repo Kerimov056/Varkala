@@ -40,9 +40,37 @@ const Home = () => {
       </div>
 
       <div className='CHOICES'>
-          <div>
-            
+        <div>
+
+          <div className='onne'>
+            <h2>TOP CHOICES</h2>
+            <h1>Popular this week</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br /> incididunt ut labore et dolore magna aliqua.</p>
           </div>
+
+          <div className='twoimg'>
+            <div className='Furniture'>
+              <div className='Furniture_img'>
+                <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book-sq.jpg'></img>
+              </div>
+              <div className='Furniture_text'>
+                <div>
+                  <h1>
+                    Furniture
+                    source
+                    book
+                  </h1>
+                  <p>$39.90</p>
+                  <h3>SHOP NOW</h3>
+                </div>
+              </div>
+            </div>
+            <div className='Norwegg'>
+              {/* <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair-2-sq.jpg'></img> */}
+            </div>
+          </div>
+          
+        </div>
       </div>
     </>
   )
