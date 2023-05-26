@@ -9,9 +9,9 @@ import AliceCarousel from 'react-alice-carousel';
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-  <img style={{width: "95%", height: "230px", objectFit: "contain"}} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
-  <img style={{width: "95%", height: "230px", objectFit: "contain"}} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
-  <img style={{width: "95%", height: "230px", objectFit: "contain"}} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
+  <img style={{ width: "95%", height: "230px", objectFit: "contain" }} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
+  <img style={{ width: "95%", height: "230px", objectFit: "contain" }} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
+  <img style={{ width: "95%", height: "230px", objectFit: "contain" }} src="https://scontent.fgyd9-1.fna.fbcdn.net/v/t39.30808-6/347230310_930038604778680_3875398452423418734_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=pJpy8Ubc7X8AX-Aik_9&_nc_ht=scontent.fgyd9-1.fna&oh=00_AfBbjsoIGy6-T4GAvBAQxznxJvQeZ0gJL7WGd4XHq4HeHw&oe=6475F1AD" onDragStart={handleDragStart} role="presentation" />,
 ];
 
 const Abouts = () => {
@@ -145,19 +145,19 @@ const Abouts = () => {
           <AliceCarousel mouseTracking items={items} />
         </div>
       </div>
-                  
+
       <div className='endinfo'>
-          <div className='endinfo_in'>
-                  <div className='endinfo_up'>
-                    <h2>At Varkala, we want the right choice to be as easy as putting on a great T-shirt</h2>
-                  </div>
-                  <div className='endinfo_low'>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections</p>
-                    <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</p>
-                  </div>
+        <div className='endinfo_in'>
+          <div className='endinfo_up'>
+            <h2>At Varkala, we want the right choice to be as easy as putting  on a great T-shirt</h2>
           </div>
-      </div>            
-      
+          <div className='endinfo_low'>
+            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections</p>
+            <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</p>
+          </div>
+        </div>
+      </div>
+
     </>
   )
 }
