@@ -1,9 +1,21 @@
 import React from 'react'
 import './contact.scss'
-import {city} from '../Helpers/City'
+import { city } from '../Helpers/City'
 import Contactcart from './Contactcart'
+import GoogleMapReact from 'google-map-react';
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const Contact = () => {
+
+    const defaultProps = {
+        center: {
+            lat: 10.99835602,
+            lng: 77.01502627
+        },
+        zoom: 11
+    };
+
     return (
         <>
             <div className='blog'>
@@ -39,17 +51,29 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div className='contact_two'>
-                <div className='map'></div>
+                <div className='map'>
+                    <GoogleMapReact
+                        bootstrapURLKeys={{ key: "" }}
+                        defaultCenter={defaultProps.center}
+                        defaultZoom={defaultProps.zoom}
+                    >
+                        <AnyReactComponent
+                            lat={53.148521}
+                            lng={8.214209}
+                            text="My Marker"
+                        />
+                    </GoogleMapReact>
+                </div>
                 <div className='city'>
                     <div>
                         <p>Our stores</p>
                         <div>
                             {
-                              city.map((item)=>{
-                                return <Contactcart name={item.name} info={item.info} location={item.location} email={item.email} />
-                              })  
+                                city.map((item) => {
+                                    return <Contactcart name={item.name} info={item.info} location={item.location} email={item.email} />
+                                })
                             }
                         </div>
                     </div>
