@@ -23,6 +23,10 @@ const Contact = () => {
 
     const [form, setForm] = useState("login")
 
+    const Form = (forName) =>{
+        setForm(forName);
+    }
+
     return (
         <>
             <div className='blog'>
@@ -101,7 +105,7 @@ const Contact = () => {
                     </div>
                     <div className='login'>
                             {
-                                form === "login" ? <Loginn/> : <Registerr/>
+                                form === "login" ? <Loginn onFormSwitch = {Form} /> : <Registerr onFormSwitch = {Form} />
                             }
                     </div>
                 </div>
