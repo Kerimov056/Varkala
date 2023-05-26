@@ -56,11 +56,13 @@ const Abouts = () => {
 
       <div className='Milestones'>
         <div className='Milestones_in'>
-          <div>
-            <h1>Varkala's Milestones</h1>
-            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections</p>
+          <div className='Milestones_left'>
+            <div>
+              <h1>Varkala's Milestones</h1>
+              <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections</p>
+            </div>
           </div>
-          <div>
+          <div className='Milestones_right'>
             <div>
               <h2>1995</h2>
               <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
