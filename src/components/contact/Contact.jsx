@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.scss'
 import {city} from '../Helpers/City'
+import Contactcart from './Contactcart'
 
 const Contact = () => {
     return (
@@ -45,7 +46,11 @@ const Contact = () => {
                     <div>
                         <p>Our stores</p>
                         <div>
-
+                            {
+                              city.map((item)=>{
+                                return <Contactcart name={item.name} info={item.info} location={item.location} email={item.email} />
+                              })  
+                            }
                         </div>
                     </div>
                 </div>
