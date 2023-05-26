@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.scss'
+import {city} from '../Helpers/City'
 
 const Contact = () => {
     return (
@@ -33,6 +34,18 @@ const Contact = () => {
                             <p>Please feel free to write an email to us or to use our electronic ticketing system.</p>
                             <h4>info@varkala.com</h4>
                             <h4>support@varkala.com</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div className='contact_two'>
+                <div className='map'></div>
+                <div className='city'>
+                    <div>
+                        <p>Our stores</p>
+                        <div>
+
                         </div>
                     </div>
                 </div>

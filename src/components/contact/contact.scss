@@ -43,6 +43,8 @@ p{
     color: #868e96;
 }
 
+
+//1ci hisse
 .contact{
     width: 100%;
     height: 340px;
@@ -81,4 +83,48 @@ p{
             }
         }
     }
+}
+
+//2ci hisse
+
+.contact_two{
+    width: 100%;
+    height: 789px;
+    display: flex;
+    
+    .map{
+        width: 50%;
+        height: 100%;
+    }
+    
+    .city{
+        width: 50%;
+        height: 100%;
+        background-color: rgb(131, 126, 26);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>div{
+            width: 83%;
+            height: 80%;
+            background-color: red;
+
+            &>p{
+                font-size: 80px;
+                font-weight: 750;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//Dinamik City cart
+
+.cartt{
+    
 }
