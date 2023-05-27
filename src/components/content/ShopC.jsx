@@ -1,4 +1,4 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 import { Homecart } from '../Helpers/Homecart'
 
 export const ShopContext = createContext(null)
@@ -12,10 +12,22 @@ const getDefaultCart = () => {
     return cart
 }
 
-const ShopC = () => {
-    
+const ShopC = (props) => {
+
+    const [cartitem,setCartItem] = useState()
+
+    const addToCart = (itemId) => {
+        setCartItem((prev) =>({...prev, [itemId]: prev[itemId] + 1}))
+    }
+    const RemoveCart = (itemId) => {
+        setCartItem((prev) =>({...prev, [itemId]: prev[itemId] - 1}))
+    }
+
     const contextValue = {
         getDefaultCart,
+        cartitem,
+        addToCart,
+        RemoveCart,
     }
     return (
         <>
