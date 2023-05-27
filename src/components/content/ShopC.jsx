@@ -22,12 +22,16 @@ const ShopC = (props) => {
     const RemoveCart = (itemId) => {
         setCartItem((prev) =>({...prev, [itemId]: prev[itemId] - 1}))
     }
+    const updateCartItemCount = (newAmount, itemId) => {
+        setCartItem((prev) => ({ ...prev, [itemId]: newAmount }));
+      };
 
     const contextValue = {
         getDefaultCart,
         cartitem,
         addToCart,
         RemoveCart,
+        updateCartItemCount,
     }
     return (
         <>

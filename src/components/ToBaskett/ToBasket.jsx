@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import './tobasket.scss'
+import { ShopContext } from '../content/ShopC'
 
 const ToBasket = ({id, productName, price, productImage}) => {
+
+    const {} = useContext(ShopContext)
+
     return (
         <>
             <div className="cart">
@@ -13,7 +17,7 @@ const ToBasket = ({id, productName, price, productImage}) => {
                         <h1>{productName}</h1>
                         <p>{price}</p>
                         <button type="button">-</button>
-                        <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}></input>
+                        <input ></input>
                         <button type="button">+</button>
                     </div>
                 </div>
