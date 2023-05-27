@@ -78,7 +78,43 @@ const ProductCart = () => {
                         </div>
 
                         <div className='pop_right'>
+                            <div className='mehsul_info'>
+                                <h1>Push-up Jeans</h1>
+                                <div>
+                                    <div className='mehsul_info_price'>
+                                        <h2>$65.00</h2>
+                                        <p>$90.00</p>
+                                    </div>
+                                    <div className='mehsul_info_star'>
+                                        <AiFillStar style={{ color: "#bcac76" }} />
+                                        <AiFillStar style={{ color: "#bcac76" }} />
+                                        <AiFillStar style={{ color: "#bcac76" }} />
+                                        <AiFillStar style={{ color: "rgb(132, 132, 132)" }} />
+                                        <AiFillStar style={{ color: "rgb(132, 132, 132)" }} />
+                                        <span>25 REVIEWS</span>
+                                    </div>
+                                </div>
+                                <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+                            </div>
 
+                            <div className='mehsul_section'>
+                                <div className='mehsul_section_size'>
+                                    Size
+                                    <span>(required)</span>
+                                </div>
+
+                                <button>SMALL</button>
+
+                                <div>
+                                    Size
+                                    <span>(required)</span>
+                                </div>
+
+                                <div>
+                                    <button>HOOIDE</button>
+                                    <button>COLLEGE</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

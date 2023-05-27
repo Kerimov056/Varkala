@@ -500,7 +500,82 @@
         .pop_right{
             width: 47%;
             height: 100%;
-            background-color: red;
+            display: flex;
+            flex-direction: column;
+
+            .mehsul_info{
+                margin-top: 20px;
+                width: 100%;
+                height: 32%;
+                background-color: aliceblue;
+
+                &>h1{
+                    font-size: 33px;
+                    font-weight: 700;
+                }
+
+                &>div{
+                    margin-top: 31px;
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .mehsul_info_price{
+                        display: flex;
+
+                        &>h2{
+                            font-size: 24px;
+                            color: black;
+                            margin-right: 13px;
+                        }
+
+                        &>p{
+                            margin-top: 4px;
+                            color: rgb(132, 132, 132);
+                            text-decoration: line-through;
+                        }
+                    }
+                    
+                    .mehsul_info_star{
+                        margin-bottom: 8px;
+
+                        &>svg{
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        &>span{
+                            margin-left: 8px;
+                            color: rgb(132, 132, 132);
+                            letter-spacing: 3px;
+                        }
+                    }
+                }
+
+                &>p{
+                    margin-top: 25px;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+
+            .mehsul_section{
+                width: 100%;
+                height: 32%;
+                display: flex;
+                flex-direction: column;
+
+                .mehsul_section_size{
+                    font-size: 18px;
+                    color: black;
+
+                    &>span{
+                        color: rgb(132, 132, 132);
+                    }
+                }
+            }
         }
     }
 }
