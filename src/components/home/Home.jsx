@@ -54,8 +54,8 @@ const Home = () => {
 
   return (
     <>
-      <div>
-        <Carousel variant="dark">
+      <div style={{zIndex: "-99"}}>
+        <Carousel variant="dark" style={{zIndex: "-99"}}>
           <Carousel.Item>
             <img
               className="d-block w-100"
