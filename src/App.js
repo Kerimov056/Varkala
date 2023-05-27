@@ -12,18 +12,20 @@ import ToBasket from './components/ToBaskett/ToBasket';
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Varkala' element={<Varkala />} />
-          <Route path='/blog' element={<Blogs />} />
-          <Route path='/about' element={<Abouts />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/toBasket' element={<ToBasket />} />
-        </Routes>
-        <Fouter />
-      </Router>
+      <ShopContextProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/Varkala' element={<Varkala />} />
+            <Route path='/blog' element={<Blogs />} />
+            <Route path='/about' element={<Abouts />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/toBasket' element={<ToBasket />} />
+          </Routes>
+          <Fouter />
+        </Router>
+      </ShopContextProvider>
     </>
   );
 }
