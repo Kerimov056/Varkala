@@ -58,7 +58,16 @@ const ProducCart = () => {
                 }
             }}
             >
-                
+                <div className='popup'>
+                    <div>
+                        <div>
+                            
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <div>solll</div>
+                </div>
             </Modal>
         </>
     )
