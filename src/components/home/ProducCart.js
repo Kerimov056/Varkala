@@ -138,16 +138,18 @@ const ProductCart = () => {
                                 </div>
                             </div>
 
-                            <div className='popend'>
+                            <div className='popADD'>
                                 <div>
-                                     {/* <input type='text'>0</input> */}
+                                    <input type='text' value='0' />
                                     <div>
                                         <HiChevronUp />
-                                        <GoChevronDown />
-                                    </div> 
+                                        <GoChevronDown className='asd' />
+                                    </div>
                                 </div>
                                 <button><SlBasket /> ADD TO CART</button>
                             </div>
+
+                            
                         </div>
                     </div>
                 </div>
