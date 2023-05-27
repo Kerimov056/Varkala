@@ -30,17 +30,17 @@ const ToBasket = ({ id, productName, price, productImage }) => {
                             <p>$390.00</p>
                         </div>
                         <h6></h6>
-                        <div>
+                        <div className='Shipping'>
                             <h1>Shipping and handling</h1>
                             <p>$10.00</p>
                         </div>
                         <h6></h6>
-                        <div>
+                        <div className='Tax'>
                             <span>Tax</span>
                             <p>$390.00</p>
                         </div>
                         <h6></h6>
-                        <div>
+                        <div className='Total'>
                             <span>Total</span>
                             <p>$400.00</p>
                         </div>
