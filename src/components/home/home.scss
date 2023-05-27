@@ -262,6 +262,7 @@
     }
 }
 
+//Products Name
 
 .Arrivals{
     width: 100%;
@@ -323,5 +324,21 @@
                 }
             }
         }
+    }
+}
+
+
+//cartlar Productlar
+
+.carts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    &>div{
+        width: 80%;
+        height: auto;
+        
     }
 }

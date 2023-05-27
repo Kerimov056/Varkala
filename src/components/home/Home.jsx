@@ -259,6 +259,13 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+      <div className='carts'>
+        <div>
+          
+        </div>
+      </div>
     </>
   )
 }
