@@ -3,11 +3,13 @@ import './home.scss';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
+import { FaFacebookF } from 'react-icons/fa';
 import { BsChevronUp } from 'react-icons/bs';
 import { FiChevronDown } from 'react-icons/fi';
 import { HiChevronUp } from 'react-icons/hi';
 import { GoChevronDown } from 'react-icons/go';
 import { AiFillStar } from 'react-icons/ai';
+import { AiOutlineTwitter } from 'react-icons/ai';
 import Modal from 'react-modal';
 
 const ProductCart = () => {
@@ -149,7 +151,16 @@ const ProductCart = () => {
                                 <button><SlBasket /> ADD TO CART</button>
                             </div>
 
-                            
+                            <div className='popEnd'>
+                                    <div>
+                                        <h1>Add to wishlist</h1>
+                                        <b><FaFacebookF/><AiOutlineTwitter/></b>
+                                    </div>
+                                    <div>
+                                        <h1>Category: <span>Jeans</span></h1>
+                                        <h1>Category: <span>Jeans</span></h1>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
