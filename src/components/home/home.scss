@@ -458,8 +458,25 @@
     width: 1100px;
     height: 700px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    // justify-content: center;
     align-items: center;
+
+    .exit{
+        display: inline-block;
+        position: relative;
+        background:none;
+        font-size: 27px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        transition: transform 0.3s;
+        margin-left: 1000px;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
 
     &>div {
         width: 98%;

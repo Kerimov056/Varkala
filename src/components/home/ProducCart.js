@@ -73,7 +73,8 @@ const ProductCart = () => {
                     }
                 }}
             >
-                <div className='popup'>
+                <div className='popup'> 
+                    <button onClick={()=>setOpen(false)} className='exit'>X</button>
                     <div>
                         <div className='pop_left'>
                             <div className='pop_left_img'>
