@@ -2,6 +2,7 @@ import React from 'react';
 import './home.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import { useSpring, animated } from "react-spring"
+import ProducCart from './ProducCart';
 
 
 const Home = () => {
@@ -263,7 +264,7 @@ const Home = () => {
 
       <div className='carts'>
         <div>
-          
+            <ProducCart />
         </div>
       </div>
     </>
