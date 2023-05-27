@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import './home.scss';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
+import { BsChevronUp } from 'react-icons/bs';
+import { FiChevronDown } from 'react-icons/fi';
 import { AiFillStar } from 'react-icons/ai';
 import Modal from 'react-modal';
 
 const ProductCart = () => {
     const [open, setOpen] = useState(false);
     const [img, setImg] = useState('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg');
+
+    const [size, setSize] = useState(false)
 
     const changeImg = (src) => {
         setImg(src);
@@ -104,7 +108,20 @@ const ProductCart = () => {
                                 </div>
 
                                 <div className='small'>
-                                    <button>SMALL </button>
+                                    <button style={{backgroundColor: size === true ? "rgb(132, 132, 132)" : "white"}} onClick={() => setSize((prev) => !prev)}>SMALL
+                                        {size ? (
+                                            <BsChevronUp />
+                                        ) : (
+                                            <FiChevronDown />
+                                        )}
+                                    </button>
+                                    {size && <div className='sizeDrop'>
+                                            <ul>
+                                                <li>Small</li>
+                                                <li>Medium</li>
+                                                <li>LArge</li>
+                                            </ul>
+                                    </div>}
                                 </div>
 
                                 <div className='mehsul_section_size2'>
@@ -114,8 +131,12 @@ const ProductCart = () => {
 
                                 <div className='two-btn'>
                                     <button>HOOIDE</button>
-                                    <button>COLLEGE</button> 
+                                    <button>COLLEGE</button>
                                 </div>
+                            </div>
+
+                            <div className='popend'>
+
                             </div>
                         </div>
                     </div>
