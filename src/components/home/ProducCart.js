@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './home.scss'
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
@@ -8,7 +8,9 @@ import Modal from 'react-modal';
 
 
 const ProducCart = () => {
-    
+
+    const [open, setOpen] = useState(false)
+
     return (
         <>
             <div className='mehsul'>
@@ -20,7 +22,7 @@ const ProducCart = () => {
                                 <h4>Add to cart</h4>
                                 <div>
                                     <span><AiOutlineHeart /></span>
-                                    <span className='add'><AiOutlineFullscreen /></span>
+                                    <span className='add'><AiOutlineFullscreen onClick={() => setOpen(true)} /></span>
                                 </div>
                             </div>
                         </div>
@@ -40,8 +42,29 @@ const ProducCart = () => {
                     </div>
                 </div>
             </div>
+
+
+            <Modal isOpen={open} onRequestClose={() => setOpen(false)} style={{
+                overlay: {
+                    background: "rgb(132, 132, 132)"
+                },
+                content: {
+                    top: '50%',
+                    left: '50%',
+                    right: 'auto',
+                    bottom: 'auto',
+                    marginRight: '-50%',
+                    transform: 'translate(-50%, -50%)',
+                }
+            }}
+            >
+                
+            </Modal>
         </>
     )
 }
 
 export default ProducCart
+
+
+{/* <button onClick={() => setOpen(false)}>Close</button> */}
