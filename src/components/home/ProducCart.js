@@ -124,12 +124,21 @@ const ProductCart = () => {
                                     </button>
                                     {size && <div className='sizeDrop'>
                                         <ul>
-                                            <li onClick={()=>{
+                                            <li style={{color: olcu === 'SMALL'? "#bcac76" : "rgb(136, 134, 134)"}}
+                                                onClick={() => {
                                                 setOlcu('SMALL')
                                                 setSize(false)
                                             }}>Small</li>
-                                            <li onClick={()=>setOlcu('MEDIUM')}>Medium</li>
-                                            <li onClick={()=>setOlcu('LARGE')}>Large</li>
+                                            <li style={{color: olcu === 'MEDIUM'? "#bcac76" : "rgb(136, 134, 134)"}}
+                                                onClick={() => {
+                                                setOlcu('MEDIUM')
+                                                setSize(false)
+                                            }}>Medium</li>
+                                            <li style={{color: olcu === 'LARGE'? "#bcac76" : "rgb(136, 134, 134)"}}
+                                                onClick={() => {
+                                                setOlcu('LARGE')
+                                                setSize(false)
+                                            }}>Large</li>
                                         </ul>
                                     </div>}
                                 </div>
@@ -157,14 +166,14 @@ const ProductCart = () => {
                             </div>
 
                             <div className='popEnd'>
-                                    <div className='popEnd_up'>
-                                        <h1><AiOutlineHeart/>Add to wishlist</h1>
-                                        <b><FaFacebookF/><AiOutlineTwitter/></b>
-                                    </div>
-                                    <div className='popEnd_low'>
-                                        <h1>Category: <span>Jeans</span></h1>
-                                        <h1>Tags:<span>Leisure, Elegant</span></h1>
-                                    </div>
+                                <div className='popEnd_up'>
+                                    <h1><AiOutlineHeart />Add to wishlist</h1>
+                                    <b><FaFacebookF /><AiOutlineTwitter /></b>
+                                </div>
+                                <div className='popEnd_low'>
+                                    <h1>Category: <span>Jeans</span></h1>
+                                    <h1>Tags:<span>Leisure, Elegant</span></h1>
+                                </div>
                             </div>
                         </div>
                     </div>
