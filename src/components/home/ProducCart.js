@@ -11,6 +11,12 @@ const ProducCart = () => {
 
     const [open, setOpen] = useState(false)
 
+    const [img, setImg] = useState('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-2-gray.jpg')
+
+    const ChangeImg = (img) => {
+        
+    }
+
     return (
         <>
             <div className='mehsul'>
@@ -60,13 +66,23 @@ const ProducCart = () => {
             >
                 <div className='popup'>
                     <div>
-                        <div>
-                            
+                        <div className='pop_left'>
+                            <div className='pop_left_img'>
+                                <img src={img}></img>
+                            </div>
+                            <div className='pop_left_imgs'>
+                                <img onClick={ChangeImg} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg'></img>
+                                <img onClick={ChangeImg} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-2-gray.jpg'></img>
+                                <img onClick={ChangeImg} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-3-gray.jpg'></img>
+                                <img onClick={ChangeImg} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-4-gray.jpg'></img>
+                                <img onClick={ChangeImg} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-5-gray.jpg'></img>
+                            </div>
                         </div>
-                        <div></div>
-                    </div>
 
-                    <div>solll</div>
+                        <div className='pop_right'>
+
+                        </div>
+                    </div>
                 </div>
             </Modal>
         </>
@@ -76,4 +92,4 @@ const ProducCart = () => {
 export default ProducCart
 
 
-{/* <button onClick={() => setOpen(false)}>Close</button> */}
+{/* <button onClick={() => setOpen(false)}>Close</button> */ }
