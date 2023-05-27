@@ -103,16 +103,18 @@ const ProductCart = () => {
                                     <span>(required)</span>
                                 </div>
 
-                                <button>SMALL</button>
+                                <div className='small'>
+                                    <button>SMALL </button>
+                                </div>
 
-                                <div>
-                                    Size
+                                <div className='mehsul_section_size2'>
+                                    Type
                                     <span>(required)</span>
                                 </div>
 
-                                <div>
+                                <div className='two-btn'>
                                     <button>HOOIDE</button>
-                                    <button>COLLEGE</button>
+                                    <button>COLLEGE</button> 
                                 </div>
                             </div>
                         </div>
