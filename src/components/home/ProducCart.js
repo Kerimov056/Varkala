@@ -18,6 +18,8 @@ const ProductCart = () => {
 
     const [size, setSize] = useState(false)
 
+    const [olcu, setOlcu] = useState('SMALL')
+
     const changeImg = (src) => {
         setImg(src);
     };
@@ -113,7 +115,7 @@ const ProductCart = () => {
                                 </div>
 
                                 <div className='small'>
-                                    <button style={{ backgroundColor: size === true ? "rgb(132, 132, 132)" : "white" }} onClick={() => setSize((prev) => !prev)}>SMALL
+                                    <button style={{ backgroundColor: size === true ? "rgb(132, 132, 132)" : "white" }} onClick={() => setSize((prev) => !prev)}>{olcu}
                                         {size ? (
                                             <BsChevronUp />
                                         ) : (
@@ -122,9 +124,12 @@ const ProductCart = () => {
                                     </button>
                                     {size && <div className='sizeDrop'>
                                         <ul>
-                                            <li>Small</li>
-                                            <li>Medium</li>
-                                            <li>LArge</li>
+                                            <li onClick={()=>{
+                                                setOlcu('SMALL')
+                                                setSize(false)
+                                            }}>Small</li>
+                                            <li onClick={()=>setOlcu('MEDIUM')}>Medium</li>
+                                            <li onClick={()=>setOlcu('LARGE')}>Large</li>
                                         </ul>
                                     </div>}
                                 </div>
@@ -152,13 +157,13 @@ const ProductCart = () => {
                             </div>
 
                             <div className='popEnd'>
-                                    <div>
-                                        <h1>Add to wishlist</h1>
+                                    <div className='popEnd_up'>
+                                        <h1><AiOutlineHeart/>Add to wishlist</h1>
                                         <b><FaFacebookF/><AiOutlineTwitter/></b>
                                     </div>
-                                    <div>
+                                    <div className='popEnd_low'>
                                         <h1>Category: <span>Jeans</span></h1>
-                                        <h1>Category: <span>Jeans</span></h1>
+                                        <h1>Tags:<span>Leisure, Elegant</span></h1>
                                     </div>
                             </div>
                         </div>
