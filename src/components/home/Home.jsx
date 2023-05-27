@@ -14,10 +14,10 @@ const Home = () => {
       delay: 300,
       config: { mass: 1, tension: 20, friction: 10 },
     });
-  
+
     return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
   }
-  
+
   function Number1({ n }) {
     const { number } = useSpring({
       from: { number: 0 },
@@ -25,10 +25,10 @@ const Home = () => {
       delay: 700,
       config: { mass: 1, tension: 20, friction: 10 },
     });
-  
+
     return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
   }
-  
+
   function Number2({ n }) {
     const { number } = useSpring({
       from: { number: 0 },
@@ -36,10 +36,10 @@ const Home = () => {
       delay: 1000,
       config: { mass: 1, tension: 20, friction: 10 },
     });
-  
+
     return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
   }
-  
+
   function Number3({ n }) {
     const { number } = useSpring({
       from: { number: 0 },
@@ -47,15 +47,15 @@ const Home = () => {
       delay: 1000,
       config: { mass: 1, tension: 20, friction: 10 },
     });
-  
+
     return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
   }
-  
+
 
   return (
     <>
-      <div style={{zIndex: "-99"}}>
-        <Carousel variant="dark" style={{zIndex: "-99"}}>
+      <div style={{ zIndex: "-99" }}>
+        <Carousel variant="dark" style={{ zIndex: "-99" }}>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -214,27 +214,48 @@ const Home = () => {
                 <p><span className='onespan'>$129.00</span><span>$79.00</span></p>
                 <button>$50 off</button>
                 <div>
-                    <div>
-                      <h4><Number n={220} /></h4>
-                      <p>days</p>
-                    </div>
-                    <div>
-                      <h4><Number1 n={220} /></h4>
-                      <p>Hours</p>
-                    </div>
-                    <div>
-                      <h4><Number2 n={220} /></h4>
-                      <p>minutes</p>
-                    </div>
-                    <div>
-                      <h4><Number3 n={220} /></h4>
-                      <p>seconds</p>
-                    </div>
+                  <div>
+                    <h4><Number n={220} /></h4>
+                    <p>days</p>
+                  </div>
+                  <div>
+                    <h4><Number1 n={220} /></h4>
+                    <p>Hours</p>
+                  </div>
+                  <div>
+                    <h4><Number2 n={220} /></h4>
+                    <p>minutes</p>
+                  </div>
+                  <div>
+                    <h4><Number3 n={220} /></h4>
+                    <p>seconds</p>
+                  </div>
                 </div>
 
                 <button id='btn'>SHOP NOW</button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='Arrivals'>
+        <div>
+          <div className='Arrivals_info'>
+            <h1>New Arrivals</h1>
+            <p>
+              One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections
+            </p>
+          </div>
+          <div className='produtss'>
+              <ul>
+                <li className='oneLi'>All Products</li>
+                <li>Chairs</li>
+                <li>Books</li>
+                <li>Clothes</li>
+                <li>Accessories</li>
+              </ul>
+            <div>ALL PRODUCTS</div>
           </div>
         </div>
       </div>
