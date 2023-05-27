@@ -140,11 +140,11 @@ const ProductCart = () => {
 
                             <div className='popend'>
                                 <div>
-                                    <input type='text'>0</input>
+                                     {/* <input type='text'>0</input> */}
                                     <div>
-                                        <GoChevronDown />
                                         <HiChevronUp />
-                                    </div>
+                                        <GoChevronDown />
+                                    </div> 
                                 </div>
                                 <button><SlBasket /> ADD TO CART</button>
                             </div>

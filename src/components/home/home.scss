@@ -454,42 +454,42 @@
 
 //popup
 
-.popup{
+.popup {
     width: 1100px;
     height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &>div{
+    &>div {
         width: 98%;
         height: 95%;
         display: flex;
         justify-content: space-between;
 
-        .pop_left{
+        .pop_left {
             width: 47%;
             height: 100%;
 
-            .pop_left_img{
+            .pop_left_img {
                 width: 100%;
                 height: 82%;
 
-                &>img{
+                &>img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
             }
 
-            .pop_left_imgs{
+            .pop_left_imgs {
                 margin-top: 8px;
                 width: 100%;
                 height: 15%;
                 display: flex;
                 justify-content: space-between;
 
-                &>img{
+                &>img {
                     width: 18%;
                     height: 100%;
                     object-fit: cover;
@@ -497,24 +497,24 @@
             }
         }
 
-        .pop_right{
+        .pop_right {
             width: 47%;
             height: 100%;
             display: flex;
             flex-direction: column;
 
-            .mehsul_info{
+            .mehsul_info {
                 margin-top: 20px;
                 width: 100%;
                 height: 32%;
                 background-color: aliceblue;
 
-                &>h1{
+                &>h1 {
                     font-size: 33px;
                     font-weight: 700;
                 }
 
-                &>div{
+                &>div {
                     margin-top: 31px;
                     width: 100%;
                     height: 40px;
@@ -522,31 +522,31 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    .mehsul_info_price{
+                    .mehsul_info_price {
                         display: flex;
 
-                        &>h2{
+                        &>h2 {
                             font-size: 24px;
                             color: black;
                             margin-right: 13px;
                         }
 
-                        &>p{
+                        &>p {
                             margin-top: 4px;
                             color: rgb(132, 132, 132);
                             text-decoration: line-through;
                         }
                     }
-                    
-                    .mehsul_info_star{
+
+                    .mehsul_info_star {
                         margin-bottom: 8px;
 
-                        &>svg{
+                        &>svg {
                             width: 20px;
                             height: 20px;
                         }
 
-                        &>span{
+                        &>span {
                             margin-left: 8px;
                             color: rgb(132, 132, 132);
                             letter-spacing: 3px;
@@ -554,44 +554,44 @@
                     }
                 }
 
-                &>p{
+                &>p {
                     margin-top: 25px;
                     font-weight: 500;
                     font-size: 18px;
                 }
             }
 
-            .mehsul_section{
+            .mehsul_section {
                 margin-top: 25px;
                 width: 100%;
                 height: 32%;
                 display: flex;
                 flex-direction: column;
 
-                .mehsul_section_size{
+                .mehsul_section_size {
                     font-size: 18px;
                     color: black;
                     font-weight: 600;
 
-                    &>span{
+                    &>span {
                         margin-left: 3px;
                         color: rgb(132, 132, 132);
                         font-size: 16px;
                     }
                 }
 
-                .small{
+                .small {
                     margin-top: 16px;
 
-                    &>button{
+                    &>button {
                         border: 1px solid rgb(132, 132, 132);
                         padding: 7px 10px 7px 10px;
                         color: black;
                         letter-spacing: 3px;
-                        background-color: white ;
+                        background-color: white;
                         outline: none;
 
-                        &>svg{
+                        &>svg {
                             margin-left: 120px;
                             width: 20px;
                             height: 20px;
@@ -599,23 +599,23 @@
                     }
                 }
 
-                .mehsul_section_size2{
+                .mehsul_section_size2 {
                     margin-top: 20px;
                     font-size: 18px;
                     color: black;
                     font-weight: 600;
 
-                    &>span{
+                    &>span {
                         margin-left: 3px;
                         color: rgb(132, 132, 132);
                         font-size: 16px;
                     }
                 }
 
-                .two-btn{
+                .two-btn {
                     margin-top: 12px;
 
-                    &>button{
+                    &>button {
                         border: 1px solid #bcac76;
                         color: #bcac76;
                         background-color: white;
@@ -624,23 +624,45 @@
                         font-weight: 600;
                         margin-right: 10px;
 
-                        &:hover{
+                        &:hover {
                             color: black;
-                            background-color: #bcac76   ;
+                            background-color: #bcac76;
                         }
                     }
                 }
             }
 
-            .popend{
+            .popend {
                 width: 100%;
                 height: 44px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                &>div{
-                    
+                &>div {
+                    width: 16%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top: 1px solid rgb(132, 132, 132);
+                    border-left: 1px solid rgb(132, 132, 132);
+                    border-bottom: 1px solid rgb(132, 132, 132);
+
+                    &>input{
+                        text-align: center;
+                        width: 70%;
+                        height: 100%;
+                    }
+
+                    &>div{
+                        width: 30%;
+                        height: 100%;
+
+                        &>svg{
+                            
+                        }
+                    }
                 }
             }
         }
@@ -650,7 +672,7 @@
 
 //size dropDown
 
-.sizeDrop{
+.sizeDrop {
     width: 220px;
     height: 130px;
     position: absolute;
@@ -658,11 +680,11 @@
     display: flex;
     flex-direction: column;
 
-    &>ul{
+    &>ul {
         margin-left: -10px;
 
-        &>li{
-            margin-top: 12px;    
+        &>li {
+            margin-top: 12px;
             font-size: 16px;
             font-weight: 500;
         }
