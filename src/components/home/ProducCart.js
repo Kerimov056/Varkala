@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import './home.scss';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
+import { SlBasket } from 'react-icons/sl';
 import { BsChevronUp } from 'react-icons/bs';
 import { FiChevronDown } from 'react-icons/fi';
+import { HiChevronUp } from 'react-icons/hi';
+import { GoChevronDown } from 'react-icons/go';
 import { AiFillStar } from 'react-icons/ai';
 import Modal from 'react-modal';
 
@@ -108,7 +111,7 @@ const ProductCart = () => {
                                 </div>
 
                                 <div className='small'>
-                                    <button style={{backgroundColor: size === true ? "rgb(132, 132, 132)" : "white"}} onClick={() => setSize((prev) => !prev)}>SMALL
+                                    <button style={{ backgroundColor: size === true ? "rgb(132, 132, 132)" : "white" }} onClick={() => setSize((prev) => !prev)}>SMALL
                                         {size ? (
                                             <BsChevronUp />
                                         ) : (
@@ -116,11 +119,11 @@ const ProductCart = () => {
                                         )}
                                     </button>
                                     {size && <div className='sizeDrop'>
-                                            <ul>
-                                                <li>Small</li>
-                                                <li>Medium</li>
-                                                <li>LArge</li>
-                                            </ul>
+                                        <ul>
+                                            <li>Small</li>
+                                            <li>Medium</li>
+                                            <li>LArge</li>
+                                        </ul>
                                     </div>}
                                 </div>
 
@@ -136,7 +139,14 @@ const ProductCart = () => {
                             </div>
 
                             <div className='popend'>
-
+                                <div>
+                                    <input type='text'>0</input>
+                                    <div>
+                                        <GoChevronDown />
+                                        <HiChevronUp />
+                                    </div>
+                                </div>
+                                <button><SlBasket /> ADD TO CART</button>
                             </div>
                         </div>
                     </div>
