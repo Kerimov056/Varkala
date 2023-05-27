@@ -7,20 +7,50 @@ const ToBasket = ({ id, productName, price, productImage }) => {
 
     return (
         <>
-            <div className="cart">
-                <div className="cart_in">
-                    <div className="one">
-                        <img src={productImage}></img>
+            <div className='tobasket'>
+                <div>
+                    <div>
+                        <h5><span>Home</span>- Shopping cart</h5>
+                        <h1>Shopping cart</h1>
+                        <p>You have 3 items in your cart.</p>
+                        <p>For the checkout, you can use either a <span>Multiple pages checkout</span>or have everything on a<span>single page.</span></p>
                     </div>
-                    <div className="two">
-                        <h1>{productName}</h1>
-                        <p>{price}</p>
-                        <button type="button">-</button>
-                        <input ></input>
-                        <button type="button">+</button>
+
+                    <div className='cart_in'>
+                <div className='productss'>
+                    asdas
+                </div>
+                <div className='Summary'>
+                        <h3><h3>Order Summary</h3></h3>
+                    <div className='Summary_in'>
+                        <p>Shipping and additional costs are calculated based on values you have entered.</p>
+                        <h6></h6>
+                        <div className='Subtotal'>
+                            <span>Order Subtotal</span>
+                            <p>$390.00</p>
+                        </div>
+                        <h6></h6>
+                        <div>
+                            <h1>Shipping and handling</h1>
+                            <p>$10.00</p>
+                        </div>
+                        <h6></h6>
+                        <div>
+                            <span>Tax</span>
+                            <p>$390.00</p>
+                        </div>
+                        <h6></h6>
+                        <div>
+                            <span>Total</span>
+                            <p>$400.00</p>
+                        </div>
                     </div>
                 </div>
             </div>
+                </div>
+            </div>
+
+            
         </>
     )
 }
