@@ -1,50 +1,51 @@
-p{
+p {
     color: rgb(126, 126, 126);
+    font-weight: 500;
 }
 
-.tobasket{
+.tobasket {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 
-    &>div{
+    &>div {
         width: 80%;
         height: auto;
-        
-        &>div{
+
+        &>div {
             margin-top: 100px;
             width: 80%;
             height: 280px;
 
-            &>h5{
+            &>h5 {
                 font-size: 18px;
                 font-weight: 600;
 
-                &>span{
+                &>span {
                     color: #bcac76;
                     margin-right: 10px;
                 }
             }
 
-            &>h1{
+            &>h1 {
                 margin-top: 21px;
                 font-size: 53px;
                 font-weight: 700;
             }
 
-            &>p{
+            &>p {
                 margin-top: 30px;
                 font-size: 22px;
 
-                &>span{
+                &>span {
                     color: #bcac76;
                 }
             }
         }
 
 
-        .cart_in{
+        .cart_in {
             margin-bottom: 100px;
             margin-top: 150px;
             width: 100%;
@@ -52,83 +53,100 @@ p{
             display: flex;
             justify-content: space-between;
 
-            .productss{
+            .productss {
                 width: 58%;
                 height: auto;
             }
 
-            .Summary{
+            .Summary {
+                box-shadow: -2px -5px 53px -11px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -2px -5px 53px -11px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px -5px 53px -11px rgba(0,0,0,0.75);
                 width: 31%;
                 height: 500px;
-                background-color: red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
 
-                &>h3{
+                &>h3 {
                     width: 100%;
                     padding-top: 3px;
                     padding-bottom: 1px;
                     border: 1px;
-                    background-color: #d9d9d9;
+                    background-color: #e8e6e6;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    &>h3{
+                    &>h3 {
+                        margin-top: 3px;
                         width: 89%;
                         font-size: 18px;
                         font-weight: 700;
                     }
                 }
 
-                .Summary_in{
+                .Summary_in {
                     width: 90%;
                     height: 99%;
-                    background-color: #bcac76;
 
-                    &>h6{
+                    &>h6 {
                         width: 100%;
                         height: 1px;
-                        background-color: #d9d9d9;
+                        background-color: #717171;
                     }
 
-                    &>p{
+                    &>p {
                         margin-top: 20px;
                         font-size: 16px;
                     }
 
-                    &>div{
-                        padding: 10px 0 10px 0;
+                    &>div {
+                        padding: 15px 0 15px 0;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                     }
 
-                    .Subtotal{
+                    .Subtotal {
 
-                        &>span{
+                        &>span {
                             color: black;
                             font-size: 20px;
                             font-weight: 500;
                         }
                     }
 
-                    .Shipping{
+                    .Shipping {
 
-                        &>h1{
+                        &>h1 {
                             width: 40%;
                             height: auto;
                             font-size: 22px;
                         }
                     }
 
-                    .Tax{
+                    .Tax {
 
-                        &>span{
+                        &>span {
                             font-size: 20px;
                             font-weight: 600;
+                        }
+                    }
+
+                    .Total {
+                        margin-top: 10px;
+
+                        &>span {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+
+                        .cem {
+                            font-size: 30px;
+                            font-weight: 700;
+                            color: black;
                         }
                     }
                 }
