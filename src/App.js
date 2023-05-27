@@ -7,6 +7,7 @@ import Abouts from './components/abouts/Abouts';
 import Blogs from './components/blogs/Blogs';
 import Fouter from './components/fouter/Fouter'
 import Contact from './components/contact/Contact';
+import ToBasket from './components/ToBaskett/ToBasket';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/blog' element={<Blogs />} />
           <Route path='/about' element={<Abouts />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/toBasket' element={<ToBasket />} />
         </Routes>
         <Fouter />
       </Router>

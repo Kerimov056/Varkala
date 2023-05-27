@@ -12,7 +12,7 @@ import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import Modal from 'react-modal';
 
-const ProductCart = () => {
+const ProductCart = ({id,imgurl,name,price}) => {
     const [open, setOpen] = useState(false);
     const [img, setImg] = useState('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg');
 
@@ -29,7 +29,7 @@ const ProductCart = () => {
             <div className='mehsul'>
                 <div className='mehsul_up'>
                     <div>
-                        <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair.jpg' alt="Product"></img>
+                        <img src={imgurl} alt="Product"></img>
                         <div className='addToCart'>
                             <div>
                                 <h4>Add to cart</h4>
@@ -42,9 +42,9 @@ const ProductCart = () => {
                     </div>
                 </div>
                 <div className='mehsul_low'>
-                    <h4>Norwegg Chair</h4>
+                    <h4>{name}</h4>
                     <div>
-                        <span className='qiymet'>$40</span>
+                        <span className='qiymet'>${price}</span>
                         <span className='star'>
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />

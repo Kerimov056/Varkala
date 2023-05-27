@@ -307,7 +307,7 @@ const Navbar = () => {
                     <div className='right2'>
                         <span><BsPerson /></span>
                         <span><AiOutlineHeart /></span>
-                        <span><BsBasket /></span>
+                        <span><Link to='toBasket'><BsBasket style={{color: "black", width: "24px", height: "24px"}}/></Link></span>
                         <span><GiHamburgerMenu /></span>
                     </div>
                 </div>
