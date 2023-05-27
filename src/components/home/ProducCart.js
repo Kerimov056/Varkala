@@ -3,8 +3,12 @@ import './home.scss'
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
 import { AiFillStar } from 'react-icons/ai';
+import Modal from 'react-modal';
+// import { Link } from "react-router-dom";
+
 
 const ProducCart = () => {
+    
     return (
         <>
             <div className='mehsul'>
@@ -16,7 +20,7 @@ const ProducCart = () => {
                                 <h4>Add to cart</h4>
                                 <div>
                                     <span><AiOutlineHeart /></span>
-                                    <span><AiOutlineFullscreen /></span>
+                                    <span className='add'><AiOutlineFullscreen /></span>
                                 </div>
                             </div>
                         </div>
