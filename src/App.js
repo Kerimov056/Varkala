@@ -8,12 +8,13 @@ import Blogs from './components/blogs/Blogs';
 import Fouter from './components/fouter/Fouter'
 import Contact from './components/contact/Contact';
 import ToBasket from './components/ToBaskett/ToBasket';
-import ShopC from './components/content/ShopC';
+// import ShopC from './components/content/ShopC';
+import {ShopContextProvider} from './components/content/ShopC'
 
 function App() {
   return (
     <>
-      <ShopC>
+      <ShopContextProvider>
         <Router>
           <Navbar />
           <Routes>
@@ -26,7 +27,7 @@ function App() {
           </Routes>
           <Fouter />
         </Router>
-      </ShopC>
+        </ShopContextProvider>
     </>
   );
 }

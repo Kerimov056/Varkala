@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import './home.scss';
+import Modal from 'react-modal';
+import { ShopContext } from '../content/ShopC'  
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
@@ -10,9 +12,10 @@ import { HiChevronUp } from 'react-icons/hi';
 import { GoChevronDown } from 'react-icons/go';
 import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
-import Modal from 'react-modal';
 
 const ProductCart = ({id,imgurl,name,price}) => {
+
+    const {cartItems,addToCart,removeFromCart,updateCartItemCount} = useContext(ShopContext)
 
     const [open, setOpen] = useState(false);
     const [img, setImg] = useState('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg');
@@ -45,7 +48,7 @@ const ProductCart = ({id,imgurl,name,price}) => {
                 <div className='mehsul_low'>
                     <h4>{name}</h4>
                     <div>
-                        <span className='qiymet'>{price}</span>
+                        <span className='qiymet'>${price}</span>
                         <span className='star'>
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />
@@ -158,13 +161,20 @@ const ProductCart = ({id,imgurl,name,price}) => {
 
                             <div className='popADD'>
                                 <div>
-                                    <input type='text' value='0' />
+                                    <input type='text' value={cartItems[id]}  onChange={(e) => updateCartItemCount(Number(e.target.value),id)} />
                                     <div>
-                                        <HiChevronUp />
-                                        <GoChevronDown className='asd' />
+                                        <HiChevronUp onClick={() => addToCart(id)}/>
+                                        <GoChevronDown onClick={() => removeFromCart(id)} className='asd' />
                                     </div>
                                 </div>
-                                <button><SlBasket /> ADD TO CART</button>
+                                <button onClick={() => {
+                                    if(cartItems>0){
+                                        addToCart(id)  ///yarimiciq qalib
+                                    }
+                                    else{
+                                        cartItems(0)
+                                    }
+                                }}><SlBasket /> ADD TO CART</button>
                             </div>
 
                             <div className='popEnd'>

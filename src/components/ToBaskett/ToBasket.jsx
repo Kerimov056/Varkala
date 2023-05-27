@@ -1,10 +1,15 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import './tobasket.scss'
-import { ShopContext } from '../content/ShopC'
+// import { ShopContext } from '../content/ShopC'
 
-const ToBasket = ({id, productName, price, productImage}) => {
+const ToBasket = ({ id, productName, price, productImage }) => {
 
-    const {} = useContext(ShopContext)
+    // const { 
+    //     cartitem,
+    //     addToCart,
+    //     RemoveCart,
+    //     updateCartItemCount, 
+    // } = useContext(ShopContext)
 
     return (
         <>

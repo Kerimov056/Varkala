@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { ShopContext } from '../content/ShopC'
 import './navbar.scss'
 import { Link } from "react-router-dom";
 // import { AOS } from 'aos';
@@ -30,6 +31,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Navbar = () => {
+
+    const {cartItems} = useContext(ShopContext)
 
     useEffect(() => {
         AOS.init({
@@ -307,7 +310,7 @@ const Navbar = () => {
                     <div className='right2'>
                         <span><BsPerson /></span>
                         <span><AiOutlineHeart /></span>
-                        <span><Link to='toBasket'><BsBasket style={{color: "black", width: "24px", height: "24px"}}/></Link></span>
+                        <span><Link to='toBasket'><BsBasket style={{color: "black", width: "24px", height: "24px"}}/></Link><span></span></span>
                         <span><GiHamburgerMenu /></span>
                     </div>
                 </div>

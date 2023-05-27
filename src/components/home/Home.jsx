@@ -267,7 +267,7 @@ const Home = () => {
         <div>     
             {       
               Homecart.map((product) =>{
-                return <ProducCart imgurl={product.img} name={product.name} price={product.price}/>  
+                return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price}/>  
               })  
             } 
         </div>
