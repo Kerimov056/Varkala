@@ -3,6 +3,7 @@ import './home.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import { useSpring, animated } from "react-spring"
 import ProducCart from './ProducCart';
+import {Homecart} from '../Helpers/Homecart'
 
 
 const Home = () => {
@@ -263,8 +264,12 @@ const Home = () => {
 
 
       <div className='carts'>
-        <div>
-            <ProducCart />
+        <div>     
+            {       
+              Homecart.map((product) =>{
+                return <ProducCart imgurl={product.img} name={product.name} price={product.price}/>  
+              })  
+            } 
         </div>
       </div>
     </>
