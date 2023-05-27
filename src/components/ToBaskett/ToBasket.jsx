@@ -4,12 +4,6 @@ import './tobasket.scss'
 
 const ToBasket = ({ id, productName, price, productImage }) => {
 
-    // const { 
-    //     cartitem,
-    //     addToCart,
-    //     RemoveCart,
-    //     updateCartItemCount, 
-    // } = useContext(ShopContext)
 
     return (
         <>

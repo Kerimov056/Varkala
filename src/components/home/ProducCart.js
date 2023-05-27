@@ -167,14 +167,7 @@ const ProductCart = ({id,imgurl,name,price}) => {
                                         <GoChevronDown onClick={() => removeFromCart(id)} className='asd' />
                                     </div>
                                 </div>
-                                <button onClick={() => {
-                                    if(cartItems>0){
-                                        addToCart(id)  ///yarimiciq qalib
-                                    }
-                                    else{
-                                        cartItems(0)
-                                    }
-                                }}><SlBasket /> ADD TO CART</button>
+                                <button onClick={() => addToCart(id)}><SlBasket /> ADD TO CART</button>
                             </div>
 
                             <div className='popEnd'>

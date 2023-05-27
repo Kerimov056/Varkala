@@ -32,8 +32,9 @@ import "aos/dist/aos.css";
 
 const Navbar = () => {
 
-    const {cartItems} = useContext(ShopContext)
+    // const {cartItems,paket} = useContext(ShopContext)
 
+    
     useEffect(() => {
         AOS.init({
             offset: 30,
@@ -310,7 +311,7 @@ const Navbar = () => {
                     <div className='right2'>
                         <span><BsPerson /></span>
                         <span><AiOutlineHeart /></span>
-                        <span><Link to='toBasket'><BsBasket style={{color: "black", width: "24px", height: "24px"}}/></Link><span></span></span>
+                        <span><Link to='toBasket'><BsBasket style={{color: "black", width: "24px", height: "24px"}}/></Link></span>
                         <span><GiHamburgerMenu /></span>
                     </div>
                 </div>

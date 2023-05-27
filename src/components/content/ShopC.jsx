@@ -14,6 +14,15 @@ const getDefaultCart = () => {
 export const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
+    const paket = () => {
+        let sum = 0
+        for (let i = 1; i < Homecart.length + 1; i++) {
+            if(Homecart[i]==cartItems){
+                sum+=1;
+            }
+            return sum
+        }
+    }
 
     const getTotalAmount = () => {
         let totalAmount = 0;
@@ -53,6 +62,7 @@ export const ShopContextProvider = (props) => {
         updateCartItemCount,
         getTotalAmount,
         checkout,
+        paket,
     };
 
     return (
@@ -62,63 +72,3 @@ export const ShopContextProvider = (props) => {
     );
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export const ShopContext = createContext(null)
-
-// const getDefaultCart = () => {
-//     let cart = {}
-
-//     for (let i = 0; i < Homecart.length + 1; i++) {
-//         cart[i] = 0
-//     }
-//     return cart
-// }
-
-// const ShopC = (props) => {
-
-//     const [cartitem,setCartItem] = useState()
-
-//     const addToCart = (itemId) => {
-//         setCartItem((prev) =>({...prev, [itemId]: prev[itemId] + 1}))
-//         console.log("varamm");
-//     }
-//     const RemoveCart = (itemId) => {
-//         setCartItem((prev) =>({...prev, [itemId]: prev[itemId] - 1}))
-//     }
-//     const updateCartItemCount = (newAmount, itemId) => {
-//         setCartItem((prev) => ({ ...prev, [itemId]: newAmount }));
-//       };
-
-//     const contextValue = {
-//         getDefaultCart,
-//         cartitem,
-//         addToCart,
-//         RemoveCart,
-//         updateCartItemCount,
-//     }
-//     return (
-//         <>
-//             <ShopContext.Provider value={contextValue}>
-//                 {props.children}
-//             </ShopContext.Provider>
-//         </>
-//     )
-// }
-
-// export default ShopC
