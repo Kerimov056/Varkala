@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './tobasket.scss'
+import BsketCart from './BsketCart';
 // import { ShopContext } from '../content/ShopC'
 
 const ToBasket = ({ id, productName, price, productImage }) => {
@@ -18,7 +19,9 @@ const ToBasket = ({ id, productName, price, productImage }) => {
 
                     <div className='cart_in'>
                         <div className='productss'>
-                            asdas
+                            <div>
+                                <BsketCart/>
+                            </div>
                         </div>
                         <div className='Summary'>
                             <h3><h3>Order Summary</h3></h3>
