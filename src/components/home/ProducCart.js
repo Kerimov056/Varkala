@@ -71,6 +71,7 @@ const ProductCart = ({ id, imgurl, name, price }) => {
                 </div>
             </div>
 
+          
 
             <Modal
                 isOpen={open}

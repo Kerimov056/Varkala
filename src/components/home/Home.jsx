@@ -3,7 +3,7 @@ import './home.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import { useSpring, animated } from "react-spring"
 import ProducCart from './ProducCart';
-import {Homecart} from '../Helpers/Homecart'
+import { Homecart } from '../Helpers/Homecart'
 
 
 const Home = () => {
@@ -250,13 +250,13 @@ const Home = () => {
             </p>
           </div>
           <div className='produtss'>
-              <ul>
-                <li className='oneLi'>All Products</li>
-                <li>Chairs</li>
-                <li>Books</li>
-                <li>Clothes</li>
-                <li>Accessories</li>
-              </ul>
+            <ul>
+              <li className='oneLi'>All Products</li>
+              <li>Chairs</li>
+              <li>Books</li>
+              <li>Clothes</li>
+              <li>Accessories</li>
+            </ul>
             <div>ALL PRODUCTS</div>
           </div>
         </div>
@@ -264,14 +264,27 @@ const Home = () => {
 
 
       <div className='carts'>
-        <div>     
-            {       
-              Homecart.map((product) =>{
-                return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price}/>  
-              })  
-            } 
+        <div>
+          {
+            Homecart.map((product) => {
+              return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
+            })
+          }
         </div>
       </div>
+
+      <div id='biggest'>
+        <div>
+          <div className='biggest_text'>
+            <h1>Summer Sales</h1>
+            <h2>Our biggest sales this year — up to 60% off!</h2>
+            <button>START SHOPPING</button>
+          </div>
+          <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair-transparent.png'></img>
+        </div>
+      </div>
+
+
     </>
   )
 }
