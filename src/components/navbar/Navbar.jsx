@@ -2,8 +2,6 @@ import React, { useState, useEffect, useContext } from 'react'
 import { ShopContext } from '../content/ShopC'
 import './navbar.scss'
 import { Link } from "react-router-dom";
-// import { AOS } from 'aos';
-// import "aos/dist/aos.css";
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
@@ -26,9 +24,9 @@ import { GiSleevelessJacket } from 'react-icons/gi';
 import { GiPoloShirt } from 'react-icons/gi';
 import { GiBilledCap } from 'react-icons/gi';
 import { TbShirtSport } from 'react-icons/tb';
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 const Navbar = () => {
 

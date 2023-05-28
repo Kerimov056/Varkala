@@ -1,16 +1,28 @@
-import React, { useContext } from 'react'
+import React, { useEffect,useContext } from 'react'
 import './tobasket.scss'
 import { Homecart } from '../Helpers/Homecart';
 import BsketCart from './BsketCart';
 import { ShopContext } from '../content/ShopC'
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ToBasket = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 30,
+            duration: 500,
+            delay: 60,
+        });
+        AOS.refresh();
+    }, []);
 
     const { cartItems, getTotalAmount } = useContext(ShopContext);
 
     const total = getTotalAmount()
 
+    // const navigate = useNavigate()
     return (
         <>
             <div className='tobasket'>
@@ -56,13 +68,16 @@ const ToBasket = () => {
                                 <h6></h6>
                                 <div className='Total'>
                                     <span>Total</span>
-                                    <p className='cem'>$400.00</p>
+                                    <p className='cem'>${total}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     ) : (
-                        <div>YOXDU</div>
+                        <div  className='notProduct'>
+                                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjfq1ju534VapeO-Q8_c1gxWFfgYmcQ78jQ&usqp=CAU'></img>
+                                <h1>Empty basket</h1>
+                        </div>
                     )
                     }
                 </div>

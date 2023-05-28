@@ -56,7 +56,6 @@ p {
             .productss {
                 width: 60%;
                 height: auto;
-                background-color: red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -64,11 +63,9 @@ p {
                 &>div{
                     width: 95%;
                     height: 95%;
-                    background-color: #bcac76;
                     display: grid;
                     grid-template-columns: auto;
 
-                    
                 }
             }
 
@@ -164,6 +161,27 @@ p {
                         }
                     }
                 }
+            }
+        }
+
+
+        //eger basketde hec bir product yoxdursa
+        .notProduct{
+            margin-bottom: 30px;
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: start;
+
+            &>img{
+                width: 23%;
+                height: 23%;
+            }
+
+            &>h1{
+                margin-top: 80px;
+                margin-left: 50px;
             }
         }
     }
