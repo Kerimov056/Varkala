@@ -8,7 +8,7 @@ import { ImPriceTags } from 'react-icons/im'
 import { RiCustomerService2Fill } from 'react-icons/ri'
 import { SlEnvolopeLetter } from 'react-icons/sl'
 import { useState } from 'react'
-import {Accordion,AccordionItem,AccordionItemHeading,AccordionItemButton,AccordionItemPanel} from "react-accessible-accordion";
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
 
 
 const Fouter = () => {
@@ -120,32 +120,69 @@ const Fouter = () => {
                     </div>
 
                     <div className='bein_low'>
+                        
                         <div>
-                            <button onClick={() => setPlus((prev) => !prev)}>Shop</button>
-                            {plus && 
-                            <Accordion allowZeroExpanded> 
-                            <div className='bein_low_res'>
-                                <ul>
-                                    <li className='bbb'>For Woman</li>
-                                    <li>For Men</li>
-                                    <li>Stores</li>
-                                    <li>Our Blog</li>
-                                    <li>Shop</li>
-                                </ul>
-                            </div>
+                            <Accordion allowZeroExpanded>
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <button>Shop</button>
+                                            <span><AiOutlinePlus /></span>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                    <AccordionItemPanel>
+                                        <ul>
+                                            <li>Login</li>
+                                            <li>Register</li>
+                                            <li>Wishlist</li>
+                                            <li>Our Products</li>
+                                            <li>Checkouts</li>
+                                        </ul>
+                                    </AccordionItemPanel>
+                                </AccordionItem>
                             </Accordion>
-                            }
-                            <span onClick={() => setPlus((prev) => !prev)}>
-                                {plus ? (<AiOutlineMinus />) : (<AiOutlinePlus />)}
-                            </span>
-                        </div>
-                        <div style={{marginTop: plus ? "160px" : "auto"}}>
-                            <button>Company</button>
-                            <span><AiOutlinePlus /></span>
                         </div>
                         <div>
-                            <button>Your account</button>
-                            <span><AiOutlinePlus /></span>
+                            <Accordion allowZeroExpanded>
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <button>Company</button>
+                                            <span><AiOutlinePlus /></span>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                    <AccordionItemPanel>
+                                        <ul>
+                                            <li>Login</li>
+                                            <li>Register</li>
+                                            <li>Wishlist</li>
+                                            <li>Our Products</li>
+                                            <li>Checkouts</li>
+                                        </ul>
+                                    </AccordionItemPanel>
+                                </AccordionItem>
+                            </Accordion>
+                        </div>
+                        <div>
+                            <Accordion allowZeroExpanded>
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <button>Your account</button>
+                                            <span><AiOutlinePlus /></span>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                    <AccordionItemPanel>
+                                        <ul>
+                                            <li>Login</li>
+                                            <li>Register</li>
+                                            <li>Wishlist</li>
+                                            <li>Our Products</li>
+                                            <li>Checkouts</li>
+                                        </ul>
+                                    </AccordionItemPanel>
+                                </AccordionItem>
+                            </Accordion>
                         </div>
                     </div>
                 </div>
