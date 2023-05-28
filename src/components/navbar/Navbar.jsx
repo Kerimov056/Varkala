@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { ShopContext } from '../content/ShopC'
+// import { ShopContext } from '../content/ShopC'
 import './navbar.scss'
 import { Link } from "react-router-dom";
 import { FaFacebookF } from 'react-icons/fa';
