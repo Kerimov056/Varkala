@@ -1,79 +1,10 @@
-import React, { useState, useContext, useEffect } from 'react';
-import './home.scss';
+import React from 'react'
 import Modal from 'react-modal';
-import { ShopContext } from '../content/ShopC'
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { AiOutlineHeart } from 'react-icons/ai';
-import { AiOutlineFullscreen } from 'react-icons/ai';
-import { SlBasket } from 'react-icons/sl';
-import { FaFacebookF } from 'react-icons/fa';
-import { BsChevronUp } from 'react-icons/bs';
-import { FiChevronDown } from 'react-icons/fi';
-import { HiChevronUp } from 'react-icons/hi';
-import { GoChevronDown } from 'react-icons/go';
-import { AiFillStar } from 'react-icons/ai';
-import { AiOutlineTwitter } from 'react-icons/ai';
 
-const ProductCart = ({ id, imgurl, name, price }) => {
-
-    useEffect(() => {
-        AOS.init({
-            offset: 30,
-            duration: 500,
-            delay: 260,
-        });
-        AOS.refresh();
-    }, []);
-
-    const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
-
-    const [open, setOpen] = useState(false);
-    const [img, setImg] = useState('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg');
-
-    const [size, setSize] = useState(false)
-
-    const [olcu, setOlcu] = useState('SMALL')
-
-    const changeImg = (src) => {
-        setImg(src);
-    };
-
-    return (
-        <>
-            <div className="mehsul">
-                <div className="mehsul_up">
-                    <div>
-                        <img src={imgurl} alt="Product" />
-                        <div id='addTToo' data-aos="fade-up" className="addToCart">
-                            <div>
-                                <h4>Add to cart</h4>
-                                <div>
-                                    <span><AiOutlineHeart /></span>
-                                    <span className="add"><AiOutlineFullscreen onClick={() => setOpen(true)} /></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="mehsul_low">
-                    <h4>{name}</h4>
-                    <div>
-                        <span className="qiymet">${price}</span>
-                        <span data-aos="fade-up" id='ssttaarr' className="star">
-                            <AiFillStar style={{ color: "#bcac76" }} />
-                            <AiFillStar style={{ color: "#bcac76" }} />
-                            <AiFillStar style={{ color: "#bcac76" }} />
-                            <AiFillStar style={{ color: "rgb(132, 132, 132)" }} />
-                            <AiFillStar style={{ color: "rgb(132, 132, 132)" }} />
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <Modal
+const Yoxla = () => {
+  return (
+    <>
+         <Modal
                 isOpen={open}
                 onRequestClose={() => setOpen(false)}
                 style={{
@@ -197,8 +128,8 @@ const ProductCart = ({ id, imgurl, name, price }) => {
                     </div>
                 </div>
             </Modal>
-        </>
-    );
-};
+    </>
+  )
+}
 
-export default ProductCart;
+export default Yoxla
