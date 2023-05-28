@@ -2,6 +2,7 @@ import React from 'react'
 import './fouter.scss'
 import { FaShippingFast } from 'react-icons/fa'
 import { AiOutlineDollarCircle } from 'react-icons/ai'
+import { AiOutlinePlus } from 'react-icons/ai'
 import { ImPriceTags } from 'react-icons/im'
 import { RiCustomerService2Fill } from 'react-icons/ri'
 import { SlEnvolopeLetter } from 'react-icons/sl'
@@ -47,7 +48,7 @@ const Fouter = () => {
                 <div className='foutertwo_in'>
                     <div className='left'>
                         <h3>Be in touch</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/> At itaque temporibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> At itaque temporibus.</p>
                         <input type='text' placeholder='Your Email Address'></input>
                         <span><SlEnvolopeLetter /></span>
                     </div>
@@ -99,7 +100,23 @@ const Fouter = () => {
                     </div>
                 </div>
             </div>
-            
+
+            {/* Resposive */}
+
+            <div className='bein'>
+                <div>
+                <h3>Be in touch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> At itaque temporibus.</p>
+                <input type='text' placeholder='Your Email Address'></input>
+                <span><SlEnvolopeLetter /></span>
+                </div>
+
+                <div>
+                    <button>Shop<AiOutlinePlus/></button>
+                    <button>Company<AiOutlinePlus/></button>
+                    <button>Your account<AiOutlinePlus/></button>
+                </div>
+            </div>
         </>
     )
 }
