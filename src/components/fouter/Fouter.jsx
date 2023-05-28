@@ -2,12 +2,17 @@ import React from 'react'
 import './fouter.scss'
 import { FaShippingFast } from 'react-icons/fa'
 import { AiOutlineDollarCircle } from 'react-icons/ai'
+import { AiOutlineMinus } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { ImPriceTags } from 'react-icons/im'
 import { RiCustomerService2Fill } from 'react-icons/ri'
 import { SlEnvolopeLetter } from 'react-icons/sl'
+import { useState } from 'react'
 
 const Fouter = () => {
+
+    const [plus,setPlus] = useState(false)
+
     return (
         <>
             <div className='fouterone'>
@@ -114,8 +119,13 @@ const Fouter = () => {
 
                     <div className='bein_low'>
                         <div>
-                            <button>Shop</button>
-                            <span><AiOutlinePlus /></span>
+                            <button onClick={() => setPlus((prev)=> !prev)}>Shop</button>
+                            {plus && <div>
+                                
+                            </div>}
+                            <span>
+                            {plus ? (<AiOutlinePlus />) :(<AiOutlineMinus/>)}
+                            </span>
                         </div>
                         <div>
                             <button>Company</button>
