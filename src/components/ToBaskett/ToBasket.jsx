@@ -7,8 +7,10 @@ import { useNavigate } from "react-router-dom";
 
 const ToBasket = () => {
 
-    const { cartItems, getTotalAmount, checkout } = useContext(ShopContext);
-    
+    const { cartItems, getTotalAmount } = useContext(ShopContext);
+
+    const total = getTotalAmount()
+
     return (
         <>
             <div className='tobasket'>
@@ -20,16 +22,16 @@ const ToBasket = () => {
                         <p>For the checkout, you can use either a <span>Multiple pages checkout</span>or have everything on a<span>single page.</span></p>
                     </div>
 
-                    <div className='cart_in'>
+                    {total > 0 ? (<div className='cart_in'>
                         <div className='productss'>
                             <div>
-                               {
-                                Homecart.map((product) => {
-                                    if(cartItems[product.id] !==0){
-                                        return <BsketCart imgurl={product.img}/>
-                                    }
-                                })
-                               }
+                                {
+                                    Homecart.map((product) => {
+                                        if (cartItems[product.id] !== 0) {
+                                            return <BsketCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
+                                        }
+                                    })
+                                }
                             </div>
                         </div>
                         <div className='Summary'>
@@ -59,6 +61,10 @@ const ToBasket = () => {
                             </div>
                         </div>
                     </div>
+                    ) : (
+                        <div>YOXDU</div>
+                    )
+                    }
                 </div>
             </div>
 
