@@ -5,9 +5,10 @@ import BsketCart from './BsketCart';
 import { ShopContext } from '../content/ShopC'
 import { useNavigate } from "react-router-dom";
 
-const ToBasket = ({ id, productName, price, productImage }) => {
+const ToBasket = () => {
 
-
+    const { cartItems, getTotalAmount, checkout } = useContext(ShopContext);
+    
     return (
         <>
             <div className='tobasket'>
@@ -22,7 +23,13 @@ const ToBasket = ({ id, productName, price, productImage }) => {
                     <div className='cart_in'>
                         <div className='productss'>
                             <div>
-                                <BsketCart/>
+                               {
+                                Homecart.map((product) => {
+                                    if(cartItems[product.id] !==0){
+                                        return <BsketCart imgurl={product.img}/>
+                                    }
+                                })
+                               }
                             </div>
                         </div>
                         <div className='Summary'>
