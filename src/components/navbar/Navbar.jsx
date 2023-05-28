@@ -198,7 +198,7 @@ const Navbar = () => {
                                             </ul>
                                         </div>
                                         <div className='twoline'>
-                                            <ul>
+                                            <ul style={{marginLeft: "-30px"}}>
                                                 <b>Category</b>
                                                 <li>Full width</li>
                                                 <li>Full width with category menu</li>
@@ -219,15 +219,15 @@ const Navbar = () => {
                                         <div className='oneLine'>
                                             <b>Order process</b>
                                             <ul>
-                                                <li>Shopping cart</li>
-                                                <li>Checkout - Five steps</li>
-                                                <li>Checkout - Single-page</li>
-                                                <li>Checkout - confirmed</li>
-                                                <li>Wishlist</li>
+                                                <li style={{marginLeft: "-30px"}}>Shopping cart</li>
+                                                <li style={{marginLeft: "-30px"}}>Checkout - Five steps</li>
+                                                <li style={{marginLeft: "-30px"}}>Checkout - Single-page</li>
+                                                <li style={{marginLeft: "-30px"}}>Checkout - confirmed</li>
+                                                <li style={{marginLeft: "-30px"}}>Wishlist</li>
                                             </ul>
                                         </div>
                                         <div className='twoline'>
-                                            <ul>
+                                            <ul style={{marginLeft: "-30px"}}>
                                                 <b>Product</b>
                                                 <li>Product with sticky info</li>
                                                 <li>Product with background</li>
@@ -244,13 +244,13 @@ const Navbar = () => {
                                         <div className='oneLine'>
                                             <b>Blog</b>
                                             <ul>
-                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li>Blog</li></Link>
-                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li>Blog - Masonry</li></Link>
-                                                <li>Post</li>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li style={{marginLeft: "-28px"}}>Blog</li></Link>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li style={{marginLeft: "-28px"}}>Blog - Masonry</li></Link>
+                                                <li style={{marginLeft: "-28px"}}>Post</li>
                                             </ul>
                                         </div>
                                         <div className='twoline'>
-                                            <ul>
+                                            <ul style={{marginLeft: "-30px"}}>
                                                 <b>Pages</b>
                                                 <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About - Company </li></Link>
                                                 <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About v.2 - Person </li></Link>
