@@ -105,16 +105,18 @@ const Fouter = () => {
 
             <div className='bein'>
                 <div>
-                <h3>Be in touch</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> At itaque temporibus.</p>
-                <input type='text' placeholder='Your Email Address'></input>
-                <span><SlEnvolopeLetter /></span>
-                </div>
+                    <div className='bein_up'>
+                        <h3>Be in touch</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> At itaque temporibus.</p>
+                        <input type='text' placeholder='Your Email Address'></input>
+                        <span><SlEnvolopeLetter /></span>
+                    </div>
 
-                <div>
-                    <button>Shop<AiOutlinePlus/></button>
-                    <button>Company<AiOutlinePlus/></button>
-                    <button>Your account<AiOutlinePlus/></button>
+                    <div className='bein_low'>
+                        <button>Shop<AiOutlinePlus /></button>
+                        <button>Company<AiOutlinePlus /></button>
+                        <button>Your account<AiOutlinePlus /></button>
+                    </div> 
                 </div>
             </div>
         </>

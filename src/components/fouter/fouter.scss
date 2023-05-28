@@ -138,12 +138,22 @@ input[type="text"]::placeholder {
     }
 }
 
+.bein{
+    display: none;
+}
 
 
 
-@media (min-width: 300px) and (max-width: 750px) {
+@media (min-width: 280px) and (max-width: 750px) {
+   
+    .foutertwo{
+        display: none;
+    }
+    .fouterthree{
+        display: none;
+    }
     .fouterone{
-        width: 400px;
+        width: 440px;
         height: 500px;
         background-color: #f8f9fa;
         display: flex;
@@ -203,5 +213,57 @@ input[type="text"]::placeholder {
         }
     }
 
+   
+
+    .bein{
+        margin-top: 50px;
+        width: 333px;
+        height: 550px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>div{
+            width: 370px;
+            height: 96%;
+            background-color: #510650;
+
+            .bein_up{
+                &>h3{
+                    font-size: 20px;
+                }
+
+                &>p{
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+                &>input{
+                    margin-top: 30px;
+                    width: 100%;
+                    height: 40px;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-bottom: 2px solid rgb(158, 157, 157);
     
+                    &:hover{
+                        border-bottom: 1px solid black
+                    }
+                }
+                &>span{
+                    &>svg{
+                        width: 30px;
+                        height: 30px;
+                        margin-left: -36px;
+                        margin-top: -6px;
+                    }
+                }
+            }
+
+            .bein_low{
+                margin-top: 60px;
+            }
+        }
+    }
 }
