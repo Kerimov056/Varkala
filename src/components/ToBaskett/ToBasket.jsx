@@ -1,4 +1,4 @@
-import React, { useEffect,useContext } from 'react'
+import React, { useEffect, useContext } from 'react'
 import './tobasket.scss'
 import { Homecart } from '../Helpers/Homecart';
 import BsketCart from './BsketCart';
@@ -22,7 +22,7 @@ const ToBasket = () => {
 
     const total = getTotalAmount()
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     return (
         <>
             <div className='tobasket'>
@@ -70,20 +70,22 @@ const ToBasket = () => {
                                     <span>Total</span>
                                     <p className='cem'>${total}</p>
                                 </div>
+                                <h6></h6>
+                                <button id='Continue' onClick={() => navigate('/')}>Continue Shopping</button>
                             </div>
                         </div>
                     </div>
                     ) : (
-                        <div  className='notProduct'>
-                                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjfq1ju534VapeO-Q8_c1gxWFfgYmcQ78jQ&usqp=CAU'></img>
-                                <h1>Empty basket</h1>
+                        <div data-aos="fade-up"
+                            data-aos-duration="3000" className='notProduct'>
+                            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjfq1ju534VapeO-Q8_c1gxWFfgYmcQ78jQ&usqp=CAU'></img>
+                            <h1>Empty basket</h1>
+                            <button id='EmpContiune' onClick={() => navigate('/')}>Continue Shopping</button>
                         </div>
                     )
                     }
                 </div>
             </div>
-
-
         </>
     )
 }
