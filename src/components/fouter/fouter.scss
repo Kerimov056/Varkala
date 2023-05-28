@@ -315,4 +315,28 @@ input[type="text"]::placeholder {
             height: 100%;
         }
     }
+
+
+
+
+    //Responsivlik DropwDown
+
+    .bein_low_res{
+        margin-top: 25px;
+        position: absolute;
+
+        &>ul{
+            display: flex;
+            flex-direction: column;
+
+            .bbb{
+                margin-top: 170px;
+            }
+            &>li{
+                margin-left: -30px;
+                color: #999b9d;
+                font-size: 15px;
+            }
+        }
+    }
 }

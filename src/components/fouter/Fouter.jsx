@@ -8,10 +8,12 @@ import { ImPriceTags } from 'react-icons/im'
 import { RiCustomerService2Fill } from 'react-icons/ri'
 import { SlEnvolopeLetter } from 'react-icons/sl'
 import { useState } from 'react'
+import {Accordion,AccordionItem,AccordionItemHeading,AccordionItemButton,AccordionItemPanel} from "react-accessible-accordion";
+
 
 const Fouter = () => {
 
-    const [plus,setPlus] = useState(false)
+    const [plus, setPlus] = useState(false)
 
     return (
         <>
@@ -119,15 +121,25 @@ const Fouter = () => {
 
                     <div className='bein_low'>
                         <div>
-                            <button onClick={() => setPlus((prev)=> !prev)}>Shop</button>
-                            {plus && <div>
-                                
-                            </div>}
-                            <span>
-                            {plus ? (<AiOutlinePlus />) :(<AiOutlineMinus/>)}
+                            <button onClick={() => setPlus((prev) => !prev)}>Shop</button>
+                            {plus && 
+                            <Accordion allowZeroExpanded> 
+                            <div className='bein_low_res'>
+                                <ul>
+                                    <li className='bbb'>For Woman</li>
+                                    <li>For Men</li>
+                                    <li>Stores</li>
+                                    <li>Our Blog</li>
+                                    <li>Shop</li>
+                                </ul>
+                            </div>
+                            </Accordion>
+                            }
+                            <span onClick={() => setPlus((prev) => !prev)}>
+                                {plus ? (<AiOutlineMinus />) : (<AiOutlinePlus />)}
                             </span>
                         </div>
-                        <div>
+                        <div style={{marginTop: plus ? "160px" : "auto"}}>
                             <button>Company</button>
                             <span><AiOutlinePlus /></span>
                         </div>
