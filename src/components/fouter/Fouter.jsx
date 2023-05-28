@@ -113,10 +113,26 @@ const Fouter = () => {
                     </div>
 
                     <div className='bein_low'>
-                        <button>Shop<AiOutlinePlus /></button>
-                        <button>Company<AiOutlinePlus /></button>
-                        <button>Your account<AiOutlinePlus /></button>
-                    </div> 
+                        <div>
+                            <button>Shop</button>
+                            <span><AiOutlinePlus /></span>
+                        </div>
+                        <div>
+                            <button>Company</button>
+                            <span><AiOutlinePlus /></span>
+                        </div>
+                        <div>
+                            <button>Your account</button>
+                            <span><AiOutlinePlus /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='resComp'>
+                <div>
+                    <p>© 2020 Your company. All rights reserved.</p>
+                    <p>Terms & Conditions Privacy & cookies Accessibility Customer Data Promise</p>
                 </div>
             </div>
         </>

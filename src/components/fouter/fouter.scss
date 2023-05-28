@@ -1,4 +1,3 @@
-
 // fouter'in 1 ci hissesi
 
 .fouterone {
@@ -23,7 +22,8 @@
 
             &>div {
                 margin-right: 10px;
-                &>svg{
+
+                &>svg {
                     width: 32px;
                     height: 32px;
                 }
@@ -35,7 +35,7 @@
 
 // fouter'in 1 ci hissesi
 
-.foutertwo{
+.foutertwo {
     width: 100%;
     height: 380px;
     background-color: white;
@@ -43,22 +43,23 @@
     justify-content: center;
     align-items: center;
 
-    .foutertwo_in{
+    .foutertwo_in {
         width: 80%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .left{
+        .left {
             margin-top: -20px;
             width: 40%;
 
-            &>p{
+            &>p {
                 margin-top: 20px;
                 color: rgb(130, 128, 128);
             }
-            &>input{
+
+            &>input {
                 margin-top: 30px;
                 width: 400px;
                 height: 40px;
@@ -67,12 +68,13 @@
                 border-left: none;
                 border-bottom: 1px solid rgb(158, 157, 157);
 
-                &:hover{
+                &:hover {
                     border-bottom: 1px solid black
                 }
             }
-            &>span{
-                &>svg{
+
+            &>span {
+                &>svg {
                     width: 30px;
                     height: 30px;
                     margin-left: -36px;
@@ -81,17 +83,18 @@
             }
         }
 
-        .right{
+        .right {
             width: 60%;
             display: flex;
             justify-content: space-around;
             align-items: center;
 
-            &>div{
-                ul{
+            &>div {
+                ul {
                     display: block;
                     margin-top: 19px;
-                    li{
+
+                    li {
                         margin-top: 12px;
                         margin-left: -23px;
                     }
@@ -108,29 +111,29 @@ input[type="text"]::placeholder {
 
 // fouter'in 1 ci hissesi
 
-.fouterthree{
+.fouterthree {
     width: 100%;
     height: 52px;
     display: flex;
     justify-content: center;
 
-    &>div{
+    &>div {
         width: 80%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        &>h5{
+        &>h5 {
             color: #999b9d;
             opacity: 0.9;
         }
 
-        &>div{
-            &>ul{
+        &>div {
+            &>ul {
                 display: flex;
 
-                &>li{
+                &>li {
                     margin-left: 18px;
                 }
             }
@@ -138,107 +141,112 @@ input[type="text"]::placeholder {
     }
 }
 
-.bein{
+.bein {
+    display: none;
+}
+
+.resComp{
     display: none;
 }
 
 
-
 @media (min-width: 280px) and (max-width: 750px) {
-   
-    .foutertwo{
+
+    .foutertwo {
         display: none;
     }
-    .fouterthree{
+
+    .fouterthree {
         display: none;
     }
-    .fouterone{
+
+    .fouterone {
+        margin-top: 70px;
         width: 440px;
         height: 500px;
-        background-color: #f8f9fa;
+        background-color: #1e4a76;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .fouterone_in{
+        .fouterone_in {
             width: 98%;
             height: 98%;
             display: grid;
             grid-template-columns: auto;
 
-            &>div{
-                
+            &>div {
+
                 width: 100%;
                 height: 65%;
                 margin-right: 100px;
 
-                &>div{
+                &>div {
                     margin-right: 70px;
                     font-size: 15px;
                 }
 
 
-                .responsive{
-                    &>h3{
+                .responsive {
+                    &>h3 {
                         margin-left: -50px;
                         // font-size: 20px;
                     }
 
-                    &>span{
+                    &>span {
                         margin-left: -50px;
                     }
                 }
             }
 
-            .res{
-                .resIcon{
+            .res {
+                .resIcon {
                     margin-left: 10px;
                     width: 1px;
                 }
 
-                .resIcon_text{
+                .resIcon_text {
                     font-size: 14px;
                     margin-right: 170px;
 
-                    &>h3{
+                    &>h3 {
                         font-size: 19px;
                     }
                 }
 
-                .s{
+                .s {
                     margin-left: 20px;
                 }
-                
+
             }
         }
     }
 
-   
 
-    .bein{
+
+    .bein {
         margin-top: 50px;
         width: 333px;
         height: 550px;
-        background-color: red;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        &>div{
-            width: 370px;
+        &>div {
+            width: 315px;
             height: 96%;
-            background-color: #510650;
 
-            .bein_up{
-                &>h3{
+            .bein_up {
+                &>h3 {
                     font-size: 20px;
                 }
 
-                &>p{
+                &>p {
                     margin-top: 20px;
                     font-size: 14px;
                 }
-                &>input{
+
+                &>input {
                     margin-top: 30px;
                     width: 100%;
                     height: 40px;
@@ -246,13 +254,14 @@ input[type="text"]::placeholder {
                     border-right: none;
                     border-left: none;
                     border-bottom: 2px solid rgb(158, 157, 157);
-    
-                    &:hover{
+
+                    &:hover {
                         border-bottom: 1px solid black
                     }
                 }
-                &>span{
-                    &>svg{
+
+                &>span {
+                    &>svg {
                         width: 30px;
                         height: 30px;
                         margin-left: -36px;
@@ -261,9 +270,49 @@ input[type="text"]::placeholder {
                 }
             }
 
-            .bein_low{
+            .bein_low {
                 margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+
+                &>div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &>button {
+                        background: none;
+                        margin-top: 25px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border: none;
+                        outline: none;
+
+                    }
+
+                    &>span {
+                        &>svg {
+                            color: rgb(0, 0, 0);
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
             }
+        }
+    }
+
+    .resComp{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &>div{
+            width: 95%;
+            height: 100%;
         }
     }
 }
