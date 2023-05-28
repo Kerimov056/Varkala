@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import { Homecart } from "../Helpers/Homecart";
 
 export const ShopContext = createContext(null);
@@ -11,8 +11,14 @@ const getDefaultCart = () => {
     return cart;
 };
 
+// const cartFormLocalS = JSON.parse(localStorage.getItem("cartItems"))
+
 export const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
+
+    // useEffect(()=> {
+    //     localStorage.setItem("cartItems",JSON.stringify(cartItems))
+    // },[cartItems])
 
     const paket = () => {
         let sum = 0
@@ -52,15 +58,19 @@ export const ShopContextProvider = (props) => {
 
 
     const checkout = (itemId) => {
-        let itemInfo; 
+        let itemInfo;
         for (const item in cartItems) {
             if (cartItems[item] > 0) {
                 let itemInfo = Homecart.find((products) => products.id === Number(item))
-                itemInfo=0
+                itemInfo = 0
                 setCartItems(itemInfo)
             }
             return setCartItems(itemInfo)
         }
+    };
+
+    const empty_basket = () => {
+        setCartItems(getDefaultCart());
     };
 
     const contextValue = {
@@ -71,6 +81,7 @@ export const ShopContextProvider = (props) => {
         getTotalAmount,
         checkout,
         paket,
+        empty_basket,
     };
 
     return (

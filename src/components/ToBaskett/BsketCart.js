@@ -21,6 +21,7 @@ const BsketCart = ({id,imgurl,name,price}) => {
             <p onClick={() => addToCart(id)}>+</p>
             <span onClick={() => checkout(id)} className='close'>X</span>
        </div>
+       <hr/>
     </>
   )
 }

@@ -74,7 +74,7 @@ p {
                 -webkit-box-shadow: -2px -5px 53px -11px rgba(0,0,0,0.75);
                 -moz-box-shadow: -2px -5px 53px -11px rgba(0,0,0,0.75);
                 width: 31%;
-                height: 580px;
+                height: 640px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -175,6 +175,25 @@ p {
                             color: white;
                         }
                     }
+
+                    .emptBasket{
+                        margin-top: 20px;
+                        padding: 8px 12px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 21px;
+                        font-weight: 600;
+                        font-family: 'Times New Roman', Times, serif;
+
+                        &:hover{
+                            background-color: black;
+                            color: white;
+                        }
+
+                        &>svg{
+                            margin-right: 20px;
+                        }
+                    }
                 }
             }
         }
@@ -209,10 +228,13 @@ p {
                 font-size: 21px;
                 font-weight: 600;
                 font-family: 'Times New Roman', Times, serif;
-               
+                background-color: #bcac76;
+                color: white;
+
                 &:hover{
-                    background-color: black;
-                    color: white;
+                    background-color: rgb(255, 255, 255);
+                    color: #bcac76;
+                    border: 1px solid #bcac76;
                 }
             }
         }

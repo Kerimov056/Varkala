@@ -6,6 +6,8 @@ import { ShopContext } from '../content/ShopC'
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BsBasket3 } from 'react-icons/bs'
+
 
 const ToBasket = () => {
 
@@ -18,7 +20,7 @@ const ToBasket = () => {
         AOS.refresh();
     }, []);
 
-    const { cartItems, getTotalAmount } = useContext(ShopContext);
+    const { cartItems, getTotalAmount, empty_basket } = useContext(ShopContext);
 
     const total = getTotalAmount()
 
@@ -71,7 +73,10 @@ const ToBasket = () => {
                                     <p className='cem'>${total}</p>
                                 </div>
                                 <h6></h6>
-                                <button id='Continue' onClick={() => navigate('/')}>Continue Shopping</button>
+                                <button id='Continue' onClick={() => navigate('/')}>Continue Shopping</button><br />
+                                <button onClick={() => {
+                                    empty_basket();
+                                }} className='emptBasket'><BsBasket3 />Empty Basket</button>
                             </div>
                         </div>
                     </div>
