@@ -1,54 +1,54 @@
 export const blogApi = [
     {
-        "id": 1,
-        "name": "Pellentesque habitant morbi",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+        id: 1,
+        name: "Pellentesque habitant morbi",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
     },
 
     {
-        "id": 2,
-        "name": "Best books about Fashion",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"
+        id: 2,
+        name: "Best books about Fashion",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"
     },
 
     {
-        "id": 3,
-        "name": "Best books about Fashion",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+        id: 3,
+        name: "Best books about Fashion",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
     },
     {
-        "id": 4,
-        "name": "Autumn fashion tips and tricks",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/matheus-ferrero-334418-unsplash.jpg"
-    },
-
-    {
-        "id": 5,
-        "name": "Newest photo apps",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/photo-1534126511673-b6899657816a.jpg"
+        id: 4,
+        name: "Autumn fashion tips and tricks",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/matheus-ferrero-334418-unsplash.jpg"
     },
 
     {
-        "id": 6,
-        "name": "Best books about Photography",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/rahul-anil-214671-unsplash.jpg"
-    },
-    {
-        "id": 7,
-        "name": "Best books about Fashion",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"
+        id: 5,
+        name: "Newest photo apps",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/photo-1534126511673-b6899657816a.jpg"
     },
 
     {
-        "id": 8,
-        "name": "Pellentesque habitant morbi",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+        id: 6,
+        name: "Best books about Photography",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/rahul-anil-214671-unsplash.jpg"
+    },
+    {
+        id: 7,
+        name: "Best books about Fashion",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"
     },
 
     {
-        "id": 9,
-        "name": "Best books about Fashion",
-        "img": "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+        id: 8,
+        name: "Pellentesque habitant morbi",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+    },
+
+    {
+        id: 9,
+        name: "Best books about Fashion",
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
     },
 
 ]
