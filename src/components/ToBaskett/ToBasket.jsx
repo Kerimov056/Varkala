@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
 import './tobasket.scss'
+import { Homecart } from '../Helpers/Homecart';
 import BsketCart from './BsketCart';
-// import { ShopContext } from '../content/ShopC'
+import { ShopContext } from '../content/ShopC'
+import { useNavigate } from "react-router-dom";
 
 const ToBasket = ({ id, productName, price, productImage }) => {
 

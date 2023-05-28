@@ -17,8 +17,8 @@ export const ShopContextProvider = (props) => {
     const paket = () => {
         let sum = 0
         for (let i = 1; i < Homecart.length + 1; i++) {
-            if(Homecart[i]==cartItems){
-                sum+=1;
+            if (Homecart[i] == cartItems) {
+                sum += 1;
             }
             return sum
         }
@@ -41,7 +41,7 @@ export const ShopContextProvider = (props) => {
     };
 
     const removeFromCart = (itemId) => {
-            setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     };
 
 
@@ -51,8 +51,16 @@ export const ShopContextProvider = (props) => {
     };
 
 
-    const checkout = () => {
-        setCartItems(getDefaultCart());
+    const checkout = (itemId) => {
+        let itemInfo; 
+        for (const item in cartItems) {
+            if (cartItems[item] > 0) {
+                let itemInfo = Homecart.find((products) => products.id === Number(item))
+                itemInfo=0
+                setCartItems(itemInfo)
+            }
+            return setCartItems(itemInfo)
+        }
     };
 
     const contextValue = {
@@ -70,5 +78,4 @@ export const ShopContextProvider = (props) => {
             {props.children}
         </ShopContext.Provider>
     );
-};
-
+}
