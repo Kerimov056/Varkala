@@ -21,7 +21,7 @@ const ProductCart = ({ id, imgurl, name, price }) => {
         AOS.init({
             offset: 30,
             duration: 500,
-            delay: 60,
+            delay: 260,
         });
         AOS.refresh();
     }, []);
