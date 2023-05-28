@@ -157,18 +157,18 @@ const Navbar = () => {
                             {icon && <div data-aos="fade-up" className='icon'>
                                 <div className='icon_up'>
                                     <div className='icon_up_in'>
-                                        <h3><div><GiTrousers className='iconss' /></div><div>Trousers</div></h3>
-                                        <h3><div><GiSleevelessJacket className='iconss' /></div><div>Jackets</div></h3>
-                                        <h3><div><TbShirtSport className='iconss' /></div><div>T-Shirts</div></h3>
-                                        <h3><div><GiPoloShirt className='iconss' /></div><div>Pullovers</div></h3>
-                                        <h3><div><BsEraserFill className='iconss' /></div><div>Scarfs</div></h3>
-                                        <h3><div><GiUnderwearShorts className='iconss' /></div><div>Shorts</div></h3>
-                                        <h3><div><GiShorts className='iconss' /></div><div>Underwear</div></h3>
-                                        <h3><div><BsWatch className='iconss' /></div><div>Watches</div></h3>
-                                        <h3><div><GiMonclerJacket className='iconss' /></div><div>Trousers</div></h3>
-                                        <h3><div><BsFillBagFill className='iconss' /></div><div>Bags</div></h3>
-                                        <h3><div><GiBilledCap className='iconss' /></div><div>TrouCapssers</div></h3>
-                                        <h3><div><AiOutlineAppstoreAdd className='iconss' /></div><div>Accessories</div></h3>
+                                        <h3><div><GiTrousers className='iconss' /></div><div className='ml'>Trousers</div></h3>
+                                        <h3><div><GiSleevelessJacket className='iconss' /></div><div className='ml'>Jackets</div></h3>
+                                        <h3><div><TbShirtSport className='iconss' /></div><div className='ml'>T-Shirts</div></h3>
+                                        <h3><div><GiPoloShirt className='iconss' /></div><div className='ml'>Pullovers</div></h3>
+                                        <h3><div><BsEraserFill className='iconss' /></div><div className='ml'>Scarfs</div></h3>
+                                        <h3><div><GiUnderwearShorts className='iconss' /></div><div className='ml'>Shorts</div></h3>
+                                        <h3><div><GiShorts className='iconss' /></div><div className='ml'>Underwear</div></h3>
+                                        <h3><div><BsWatch className='iconss' /></div><div className='ml'>Watches</div></h3>
+                                        <h3><div><GiMonclerJacket className='iconss' /></div><div className='ml'>Trousers</div></h3>
+                                        <h3><div><BsFillBagFill className='iconss' /></div><div className='ml'>Bags</div></h3>
+                                        <h3><div><GiBilledCap className='iconss' /></div><div className='ml'>TrouCapssers</div></h3>
+                                        <h3><div><AiOutlineAppstoreAdd className='iconss' /></div><div className='ml'>Accessories</div></h3>
                                     </div>
                                 </div>
                                 <div className='icon_low'>

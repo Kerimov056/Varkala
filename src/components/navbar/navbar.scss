@@ -277,6 +277,7 @@ span{
             height: 90%;
             display: grid;
             grid-template-columns: auto auto auto auto auto auto;
+            margin-left: -40px;
 
             &>h3 {
                 display: block;
@@ -285,8 +286,12 @@ span{
                 text-align: center;
 
                 .iconss {
-                    width: 50px;
-                    height: 80px;
+                    width: 40px;
+                    height: 70px;
+                }
+
+                .ml{
+                    font-size: 23px;
                 }
 
             }
