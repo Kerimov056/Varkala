@@ -14,6 +14,8 @@ import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, Ac
 const Fouter = () => {
 
     const [plus, setPlus] = useState(false)
+    const [plus1, setPlus1] = useState(false)
+    const [plus2, setPlus2] = useState(false)
 
     return (
         <>
@@ -120,70 +122,73 @@ const Fouter = () => {
                     </div>
 
                     <div className='bein_low'>
+
+                        <div>
+                            <Accordion allowZeroExpanded>
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <button className='acorBtn' onClick={()=> setPlus((prev) =>!prev)}>Shop</button>
+                                            <span className='acorBtnS' style={{marginLeft: "160px"}}>{plus ? <AiOutlineMinus/> :<AiOutlinePlus /> }</span>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                    <AccordionItemPanel>
+                                        <ul>
+                                            <li>For Women</li>
+                                            <li>For Men</li>
+                                            <li>Stores</li>
+                                            <li>Our Blog</li>
+                                            <li>Shop</li>
+                                        </ul>
+                                    </AccordionItemPanel>
+                                </AccordionItem>
+                            </Accordion>
+                        </div>
+
+                        <div>
+                            <Accordion allowZeroExpanded>
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <button className='acorBtn' onClick={()=> setPlus1((prev) =>!prev)}>Company</button>
+                                            <span className='acorBtnS' style={{marginLeft: "120px"}}>{plus1 ? <AiOutlineMinus/> :<AiOutlinePlus /> }</span>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                    <AccordionItemPanel>
+                                        <ul>
+                                            <li>Login</li>
+                                            <li>Register</li>
+                                            <li>Wishlist</li>
+                                            <li>Our Products</li>
+                                            <li>Checkouts</li>
+                                        </ul>
+                                    </AccordionItemPanel>
+                                </AccordionItem>
+                            </Accordion>
+                        </div>
+
+                        <div>
+                            <Accordion allowZeroExpanded>
+                                <AccordionItem>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <button className='acorBtn' onClick={()=> setPlus2((prev) =>!prev)}>Your account</button>
+                                            <span  className='acorBtnS' style={{marginLeft: "90px"}}>{plus2 ? <AiOutlineMinus/> :<AiOutlinePlus /> }</span>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                    <AccordionItemPanel>
+                                        <ul>
+                                            <li>Login</li>
+                                            <li>Register</li>
+                                            <li>Wishlist</li>
+                                            <li>Our Products</li>
+                                            <li>Checkouts</li>
+                                        </ul>
+                                    </AccordionItemPanel>
+                                </AccordionItem>
+                            </Accordion>
+                        </div>
                         
-                        <div>
-                            <Accordion allowZeroExpanded>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            <button>Shop</button>
-                                            <span><AiOutlinePlus /></span>
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <ul>
-                                            <li>Login</li>
-                                            <li>Register</li>
-                                            <li>Wishlist</li>
-                                            <li>Our Products</li>
-                                            <li>Checkouts</li>
-                                        </ul>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                            </Accordion>
-                        </div>
-                        <div>
-                            <Accordion allowZeroExpanded>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            <button>Company</button>
-                                            <span><AiOutlinePlus /></span>
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <ul>
-                                            <li>Login</li>
-                                            <li>Register</li>
-                                            <li>Wishlist</li>
-                                            <li>Our Products</li>
-                                            <li>Checkouts</li>
-                                        </ul>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                            </Accordion>
-                        </div>
-                        <div>
-                            <Accordion allowZeroExpanded>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            <button>Your account</button>
-                                            <span><AiOutlinePlus /></span>
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <ul>
-                                            <li>Login</li>
-                                            <li>Register</li>
-                                            <li>Wishlist</li>
-                                            <li>Our Products</li>
-                                            <li>Checkouts</li>
-                                        </ul>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                            </Accordion>
-                        </div>
                     </div>
                 </div>
             </div>

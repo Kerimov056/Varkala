@@ -231,6 +231,7 @@ input[type="text"]::placeholder {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 30px;
 
         &>div {
             width: 315px;
@@ -276,11 +277,12 @@ input[type="text"]::placeholder {
                 flex-direction: column;
 
                 &>div {
+                    width: 333px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-
-                    &>button {
+                    
+                    .acorBtn{
                         background: none;
                         margin-top: 25px;
                         font-size: 20px;
@@ -290,7 +292,7 @@ input[type="text"]::placeholder {
 
                     }
 
-                    &>span {
+                    .acorBtnS {
                         &>svg {
                             color: rgb(0, 0, 0);
                             width: 24px;
@@ -315,29 +317,6 @@ input[type="text"]::placeholder {
             height: 100%;
         }
     }
-    // </AccordionItemButton>
-    // </AccordionItemHeading>
 
 
-
-    //Responsivlik DropwDown
-
-    .bein_low_res{
-        margin-top: 25px;
-        position: absolute;
-
-        &>ul{
-            display: flex;
-            flex-direction: column;
-
-            .bbb{
-                margin-top: 170px;
-            }
-            &>li{
-                margin-left: -30px;
-                color: #999b9d;
-                font-size: 15px;
-            }
-        }
-    }
 }
