@@ -1,7 +1,7 @@
-import React, { useState,useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import './home.scss';
 import Modal from 'react-modal';
-import { ShopContext } from '../content/ShopC'  
+import { ShopContext } from '../content/ShopC'
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
@@ -13,9 +13,9 @@ import { GoChevronDown } from 'react-icons/go';
 import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 
-const ProductCart = ({id,imgurl,name,price}) => {
+const ProductCart = ({ id, imgurl, name, price }) => {
 
-    const {cartItems,addToCart,removeFromCart,updateCartItemCount} = useContext(ShopContext)
+    const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
 
     const [open, setOpen] = useState(false);
     const [img, setImg] = useState('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg');
@@ -30,26 +30,26 @@ const ProductCart = ({id,imgurl,name,price}) => {
 
     return (
         <>
-            <div className='mehsul'>
-                <div className='mehsul_up'>
+            <div className="mehsul">
+                <div className="mehsul_up">
                     <div>
-                        <img src={imgurl} alt="Product"></img>
-                        <div className='addToCart'>
+                        <img src={imgurl} alt="Product" />
+                        <div id='addTToo' data-aos="fade-up" className="addToCart">
                             <div>
                                 <h4>Add to cart</h4>
                                 <div>
                                     <span><AiOutlineHeart /></span>
-                                    <span className='add'><AiOutlineFullscreen onClick={() => setOpen(true)} /></span>
+                                    <span className="add"><AiOutlineFullscreen onClick={() => setOpen(true)} /></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='mehsul_low'>
+                <div className="mehsul_low">
                     <h4>{name}</h4>
                     <div>
-                        <span className='qiymet'>${price}</span>
-                        <span className='star'>
+                        <span className="qiymet">${price}</span>
+                        <span data-aos="fade-up" id='ssttaarr' className="star">
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />
@@ -59,6 +59,7 @@ const ProductCart = ({id,imgurl,name,price}) => {
                     </div>
                 </div>
             </div>
+
 
             <Modal
                 isOpen={open}
@@ -77,8 +78,8 @@ const ProductCart = ({id,imgurl,name,price}) => {
                     }
                 }}
             >
-                <div className='popup'> 
-                    <button onClick={()=>setOpen(false)} className='exit'>X</button>
+                <div className='popup'>
+                    <button onClick={() => setOpen(false)} className='exit'>X</button>
                     <div>
                         <div className='pop_left'>
                             <div className='pop_left_img'>
@@ -129,21 +130,21 @@ const ProductCart = ({id,imgurl,name,price}) => {
                                     </button>
                                     {size && <div className='sizeDrop'>
                                         <ul>
-                                            <li style={{color: olcu === 'SMALL'? "#bcac76" : "rgb(136, 134, 134)"}}
+                                            <li style={{ color: olcu === 'SMALL' ? "#bcac76" : "rgb(136, 134, 134)" }}
                                                 onClick={() => {
-                                                setOlcu('SMALL')
-                                                setSize(false)
-                                            }}>Small</li>
-                                            <li style={{color: olcu === 'MEDIUM'? "#bcac76" : "rgb(136, 134, 134)"}}
+                                                    setOlcu('SMALL')
+                                                    setSize(false)
+                                                }}>Small</li>
+                                            <li style={{ color: olcu === 'MEDIUM' ? "#bcac76" : "rgb(136, 134, 134)" }}
                                                 onClick={() => {
-                                                setOlcu('MEDIUM')
-                                                setSize(false)
-                                            }}>Medium</li>
-                                            <li style={{color: olcu === 'LARGE'? "#bcac76" : "rgb(136, 134, 134)"}}
+                                                    setOlcu('MEDIUM')
+                                                    setSize(false)
+                                                }}>Medium</li>
+                                            <li style={{ color: olcu === 'LARGE' ? "#bcac76" : "rgb(136, 134, 134)" }}
                                                 onClick={() => {
-                                                setOlcu('LARGE')
-                                                setSize(false)
-                                            }}>Large</li>
+                                                    setOlcu('LARGE')
+                                                    setSize(false)
+                                                }}>Large</li>
                                         </ul>
                                     </div>}
                                 </div>
@@ -161,9 +162,9 @@ const ProductCart = ({id,imgurl,name,price}) => {
 
                             <div className='popADD'>
                                 <div>
-                                    <input type='text' value={cartItems[id]}  onChange={(e) => updateCartItemCount(Number(e.target.value),id)} />
+                                    <input type='text' value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
                                     <div>
-                                        <HiChevronUp onClick={() => addToCart(id)}/>
+                                        <HiChevronUp onClick={() => addToCart(id)} />
                                         <GoChevronDown onClick={() => removeFromCart(id)} className='asd' />
                                     </div>
                                 </div>

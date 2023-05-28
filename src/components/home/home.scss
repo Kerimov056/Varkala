@@ -383,7 +383,7 @@
                 bottom: 0;
                 left: 0;
                 background-color: white;
-                // visibility: hidden;
+                 visibility: hidden;
 
                 &>div {
                     margin-top: 3px;
@@ -445,12 +445,20 @@
                 color: rgb(132, 132, 132);
                 font-size: 19px;
             }
-        }
-    }
 
-    &:hover .addToCart {
+            .star{
+                visibility: hidden;
+            }
+        }
+       
+    }
+    &:hover #ssttaarr{
         visibility: visible;
     }
+    &:hover #addTToo{
+        visibility: visible;
+    }
+
 }
 
 
