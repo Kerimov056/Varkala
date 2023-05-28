@@ -1,7 +1,9 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import './home.scss';
 import Modal from 'react-modal';
 import { ShopContext } from '../content/ShopC'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineFullscreen } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
@@ -14,6 +16,15 @@ import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 
 const ProductCart = ({ id, imgurl, name, price }) => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 30,
+            duration: 500,
+            delay: 60,
+        });
+        AOS.refresh();
+    }, []);
 
     const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
 
