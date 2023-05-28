@@ -13,28 +13,28 @@ const Fouter = () => {
                 <div className='fouterone_in'>
                     <div>
                         <div><FaShippingFast /></div>
-                        <div>
+                        <div className='responsive'>
                             <h3>Free shipping & return</h3>
                             <span>Free Shipping over $300</span>
                         </div>
                     </div>
                     <div>
                         <div><AiOutlineDollarCircle /></div>
-                        <div>
+                        <div className='responsive'>
                             <h3>Money back guarantee</h3>
                             <span>30 Days Money Back Guarantee</span>
                         </div>
                     </div>
-                    <div>
-                        <div><ImPriceTags /></div>
-                        <div>
+                    <div className='res'>
+                        <div className='resIcon'><ImPriceTags /></div>
+                        <div className='resIcon_text'>
                             <h3>Best prices</h3>
                             <span>Always the best prices</span>
                         </div>
                     </div>
-                    <div>
-                        <div><RiCustomerService2Fill /></div>
-                        <div>
+                    <div className='res'>
+                        <div className='resIcon s'><RiCustomerService2Fill /></div>
+                        <div className='resIcon_text t'>
                             <h3>020-800-456-747</h3>
                             <span>24/7 Available Support</span>
                         </div>
@@ -99,6 +99,7 @@ const Fouter = () => {
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }

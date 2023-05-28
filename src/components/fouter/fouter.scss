@@ -137,3 +137,69 @@ input[type="text"]::placeholder {
         }
     }
 }
+
+
+
+
+@media (min-width: 300px) and (max-width: 750px) {
+    .fouterone{
+        width: 400px;
+        height: 500px;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fouterone_in{
+            width: 98%;
+            height: 98%;
+            display: grid;
+            grid-template-columns: auto;
+
+            &>div{
+                
+                width: 100%;
+                height: 65%;
+                margin-right: 100px;
+
+                &>div{
+                    margin-right: 70px;
+                    font-size: 15px;
+                }
+
+
+                .responsive{
+                    &>h3{
+                        margin-left: -50px;
+                        // font-size: 20px;
+                    }
+
+                    &>span{
+                        margin-left: -50px;
+                    }
+                }
+            }
+
+            .res{
+                .resIcon{
+                    margin-left: 10px;
+                    width: 1px;
+                }
+
+                .resIcon_text{
+                    font-size: 14px;
+                    margin-right: 170px;
+
+                    &>h3{
+                        font-size: 19px;
+                    }
+                }
+
+                .s{
+                    margin-left: 20px;
+                }
+                
+            }
+        }
+    }
+}
