@@ -346,7 +346,7 @@ const Navbar = () => {
                             <AccordionItemPanel className='resPanel'>
                                 {burger &&
                                     <>
-                                        <div>
+                                        <div data-aos="fade-down">
                                             <Accordion>
                                                 <AccordionItem>
                                                     <AccordionItemHeading>
@@ -362,7 +362,7 @@ const Navbar = () => {
                                                     </AccordionItemHeading>
                                                     <AccordionItemPanel>
                                                         {home &&
-                                                            <ul>
+                                                            <ul data-aos="fade-down">
                                                                 <li>Home 1 - Fashion</li>
                                                                 <li>Home 2 - Fashion</li>
                                                                 <Link id='Reshome' to="/"><li>Home 3 - Design</li></Link>
@@ -386,7 +386,7 @@ const Navbar = () => {
                                                             </ul>
                                                         </AccordionItemButton>
                                                     </AccordionItemHeading>
-                                                    <AccordionItemPanel>
+                                                    <AccordionItemPanel data-aos="fade-down">
                                                         <ul>
                                                             <li className='firstt' style={{ color: "black" }}>Shop pages</li>
                                                             <li>Full witdh</li>
@@ -415,16 +415,16 @@ const Navbar = () => {
                                                         <AccordionItemButton>
                                                             <ul onClick={() => setIcon((prev) => !prev)}>Icons
                                                                 {icon ? (
-                                                                    <FiChevronDown />
-                                                                ) : (
                                                                     <BsChevronUp />
+                                                                    ) : (
+                                                                        <FiChevronDown />
                                                                 )}
                                                             </ul>
                                                         </AccordionItemButton>
                                                     </AccordionItemHeading>
-                                                    <AccordionItemPanel style={{ display: "grid", gridTemplateColumns: "auto auto", marginLeft: "30px" }}>
+                                                    <AccordionItemPanel>
                                                         {icon &&
-                                                            <>
+                                                            <div data-aos="fade-down" style={{ display: "grid", gridTemplateColumns: "auto auto", marginLeft: "30px" }}>
                                                                 <h3><div><GiTrousers className='iconss' /></div><div className='ml'>Trousers</div></h3>
                                                                 <h3><div><GiSleevelessJacket className='iconss' /></div><div className='ml'>Jackets</div></h3>
                                                                 <h3><div><TbShirtSport className='iconss' /></div><div className='ml'>T-Shirts</div></h3>
@@ -437,7 +437,7 @@ const Navbar = () => {
                                                                 <h3><div><BsFillBagFill className='iconss' /></div><div className='ml'>Bags</div></h3>
                                                                 <h3><div><GiBilledCap className='iconss' /></div><div className='ml'>TrouCapssers</div></h3>
                                                                 <h3><div><AiOutlineAppstoreAdd className='iconss' /></div><div className='ml'>Accessories</div></h3>
-                                                            </>
+                                                            </div>
                                                         }
                                                     </AccordionItemPanel>
                                                 </AccordionItem>
@@ -456,9 +456,9 @@ const Navbar = () => {
                                                             </ul>
                                                         </AccordionItemButton>
                                                     </AccordionItemHeading>
-                                                    <AccordionItemPanel>
+                                                    <AccordionItemPanel >
                                                         {pages &&
-                                                            <>
+                                                            <div data-aos="fade-down">
                                                                 <b style={{ marginLeft: "33px" }}>Homepage</b>
                                                                 <ul>
                                                                     <li>Home 1 - Fashion</li>
@@ -519,7 +519,7 @@ const Navbar = () => {
                                                                     <li>Profile </li>
                                                                     <li>Wishlist </li>
                                                                 </ul>
-                                                            </>
+                                                            </div>
                                                         }
                                                     </AccordionItemPanel>
                                                 </AccordionItem>
@@ -540,7 +540,7 @@ const Navbar = () => {
                                                     </AccordionItemHeading>
                                                     <AccordionItemPanel>
                                                         {docs &&
-                                                            <>
+                                                            <div data-aos="fade-down">
                                                                 <ul>
                                                                     <li>Introduction</li>
                                                                     <li>Directory structure</li>
@@ -551,7 +551,7 @@ const Navbar = () => {
                                                                     <li>Bootstrap</li>
                                                                     <li>Theme</li>
                                                                 </ul>
-                                                            </>
+                                                            </div>
                                                         }
                                                     </AccordionItemPanel>
                                                 </AccordionItem>
