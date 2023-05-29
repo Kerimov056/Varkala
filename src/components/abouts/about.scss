@@ -699,8 +699,18 @@
                 }
 
                 .samsa_low{
-                    
+                    display: block;
+                    &>div{
+                        display: block;
+                        &>h5{
+                            font-size: 32px;
+                        }
+                    }
                 }
+            }
+
+            .team{
+                display: none;
             }
         }
     }
