@@ -18,10 +18,10 @@ const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
                             <p>Colour: Green</p>
                         </div>
                     </div>
-                    <span onClick={() => checkout(id)} className='close'>X</span>
+                    <span id='ResX' onClick={() => checkout(id)} className='close'>X</span>
                 </div>
 
-                <div>
+                <div className='ResponProduc_low'>
                     <div>
                         <p>Price per item</p><span>${price}</span>
                     </div>
