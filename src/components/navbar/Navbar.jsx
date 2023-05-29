@@ -342,9 +342,8 @@ const Navbar = () => {
                                     <ul>Icons</ul>
                                     <ul>Pages</ul>
                                     <ul>Docs</ul>
-                                <input type='search'></input>
+                                    <input type='search'></input>
                                 </div>
-
                             </AccordionItemPanel>
                         </AccordionItem>
                     </Accordion>
