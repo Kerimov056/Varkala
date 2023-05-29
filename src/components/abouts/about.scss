@@ -630,6 +630,51 @@
     }
 
     .Milestones{
-        display: none;
+        width: 333px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+        .Milestones_in{
+            width: 96%;
+            height: auto;
+            display: block;
+            margin-left: -90px;
+
+            .Milestones_left{
+                width: 100%;
+                height: auto;
+
+                &>div{
+                    &>h1{
+                        white-space: pre-wrap;
+                        font-size: 32px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .Milestones_right{
+                margin-left: 60px;
+                display: block;
+                
+                &>div{
+                    width: 290px;
+                    margin-top: 55px;
+                }
+            }
+        }
+    }
+
+    .people{
+        width: 333px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+        &>div{
+            width: 95%;
+            height: auto;
+        }
     }
 }
