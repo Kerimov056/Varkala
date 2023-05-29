@@ -5,10 +5,20 @@ import { useSpring, animated } from "react-spring"
 import ProducCart from './ProducCart';
 import { Homecart } from '../Helpers/Homecart'
 
+ 
+
 
 const Home = () => {
 
   const [price, setPrice] = useState(1)
+
+  const [names, setNames] = useState(Homecart)
+
+  const filterName = (e) => {
+    const search = e.target.value.toLowerCase()
+    const filterName = Homecart.filter(names => names.name.toLowerCase().includes(search))
+    setNames(filterName)
+  }
 
     const change = (e) => {
         setPrice(e.target.value);
@@ -300,7 +310,7 @@ const Home = () => {
         <div className='carts_filter'>
           <input type="range" min={1} max={1000} onInput={change} />
           <h2>Price: {price}</h2>
-          <input type='search'></input>
+          <input type='search' onChange={(e) => filterName(e)}></input>
         </div>
         <div className='Productll'>
           {
