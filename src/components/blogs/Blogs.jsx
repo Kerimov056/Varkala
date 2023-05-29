@@ -12,7 +12,7 @@ const Blogs = () => {
 
     return (
         <>
-            <div className='blog'>
+            <div id='ResB' className='blog'>
                 <div>
                     <div>
                         <h1>Blog</h1>
@@ -24,9 +24,9 @@ const Blogs = () => {
 
             {/* responsiv */}
 
-            <div className='ResBlog'>
+            <div id='ResBlog'>
                 <div>
-                    <img src=''></img>
+                    <img src='https://demo.bootstrapious.com/varkala/1-2-1/img/photo/blog-2.jpg'></img>
                     <div>
                         <h1>Blog</h1>
                         <h3>As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.</h3>
