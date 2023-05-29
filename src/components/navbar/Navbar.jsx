@@ -79,7 +79,7 @@ const Navbar = () => {
                         <span><AiOutlineTwitter /></span>
                         <h4><span><BsTelephone /></span>020-800-456-747</h4>
                     </div>
-                    <h3>Free in-store delivery</h3>
+                    <h3 id='free'>Free in-store delivery</h3>
                     <div className='right'>
                         <button>English<span><FiChevronDown /></span></button>
                         <button>USD<span><FiChevronDown /></span></button>
@@ -314,6 +314,9 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+
+
+            
         </>
     )
 
