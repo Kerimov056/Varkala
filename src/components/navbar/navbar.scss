@@ -433,12 +433,18 @@ li{
 }
 
 
+//Responsive Div none
+
+   .responsiv{
+    display: none;
+   } 
+
 //responsiv Navbar
 
 @media (min-width: 280px) and (max-width: 750px) {
 
     .navbar{
-        width: 380px;
+        width: 333px;
         height: 50px;
         display: flex;
         justify-content: start;
@@ -464,6 +470,49 @@ li{
 
             #free{
                 font-size: 18px;
+            }
+        }
+    }
+    .navbar2{
+        display: none;
+    }
+    .responsiv{
+        width: 333px;
+        height: 50px;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>div{
+            width: 93%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &>h1{
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            &>div{
+                &>svg{
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 10px;
+                }
+
+                .bst{
+                    color: black;
+                    width: 25px;
+                    height: 25px;
+                    &>svg{
+                        width: 25px;
+                        height: 25px;
+                        margin-left: 10px;
+                    }
+                }
             }
         }
     }

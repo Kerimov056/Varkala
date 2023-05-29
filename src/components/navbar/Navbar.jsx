@@ -32,7 +32,7 @@ const Navbar = () => {
 
     // const {cartItems,paket} = useContext(ShopContext)
 
-    
+
     useEffect(() => {
         AOS.init({
             offset: 30,
@@ -69,7 +69,7 @@ const Navbar = () => {
     const [pages, setPages] = useState(false)
     const [docs, setDocs] = useState(false)
 
-  
+
     return (
         <>
             <div className='navbar'>
@@ -198,7 +198,7 @@ const Navbar = () => {
                                             </ul>
                                         </div>
                                         <div className='twoline'>
-                                            <ul style={{marginLeft: "-30px"}}>
+                                            <ul style={{ marginLeft: "-30px" }}>
                                                 <b>Category</b>
                                                 <li>Full width</li>
                                                 <li>Full width with category menu</li>
@@ -219,15 +219,15 @@ const Navbar = () => {
                                         <div className='oneLine'>
                                             <b>Order process</b>
                                             <ul>
-                                                <li style={{marginLeft: "-30px"}}>Shopping cart</li>
-                                                <li style={{marginLeft: "-30px"}}>Checkout - Five steps</li>
-                                                <li style={{marginLeft: "-30px"}}>Checkout - Single-page</li>
-                                                <li style={{marginLeft: "-30px"}}>Checkout - confirmed</li>
-                                                <li style={{marginLeft: "-30px"}}>Wishlist</li>
+                                                <li style={{ marginLeft: "-30px" }}>Shopping cart</li>
+                                                <li style={{ marginLeft: "-30px" }}>Checkout - Five steps</li>
+                                                <li style={{ marginLeft: "-30px" }}>Checkout - Single-page</li>
+                                                <li style={{ marginLeft: "-30px" }}>Checkout - confirmed</li>
+                                                <li style={{ marginLeft: "-30px" }}>Wishlist</li>
                                             </ul>
                                         </div>
                                         <div className='twoline'>
-                                            <ul style={{marginLeft: "-30px"}}>
+                                            <ul style={{ marginLeft: "-30px" }}>
                                                 <b>Product</b>
                                                 <li>Product with sticky info</li>
                                                 <li>Product with background</li>
@@ -244,13 +244,13 @@ const Navbar = () => {
                                         <div className='oneLine'>
                                             <b>Blog</b>
                                             <ul>
-                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li style={{marginLeft: "-28px"}}>Blog</li></Link>
-                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li style={{marginLeft: "-28px"}}>Blog - Masonry</li></Link>
-                                                <li style={{marginLeft: "-28px"}}>Post</li>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li style={{ marginLeft: "-28px" }}>Blog</li></Link>
+                                                <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li style={{ marginLeft: "-28px" }}>Blog - Masonry</li></Link>
+                                                <li style={{ marginLeft: "-28px" }}>Post</li>
                                             </ul>
                                         </div>
                                         <div className='twoline'>
-                                            <ul style={{marginLeft: "-30px"}}>
+                                            <ul style={{ marginLeft: "-30px" }}>
                                                 <b>Pages</b>
                                                 <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About - Company </li></Link>
                                                 <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li>About v.2 - Person </li></Link>
@@ -309,14 +309,30 @@ const Navbar = () => {
                     <div className='right2'>
                         <span><BsPerson /></span>
                         <span><AiOutlineHeart /></span>
-                        <span><Link to='toBasket'><BsBasket style={{color: "black", width: "24px", height: "24px"}}/></Link></span>
+                        <span><Link to='toBasket'><BsBasket style={{ color: "black", width: "24px", height: "24px" }} /></Link></span>
                         <span><GiHamburgerMenu /></span>
                     </div>
                 </div>
             </div>
 
 
-            
+            {/* Responsiv */}
+
+            <div className='responsiv'>
+                <div>
+                    <h1>Varkala</h1>
+                    <div>
+                        <BsPerson />
+                        <AiOutlineHeart />
+                        <Link to='toBasket' style={{ color: "black", width: "24px", height: "30px", marginLeft: "12px" }} ><BsBasket style={{ width: "25px", height: "25px" }} /></Link>
+                    </div>
+                    <Accordion allowZeroExpanded>
+                        <AccordionItem>
+                            <div><GiHamburgerMenu /></div>
+                        </AccordionItem>
+                    </Accordion>
+                </div>
+            </div>
         </>
     )
 
