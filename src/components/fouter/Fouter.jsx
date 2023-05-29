@@ -121,7 +121,7 @@ const Fouter = () => {
                         <span><SlEnvolopeLetter /></span>
                     </div>
 
-                    <div className='bein_low'>
+                    <div className='bein_lsow'>
 
                         <div>
                             <Accordion allowZeroExpanded>

@@ -238,6 +238,7 @@ input[type="text"]::placeholder {
             height: 96%;
 
             .bein_up {
+
                 &>h3 {
                     font-size: 20px;
                 }
@@ -282,23 +283,6 @@ input[type="text"]::placeholder {
                     justify-content: space-between;
                     align-items: center;
                     
-                    .acorBtn{
-                        background: none;
-                        margin-top: 25px;
-                        font-size: 20px;
-                        font-weight: 600;
-                        border: none;
-                        outline: none;
-
-                    }
-
-                    .acorBtnS {
-                        &>svg {
-                            color: rgb(0, 0, 0);
-                            width: 24px;
-                            height: 24px;
-                        }
-                    }
                 }
             }
         }
@@ -317,6 +301,21 @@ input[type="text"]::placeholder {
             height: 100%;
         }
     }
+    .acorBtn{
+        background: none;
+        margin-top: 25px;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        outline: none;
 
+    }
 
+    .acorBtnS {
+        &>svg {
+            color: rgb(0, 0, 0);
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
