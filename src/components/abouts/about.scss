@@ -675,6 +675,33 @@
         &>div{
             width: 95%;
             height: auto;
+            display: block;
+            .samsa{
+                display: block;
+
+                .samsa_up{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: -100px;
+
+                    &>div{
+                        width: 240px;
+                        height: 240px;
+                        
+                        &>img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .samsa_low{
+                    
+                }
+            }
         }
     }
 }
