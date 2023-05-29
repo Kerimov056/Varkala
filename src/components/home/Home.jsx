@@ -121,7 +121,6 @@ const Home = () => {
                     Norwegg
                     design
                     chair
-                    $139.90
                   </h1>
                   <p>$139.90</p>
                   <h3>SHOP NOW</h3>
@@ -185,7 +184,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='Norwegg'>
+            <div className='Norwegg ResNorwegg'>
               <div style={{ width: "70px", marginRight: "200px" }} className='Norwegg_text'>
                 <div style={{ width: "100px" }}>
                   <h1>
@@ -196,7 +195,7 @@ const Home = () => {
                   <h3>SHOP NOW</h3>
                 </div>
               </div>
-              <div style={{ height: "120%", width: "100%" }} className='Norwegg_img'>
+              <div style={{ height: "120%", width: "100%" }} id='' className='Norwegg_img'>
                 <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair3-3-sq.jpg'></img>
               </div>
             </div>

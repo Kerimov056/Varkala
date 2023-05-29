@@ -942,7 +942,7 @@
                 }
             
                 .Norwegg {
-                    margin-top: 100px;
+                    margin-top: 20px;
                     width: 333px;
                     height: auto;
                     display: flex;
@@ -950,8 +950,8 @@
                     align-items: center;
     
                     .Norwegg_text {
-                        margin-top: -160px;
-                        margin-left: -50px;
+                      width: 40%;
+                      margin-top: 100px;
     
                         &>div {
                             width: 34%;
@@ -961,7 +961,7 @@
                             &>h1 {
                                 font-size: 30px;
                                 color: black;
-                                font-weight: 700;
+                                font-weight: 600;
                             }
     
                             &>p {
@@ -972,18 +972,18 @@
                                 display: none;
                             }
                         }
-                        display: none;
                     }
     
                     .Norwegg_img {
+                        margin-left: 10px;
                         margin-top: 7px;
                         z-index: -90;
-                        width: 90%;
+                        width: 60%;
                         height: auto;
     
                         &>img {
-                            width: 80%;
-                            height: 70%;
+                            width: 95%;
+                            height: 100%;
                             object-fit: cover;
                         }
                     }
@@ -993,6 +993,27 @@
                     }
                 }
             }
+        }
+
+        .ResNorwegg{
+            width: 333px;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .Norwegg_text{
+               display: none;
+            }
+
+           #fff{
+            width: 200px !important; 
+            margin-right: 35px;
+
+            &>img{
+                width: 100% !important;
+            }
+           }
         }
     }
 }
