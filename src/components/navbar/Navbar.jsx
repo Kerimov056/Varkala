@@ -337,12 +337,138 @@ const Navbar = () => {
                             </AccordionItemHeading>
                             <AccordionItemPanel className='resPanel'>
                                 <div>
-                                    <ul>Home</ul>
-                                    <ul>Shop</ul>
-                                    <ul>Icons</ul>
-                                    <ul>Pages</ul>
-                                    <ul>Docs</ul>
-                                    <input type='search'></input>
+                                    <Accordion>
+                                        <AccordionItem>
+                                            <AccordionItemHeading>
+                                                <AccordionItemButton>
+                                                    <ul onClick={() => setHome((prev) => !prev)}>Home
+                                                        {home ? (
+                                                            <BsChevronUp />
+                                                        ) : (
+                                                            <FiChevronDown />
+                                                        )}
+                                                    </ul>
+                                                </AccordionItemButton>
+                                            </AccordionItemHeading>
+                                            <AccordionItemPanel>
+                                                <ul>
+                                                    <li>Home 1 - Fashion</li>
+                                                    <li>Home 2 - Fashion</li>
+                                                    <li>Home 3 - Design</li>
+                                                    <li>Home 4 - Design</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+
+                                    <Accordion allowZeroExpanded>
+                                        <AccordionItem>
+                                            <AccordionItemHeading>
+                                                <AccordionItemButton>
+                                                    <ul onClick={() => setShop((prev) => !prev)}>Shope
+                                                        {home ? (
+                                                            <BsChevronUp />
+                                                        ) : (
+                                                            <FiChevronDown />
+                                                        )}
+                                                    </ul>
+                                                </AccordionItemButton>
+                                            </AccordionItemHeading>
+                                            <AccordionItemPanel>
+                                            <ul>
+                                                <li className='firstt' style={{color: "black"}}>Shop pages</li>
+                                                <li>Full witdh</li>
+                                                <li>Full witdh with category menu</li>
+                                                <li>Full witdh with big products</li>
+                                                <li>Fixed witdh</li>
+                                                <li>Fixed witdh & sidebar</li>
+                                                <li>Fixed witdh & masonry layout</li>
+                                                <li>Subcatagerios</li>
+                                            </ul>
+                                            
+                                            <ul>
+                                                <li className='firstt' style={{color: "black"}}>Product pages</li>
+                                                <li>Product with sticky info</li>
+                                                <li>Product with background</li>
+                                                <li>Product standart</li>
+                                            </ul>
+
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+
+                                    <Accordion>
+                                        <AccordionItem>
+                                            <AccordionItemHeading>
+                                                <AccordionItemButton>
+                                                    <ul onClick={() => setIcon((prev) => !prev)}>Icons
+                                                        {home ? (
+                                                            <BsChevronUp />
+                                                        ) : (
+                                                            <FiChevronDown />
+                                                        )}
+                                                    </ul>
+                                                </AccordionItemButton>
+                                            </AccordionItemHeading>
+                                            <AccordionItemPanel>
+                                                <ul>
+                                                    <li>Home 1 - Fashion</li>
+                                                    <li>Home 2 - Fashion</li>
+                                                    <li>Home 3 - Design</li>
+                                                    <li>Home 4 - Design</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+
+                                    <Accordion>
+                                        <AccordionItem>
+                                            <AccordionItemHeading>
+                                                <AccordionItemButton>
+                                                    <ul onClick={() => setPages((prev) => !prev)}>Pages
+                                                        {home ? (
+                                                            <BsChevronUp />
+                                                        ) : (
+                                                            <FiChevronDown />
+                                                        )}
+                                                    </ul>
+                                                </AccordionItemButton>
+                                            </AccordionItemHeading>
+                                            <AccordionItemPanel>
+                                                <ul>
+                                                    <li>Home 1 - Fashion</li>
+                                                    <li>Home 2 - Fashion</li>
+                                                    <li>Home 3 - Design</li>
+                                                    <li>Home 4 - Design</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+
+                                    <Accordion>
+                                        <AccordionItem>
+                                            <AccordionItemHeading>
+                                                <AccordionItemButton>
+                                                    <ul onClick={() => setDocs((prev) => !prev)}>Docs
+                                                        {home ? (
+                                                            <BsChevronUp />
+                                                        ) : (
+                                                            <FiChevronDown />
+                                                        )}
+                                                    </ul>
+                                                </AccordionItemButton>
+                                            </AccordionItemHeading>
+                                            <AccordionItemPanel>
+                                                <ul>
+                                                    <li>Home 1 - Fashion</li>
+                                                    <li>Home 2 - Fashion</li>
+                                                    <li>Home 3 - Design</li>
+                                                    <li>Home 4 - Design</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                    <input type='search' placeholder='Search'></input><AiOutlineSearch id='sera' />
                                 </div>
                             </AccordionItemPanel>
                         </AccordionItem>
