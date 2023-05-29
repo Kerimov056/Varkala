@@ -8,6 +8,7 @@ import { FaTwitter } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
 import { Loginn } from './Loginn';
 import { Registerr } from './Register';
+import ResponsiveCart from './ResponsiveCart';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -93,6 +94,18 @@ const Contact = () => {
                             {
                                 city.map((item) => {
                                     return <Contactcart name={item.name} info={item.info} location={item.location} email={item.email} />
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div id='ResponCartss'>
+                    <div>
+                        <p>Our stores</p>
+                        <div>
+                            {
+                                city.map((item) => {
+                                    return <ResponsiveCart name={item.name} info={item.info} location={item.location} email={item.email} />
                                 })
                             }
                         </div>

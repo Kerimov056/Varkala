@@ -312,6 +312,10 @@ label {
     display: none;
 }
 
+#ResponCartss{
+    display: none;
+}
+
 //Responsive
 
 @media (min-width: 280px) and (max-width: 750px){
@@ -376,4 +380,50 @@ label {
         }
         margin-bottom: 50px;
     }
+
+    .contact_two{
+        margin-top: 10px;
+        width: 333px;
+        height: auto;
+        display: block;
+
+        .map{
+            width: 333px;
+            height: 500px;
+        }
+
+        .city{
+           display: none;
+        }
+
+        #ResponCartss{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+    }
+
+    .ResponCaart{
+        width: 313px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &>div{
+            margin-top: 30px;
+            width: 50%;
+            height: auto;
+            margin-bottom: 30px;            
+
+            .ResponCaart_name{
+                font-size: 20px;
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+    
 }
