@@ -721,9 +721,84 @@
                 .ourteam{
                     display: block;
                     
+                    .ourteam_info{
+                        margin-top: 600px;
+                        display: block;
+                        margin-bottom: 200px;
+
+                        &>h2{
+                            font-size: 20px;
+                        }   
+
+                        &>h1{
+                            font-size: 47px;
+                        }
+                    }
+
+                    .jobs{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+
+                        .jobs_in{
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            gap: 30px;
+                        }
+                    }
                 }
             }
         }
         margin-bottom: 500px;
     }
+
+    .sponsor{
+
+    }
+
+
+
+
+
+
+
+    
+    //Responsiv  isci cart
+
+    .jobb{
+        width: 140px;
+        height: 210px;
+    
+        .jobb_img{
+            width: 100%;
+            height: 140px;
+    
+            &>img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    
+        .jobb_text{
+            margin-top: 10px;
+            width: 100%;
+            height: 25%;
+            text-align: center;
+    
+            &>h2{
+                font-size: 19px;
+            }
+    
+            &>h3{
+                font-size: 15px;
+                color: #868e96;
+            }
+        }
+    }
+    
 }
