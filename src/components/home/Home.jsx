@@ -8,6 +8,11 @@ import { Homecart } from '../Helpers/Homecart'
 
 const Home = () => {
 
+  const [price, setPrice] = useState(1)
+
+    const change = (e) => {
+        setPrice(e.target.value);
+    }
 
   function Number({ n }) {
     const { number } = useSpring({
@@ -245,7 +250,7 @@ const Home = () => {
           <h2>DEAL OF THE WEEK</h2>
           <h1>Black and white Nordegg chairs</h1>
           <p><span className='onespan'>$129.00</span><span>$79.00</span></p>
-          <button  className='ResELL'>%50 off</button>
+          <button className='ResELL'>%50 off</button>
           <div>
             <div>
               <h4><Number n={220} /></h4>
@@ -292,6 +297,10 @@ const Home = () => {
 
 
       <div className='carts'>
+        <div>
+          <input type="range" min={1} max={1000} onInput={change} />
+          <h1>Price: {price}</h1>
+        </div>
         <div>
           {
             Homecart.map((product) => {
