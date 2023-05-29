@@ -339,15 +339,25 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 
-    &>div {
-        margin-left: 85px;
+    .carts_filter{
+        width: 20%;
+        height: auto;
+        margin-left: -90px;
+        display: block;
+
+        input{
+            width: 120px;
+        }
+    }
+    .Productll{
+        margin-left: -145px;
         width: 80%;
         height: auto;
         display: grid;
         grid-template-columns: auto auto auto auto;
-        gap: 20px;
+        gap: 15px;
         margin-bottom: 50px;
     }
 }

@@ -297,11 +297,12 @@ const Home = () => {
 
 
       <div className='carts'>
-        <div>
+        <div className='carts_filter'>
           <input type="range" min={1} max={1000} onInput={change} />
-          <h1>Price: {price}</h1>
+          <h2>Price: {price}</h2>
+          <input type='search'></input>
         </div>
-        <div>
+        <div className='Productll'>
           {
             Homecart.filter(filterr =>{return filterr.price > parseInt(price, 0)}).map((product) => {
               return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
