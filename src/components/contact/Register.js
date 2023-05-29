@@ -16,12 +16,12 @@ export const Registerr = (props) => {
             <form className="login-form" onSubmit={Submit}>
                 <div className="firstlast">
                     <div className="first">
-                        <label id="ResLeft" htmlFor="name">Your firstname *</label>
-                        <input id="ResLeft" value={name} name="name" onChange={(e) => setName(e.target.value)} id="name"  />
+                        <label htmlFor="name">Your firstname *</label>
+                        <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name"  />
                     </div>
                     <div className="last">
-                        <label htmlFor="name">Your lastname *</label>
-                        <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name"  />
+                        <label id="ResLeft" htmlFor="name">Your lastname *</label>
+                        <input id="resInput" value={name} name="name" onChange={(e) => setName(e.target.value)} id="name"  />
                     </div>
                 </div>
                 <label className="Login" htmlFor="email">Your email *</label>
