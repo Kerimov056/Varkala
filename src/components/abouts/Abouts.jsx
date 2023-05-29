@@ -142,7 +142,7 @@ const Abouts = () => {
 
       <div className='sponsor'>
         <div className='sponsor_in'>
-          <AliceCarousel mouseTracking items={items} />
+          <AliceCarousel id='ResCoursell' mouseTracking items={items} />
         </div>
       </div>
 
