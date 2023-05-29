@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './home.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import { useSpring, animated } from "react-spring"
@@ -14,6 +14,16 @@ import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, Ac
 
 
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({
+      offset: 130,
+      duration: 1500,
+      delay: 60,
+    });
+    AOS.refresh();
+  }, []);
+
 
   const [price, setPrice] = useState(1)
 
@@ -322,18 +332,18 @@ const Home = () => {
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
-                <div className='FilterAccor'><button>Filter</button></div>
+                <div data-aos="fade-right" className='FilterAccor'><button>Filter</button></div>
               </AccordionItemButton>
             </AccordionItemHeading>
-            <AccordionItemPanel>
-              <div className='carts_filter'>
+            <AccordionItemPanel data-aos="zoom-in-down">
+              <div  className='carts_filter'>
                 <input type="range" min={1} max={1000} onInput={change} />
-                <h3>Price: {price}</h3>
+                <h4>Price: {price}</h4>
                 <hr id='xett' />
-               <div>
-               <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
-                <span className='FilterSearch'><AiOutlineSearch /></span>
-               </div>
+                <div>
+                  <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
+                  <span className='FilterSearch'><AiOutlineSearch /></span>
+                </div>
               </div>
             </AccordionItemPanel>
           </AccordionItem>
