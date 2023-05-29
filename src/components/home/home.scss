@@ -1115,7 +1115,32 @@
         margin-bottom: 100px;
         display: block;
         margin-left: -20px;
+
+        &>div{
+            width: 93%;
+            height: auto;
+
+            .produtss{
+                width: 100%;
+                display: block;
+                &>ul{
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    &>li{
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+
+                &>div{
+                    margin-left: 50px;
+                }
+               
+            }
+        }
     }
+
+    
 }
 
 
