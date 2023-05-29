@@ -253,4 +253,56 @@
             }
         }
     }
+
+    .low{
+        width: 333px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -190px !important;
+
+        button {
+            padding: 10px ;
+            background: none;
+            color: rgb(93, 93, 93);
+            font-size: 12px;
+            font-weight:650;
+            border: none;
+            position: relative;
+            width: 100px;
+            height: 40px;
+            white-space: nowrap;
+    
+            &:hover {
+                border: 3px solid #bcac76;
+            }
+    
+            &>span {
+                &>svg {
+                    position: absolute;
+                    margin-top: 4px;
+                }
+            }
+        }
+    
+        .Older {
+            &>span {
+                &>svg {
+                    margin-left: -6px;
+                }
+            }
+        }
+    
+        .Newer {
+             margin-left: 130px;
+            &>span {
+                &>svg {
+                    margin-left: -6px;
+                }
+            }
+            // display: none;
+        }
+        margin-top: -30px;
+    }
 }
