@@ -341,54 +341,73 @@
     display: flex;
     justify-content: start;
 
-    .FilterAccor{
+    .FilterAccor {
         margin-top: 20px;
         width: 20%;
         height: auto;
         margin-left: -90px;
         display: block;
-       
-        &>button{
+
+        &>button {
             font-size: 25px;
             font-weight: 700;
             color: #bcac76;
             border: 1px solid #bcac76;
-            padding: 10px;  
+            padding: 8px 20px;
+            margin-right: 100px;
+            background-color: white;
+
+            &:hover {
+                background-color: black;
+                color: #bcac76;
+            }
         }
     }
 
-    .carts_filter{
+    .carts_filter {
         margin-top: 20px;
         width: 20%;
         height: auto;
         margin-left: -90px;
         display: block;
 
-        input{
-            width: 130px;
-            height: 30px;
-            border-top: none;
-            border-left: none;
-            border-right: none;
 
-        }
-
-        #xett{
+        #xett {
             width: 160px;
             margin-left: -16px;
         }
 
-        .FilterSearch{
-            margin-left: -20px;
-            &>svg{
-                width: 22px;
-                height: 22px;
+
+        &>div {
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 130px;
+                height: 30px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                display: inline-block;
+            }
+
+            .FilterSearch {
+                margin-left: 20px;
+                display: inline-block;
+
+                &>svg {
+                    margin-top: 30px;
+                    margin-left: -45px;
+                    width: 22px;
+                    height: 22px;
+                }
             }
         }
     }
 
-    
-    .Productll{
+
+    .Productll {
         // margin-left: 95px;
         width: 80%;
         height: auto;
@@ -1320,12 +1339,12 @@
                     font-size: 39px;
                 }
 
-                &>h2{
+                &>h2 {
                     width: 100%;
                     font-size: 31px;
                 }
 
-                &>button{
+                &>button {
                     letter-spacing: 2px;
                 }
             }

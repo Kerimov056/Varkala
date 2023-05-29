@@ -5,6 +5,8 @@ import { useSpring, animated } from "react-spring"
 import ProducCart from './ProducCart';
 import { Homecart } from '../Helpers/Homecart'
 import { AiOutlineSearch } from 'react-icons/ai';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
 
 
@@ -328,8 +330,10 @@ const Home = () => {
                 <input type="range" min={1} max={1000} onInput={change} />
                 <h3>Price: {price}</h3>
                 <hr id='xett' />
-                <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
+               <div>
+               <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                 <span className='FilterSearch'><AiOutlineSearch /></span>
+               </div>
               </div>
             </AccordionItemPanel>
           </AccordionItem>
