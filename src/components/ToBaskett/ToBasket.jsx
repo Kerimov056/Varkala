@@ -29,7 +29,7 @@ const ToBasket = () => {
         <>
             <div className='tobasket'>
                 <div>
-                    <div>
+                    <div id='ResOne'>
                         <h5><span>Home</span>- Shopping cart</h5>
                         <h1>Shopping cart</h1>
                         <p>You have 3 items in your cart.</p>

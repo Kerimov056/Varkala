@@ -300,3 +300,22 @@ p {
         height: 40px;
     }
 }
+
+
+@media (min-width: 280px) and (max-width: 750px){
+    .tobasket{
+        width: 333px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+        &>div{
+            width: 95%;
+            height: auto;
+
+            #ResOne{
+                display: none;
+            }
+        }
+    }
+}
