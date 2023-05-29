@@ -314,7 +314,43 @@ p {
             height: auto;
 
             #ResOne{
-                display: none;
+                width: 100%;
+                height: auto;
+                display: block;
+
+                &>h5{
+                    font-size: 23px !important;
+
+                    &>span{
+                        font-size: 23px;
+                    }
+                }
+
+                &>h1{
+                    font-size: 29px;
+                }
+
+                &>p{
+                    font-size: 20px;
+                }
+            }
+
+            .cart_in{
+                width: 100%;
+                height: auto;
+                display: block;
+
+                .productss{
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+
+                .Summary{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     }
