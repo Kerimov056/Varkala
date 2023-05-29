@@ -301,6 +301,13 @@ p {
     }
 }
 
+//Responsive div none
+
+#ResponsiveProductsss{
+    display: none;
+}
+
+// Responsive
 
 @media (min-width: 280px) and (max-width: 750px){
     .tobasket{
@@ -341,8 +348,10 @@ p {
                 display: block;
 
                 .productss{
-                    width: 100%;
-                    height: auto;
+                    display: none;
+                }
+
+                #ResponsiveProductsss{
                     display: block;
                 }
 
@@ -353,5 +362,11 @@ p {
                 }
             }
         }
+    }
+
+
+    .ResponProduc{
+        width: 310px;
+        height: 300px;
     }
 }

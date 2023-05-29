@@ -4,7 +4,7 @@ import { ShopContext } from '../content/ShopC'
 
 const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
 
-    const { cartItems, addToCart, removeFromCart, updateCartItemCount, checkout } = useContext(ShopContext)
+    const { cartItems, addToCart, removeFromCart, updateCartItemCount, checkout,getTotalAmount } = useContext(ShopContext)
 
     return (
         <>
@@ -23,12 +23,18 @@ const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
                     <div>
                         <p>Price per item</p><span>${price}</span>
                     </div>
+                    <div>
+                        <p>Quantity</p>
+                        <div>
+                            <p onClick={() => removeFromCart(id)}>-</p>
+                            <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}></input>
+                            <p onClick={() => addToCart(id)}>+</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Total price</p><span>${getTotalAmount}</span>
+                    </div>
                 </div>
-
-                <span className='oneSpan'>${price}</span>
-                <p onClick={() => removeFromCart(id)}>-</p>
-                <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}></input>
-                <p onClick={() => addToCart(id)}>+</p>
             </div>
             <hr />
         </>

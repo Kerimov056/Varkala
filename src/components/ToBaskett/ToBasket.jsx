@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BsBasket3 } from 'react-icons/bs'
+import ResponsivBasketCart from './ResponsivBasketCart';
 
 
 const ToBasket = () => {
@@ -43,6 +44,17 @@ const ToBasket = () => {
                                     Homecart.map((product) => {
                                         if (cartItems[product.id] !== 0) {
                                             return <BsketCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
+                                        }
+                                    })
+                                }
+                            </div>
+                        </div>
+                        <div id='ResponsiveProductsss'>
+                            <div>
+                                {
+                                    Homecart.map((product) => {
+                                        if (cartItems[product.id] !== 0) {
+                                            return <ResponsivBasketCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
                                         }
                                     })
                                 }
