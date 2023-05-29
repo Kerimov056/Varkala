@@ -368,5 +368,29 @@ p {
     .ResponProduc{
         width: 310px;
         height: 300px;
+        display: block;
+
+        .ResponProduc_up{
+            display: flex;
+            justify-content: space-between;
+
+            &>div{
+                display: flex;
+                width: 160px;
+                height: 130px;
+
+                &>img{
+                    width: 90%;
+                    height: 90%;
+                }
+
+                &>div{
+                    margin-left: 10px;
+                    &>p{
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
     }
 }

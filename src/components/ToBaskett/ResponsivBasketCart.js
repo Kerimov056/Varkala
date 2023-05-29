@@ -4,17 +4,19 @@ import { ShopContext } from '../content/ShopC'
 
 const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
 
-    const { cartItems, addToCart, removeFromCart, updateCartItemCount, checkout,getTotalAmount } = useContext(ShopContext)
+    const { cartItems, addToCart, removeFromCart, updateCartItemCount, checkout, getTotalAmount } = useContext(ShopContext)
 
     return (
         <>
             <div className='ResponProduc'>
                 <div className='ResponProduc_up'>
-                    <img src={imgurl}></img>
                     <div>
-                        <h4>{name}</h4>
-                        <p className='sizeL'>Size: Large</p>
-                        <p>Colour: Green</p>
+                        <img src={imgurl}></img>
+                        <div>
+                            <h4>{name}</h4>
+                            <p className='sizeL'>Size: Large</p>
+                            <p>Colour: Green</p>
+                        </div>
                     </div>
                     <span onClick={() => checkout(id)} className='close'>X</span>
                 </div>
