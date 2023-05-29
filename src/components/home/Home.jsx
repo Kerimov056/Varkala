@@ -320,7 +320,7 @@ const Home = () => {
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
-                <div>Filter</div>
+                <div className='FilterAccor'><button>Filter</button></div>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>

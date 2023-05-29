@@ -341,6 +341,22 @@
     display: flex;
     justify-content: start;
 
+    .FilterAccor{
+        margin-top: 20px;
+        width: 20%;
+        height: auto;
+        margin-left: -90px;
+        display: block;
+       
+        &>button{
+            font-size: 25px;
+            font-weight: 700;
+            color: #bcac76;
+            border: 1px solid #bcac76;
+            padding: 10px;  
+        }
+    }
+
     .carts_filter{
         margin-top: 20px;
         width: 20%;
@@ -370,8 +386,10 @@
             }
         }
     }
+
+    
     .Productll{
-        margin-left: -145px;
+        // margin-left: 95px;
         width: 80%;
         height: auto;
         display: grid;
