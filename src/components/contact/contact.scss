@@ -39,45 +39,48 @@
     }
 
 }
-p{
+
+p {
     color: #868e96;
 }
 
 
 //1ci hisse
-.contact{
+.contact {
     width: 100%;
     height: 340px;
     display: flex;
     justify-content: center;
 
-    &>div{
+    &>div {
         width: 80%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        &>div{
+
+        &>div {
             width: 33%;
 
-            &>div{
-                &>b{
+            &>div {
+                &>b {
                     font-size: 24px;
                 }
-                &>p{
+
+                &>p {
                     margin-top: 10px;
                     font-size: 17px;
                     font-weight: 500;
                 }
 
-                &>h4{
+                &>h4 {
                     margin-top: 15px;
                     font-size: 18px;
                     color: #868e96;
                 }
             }
-            .end{
+
+            .end {
                 margin-left: 20px;
                 margin-top: 30px;
             }
@@ -87,41 +90,41 @@ p{
 
 //2ci hisse map
 
-.contact_two{
+.contact_two {
     width: 100%;
     height: 789px;
     display: flex;
-    
-    .map{
+
+    .map {
         width: 50%;
         height: 100%;
     }
-    
-    .city{
+
+    .city {
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        &>div{
+        &>div {
             width: 83%;
             height: 80%;
 
-            &>p{
+            &>p {
                 font-size: 80px;
                 font-weight: 750;
                 margin-bottom: 60px;
             }
 
-            &>div{
-                
+            &>div {
+
                 width: 100%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
 
-                &>div{
+                &>div {
                     margin-top: -20px;
                 }
             }
@@ -132,38 +135,38 @@ p{
 
 //3cu hisse login
 
-.logIn{
+.logIn {
     width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
 
-    &>div{
+    &>div {
         width: 80%;
         height: 100%;
         display: flex;
         align-items: center;
 
-        .getinTouch{
+        .getinTouch {
             width: 50%;
             height: 100%;
             background-color: white;
 
-            &>div{
+            &>div {
                 width: 300px;
                 height: 300px;
                 margin-top: 80px;
 
-                .getinTouch_name{
+                .getinTouch_name {
                     text-align: center;
                     font-size: 80px;
                     font-weight: 700;
                 }
 
-                .sosial{
-                    
-                    .sosial_sebeke{
+                .sosial {
+
+                    .sosial_sebeke {
                         margin-top: 20px;
                         width: 33px;
                         height: 33px;
@@ -171,14 +174,14 @@ p{
                         margin-left: 15px;
                     }
 
-                    .firstt{
+                    .firstt {
                         margin-left: 40px;
                     }
                 }
             }
         }
 
-        .login{
+        .login {
             width: 50%;
             height: 100%;
         }
@@ -189,25 +192,27 @@ p{
 
 //Dinamik City cart
 
-.cartt{
+.cartt {
     width: 100%;
     height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &>div{
+    &>div {
         width: 25%;
         height: 100%;
 
     }
-    .cartt_name{
+
+    .cartt_name {
         font-size: 27px;
         color: black;
         font-weight: 700;
         margin-top: 27px;
     }
-    .cartt_two{
+
+    .cartt_two {
         width: 21%;
     }
 }
@@ -215,7 +220,7 @@ p{
 
 
 
-             //login And register
+//login And register
 
 .login-form {
     margin-top: 100px;
@@ -243,7 +248,7 @@ input {
     padding: 10px 34px;
     background-color: white;
     border: 1px solid #bcac76;
-    color:#bcac76;
+    color: #bcac76;
     letter-spacing: 5px;
     font-size: 18px;
 
@@ -266,24 +271,26 @@ label {
     color: #bcac76;
     font-size: 18px;
 
-   &:hover{
-    background-color: #bcac76;
-    color: black;
-   }
+    &:hover {
+        background-color: #bcac76;
+        color: black;
+    }
 }
 
 .firstlast {
     display: flex;
     flex-wrap: wrap;
 
-    .first{
-       &>label{
-        margin-left: -60px;
-       }
-       &>input{
-        margin-left: 0px;
-       }
+    .first {
+        &>label {
+            margin-left: -60px;
+        }
+
+        &>input {
+            margin-left: 0px;
+        }
     }
+
     .last {
         margin-left: 30px;
     }
@@ -298,52 +305,52 @@ label {
         display: block;
         margin-left: 10px;
         width: 270px;
-        
+
     }
 }
 
-.buin{
+.buin {
     height: 100px;
 }
 
 //Responsive div none
 
-#ResContact{
+#ResContact {
     display: none;
 }
 
-#ResponCartss{
+#ResponCartss {
     display: none;
 }
 
 //Responsive
 
-@media (min-width: 280px) and (max-width: 750px){
+@media (min-width: 280px) and (max-width: 750px) {
 
-    .blog{
+    .blog {
         display: none;
     }
 
-    #ResContact{
+    #ResContact {
         display: block;
         z-index: -99;
         width: 333px;
         height: 360px;
         position: relative;
 
-        &>div{
+        &>div {
             position: relative;
             display: inline-block;
             width: 100%;
             height: 100%;
 
-            &>img{
+            &>img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
 
-            &>div{
+            &>div {
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -351,52 +358,54 @@ label {
                 margin-left: 114px;
                 margin-bottom: 80px;
 
-                &>h1{
+                &>h1 {
                     font-size: 25px;
                     font-weight: 600;
                     margin-bottom: 30px;
                 }
             }
         }
+
         margin-bottom: 100px;
     }
 
-    .contact{
+    .contact {
         width: 333px;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        &>div{
-           display: block;
+        &>div {
+            display: block;
             text-align: center;
 
-            &>div{
+            &>div {
                 margin-top: 20px;
                 width: 90%;
                 height: auto;
             }
         }
+
         margin-bottom: 50px;
     }
 
-    .contact_two{
+    .contact_two {
         margin-top: 10px;
         width: 333px;
         height: auto;
         display: block;
 
-        .map{
+        .map {
             width: 333px;
             height: 500px;
         }
 
-        .city{
-           display: none;
+        .city {
+            display: none;
         }
 
-        #ResponCartss{
+        #ResponCartss {
             display: flex;
             flex-direction: column;
             margin-left: 0px;
@@ -406,7 +415,7 @@ label {
 
     }
 
-    .ResponCaart{
+    .ResponCaart {
         width: 313px;
         height: auto;
         display: flex;
@@ -414,46 +423,53 @@ label {
         align-items: center;
         margin-left: 10px;
 
-        &>div{
+        &>div {
             margin-top: 30px;
             width: 50%;
             height: auto;
-            margin-bottom: 30px;            
+            margin-bottom: 30px;
 
-            .ResponCaart_name{
+            .ResponCaart_name {
                 font-size: 20px;
                 color: black;
                 font-weight: 600;
             }
         }
     }
-    
 
-    .logIn{
+
+    .logIn {
         width: 333px;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        &>div{
+        &>div {
             width: 97%;
             height: auto;
             display: block;
 
-            .getinTouch{
+            .getinTouch {
                 width: 100%;
                 height: auto;
 
-               &>div{
-                .getinTouch_name{
-                    font-size: 50px;
-                    font-weight: 700;
+                &>div {
+                    .getinTouch_name {
+                        font-size: 50px;
+                        font-weight: 700;
+                    }
+
+                    .sosial {
+                        margin-left: -35px;
+                    }
                 }
-                .sosial{
-                    margin-left: -35px;
-                }
-               }
+            }
+
+            .login{
+                margin-top: -170px;
+                width: 100%;
+                height: auto;
             }
         }
     }

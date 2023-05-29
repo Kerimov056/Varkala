@@ -16,8 +16,8 @@ export const Registerr = (props) => {
             <form className="login-form" onSubmit={Submit}>
                 <div className="firstlast">
                     <div className="first">
-                        <label htmlFor="name">Your firstname *</label>
-                        <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name"  />
+                        <label id="ResLeft" htmlFor="name">Your firstname *</label>
+                        <input id="ResLeft" value={name} name="name" onChange={(e) => setName(e.target.value)} id="name"  />
                     </div>
                     <div className="last">
                         <label htmlFor="name">Your lastname *</label>
