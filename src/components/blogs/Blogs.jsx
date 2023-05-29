@@ -21,6 +21,21 @@ const Blogs = () => {
                     </div>
                 </div>
             </div>
+
+            {/* responsiv */}
+
+            <div className='ResBlog'>
+                <div>
+                    <img src=''></img>
+                    <div>
+                        <h1>Blog</h1>
+                        <h3>As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.</h3>
+                    </div>
+                </div>
+            </div>
+
+            {/* responsiv */}
+
             <div className='carts'>
                 <div className='carts_in'>
                     <div className='carts_in_in'>
