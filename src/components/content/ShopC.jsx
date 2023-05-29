@@ -41,6 +41,16 @@ export const ShopContextProvider = (props) => {
         }
     }
 
+    const Total = () => {
+        let total = 0;
+        for (const item in cartItems) {
+            if (cartItems[item] > 0) {
+              total += Homecart.find((products) => products.id === Number(item))
+            }
+        }
+        return total;
+    }
+
     const addToCart = (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
         console.log(itemId);
@@ -82,6 +92,7 @@ export const ShopContextProvider = (props) => {
         checkout,
         paket,
         empty_basket,
+        Total,
     };
 
     return (

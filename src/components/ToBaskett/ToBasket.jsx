@@ -21,8 +21,9 @@ const ToBasket = () => {
         AOS.refresh();
     }, []);
 
-    const { cartItems, getTotalAmount, empty_basket } = useContext(ShopContext);
+    const { cartItems, getTotalAmount, empty_basket,Total } = useContext(ShopContext);
 
+    const FullSum = Total()
     const total = getTotalAmount()
 
     const navigate = useNavigate()
@@ -82,7 +83,7 @@ const ToBasket = () => {
                                 <h6></h6>
                                 <div className='Total'>
                                     <span>Total</span>
-                                    <p className='cem'>${total}</p>
+                                    <p className='cem'>${FullSum}</p>
                                 </div>
                                 <h6></h6>
                                 <button id='Continue' onClick={() => navigate('/')}>Continue Shopping</button><br />
