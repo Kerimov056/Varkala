@@ -6,6 +6,8 @@ const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
 
     const { cartItems, addToCart, removeFromCart, updateCartItemCount, checkout, getTotalAmount } = useContext(ShopContext)
 
+    const total = getTotalAmount()
+
     return (
         <>
             <div className='ResponProduc'>
@@ -25,7 +27,7 @@ const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
                     <div>
                         <p>Price per item</p><span>${price}</span>
                     </div>
-                    <div className='ResOtehers'>
+                    <div className='ResOtehers Fer'>
                         <p>Quantity</p>
                         <div>
                             <p onClick={() => removeFromCart(id)}>-</p>
@@ -34,7 +36,7 @@ const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
                         </div>
                     </div>
                     <div className='ResOtehers'>
-                        <p>Total price</p><span>${getTotalAmount}</span>
+                        <p>Total price</p><span>${total}</span>
                     </div>
                 </div>
             </div>
