@@ -502,17 +502,23 @@ li{
                     height: 25px;
                     margin-left: 10px;
                 }
+                
+            }
+        }
 
-                .bst{
-                    color: black;
-                    width: 25px;
-                    height: 25px;
-                    &>svg{
-                        width: 25px;
-                        height: 25px;
-                        margin-left: 10px;
-                    }
-                }
+        #bst{
+            width: 25px;
+            height: 25px;
+        }
+
+        .resPanel{
+            position: absolute;
+            &>div{
+                background-color: red;
+                margin-top: 20px;
+                margin-left: -300px;
+                width: 333px;
+                height: 400px;
             }
         }
     }

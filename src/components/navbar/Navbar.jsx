@@ -26,6 +26,8 @@ import { GiBilledCap } from 'react-icons/gi';
 import { TbShirtSport } from 'react-icons/tb';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
+
 
 
 const Navbar = () => {
@@ -326,9 +328,24 @@ const Navbar = () => {
                         <AiOutlineHeart />
                         <Link to='toBasket' style={{ color: "black", width: "24px", height: "30px", marginLeft: "12px" }} ><BsBasket style={{ width: "25px", height: "25px" }} /></Link>
                     </div>
-                    <Accordion allowZeroExpanded>
+                    <Accordion>
                         <AccordionItem>
-                            <div><GiHamburgerMenu /></div>
+                            <AccordionItemHeading>
+                                <AccordionItemButton>
+                                    <div><GiHamburgerMenu id='bst' /></div>
+                                </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className='resPanel'>
+                                <div>
+                                    <ul>Home</ul>
+                                    <ul>Shop</ul>
+                                    <ul>Icons</ul>
+                                    <ul>Pages</ul>
+                                    <ul>Docs</ul>
+                                <input type='search'></input>
+                                </div>
+
+                            </AccordionItemPanel>
                         </AccordionItem>
                     </Accordion>
                 </div>
