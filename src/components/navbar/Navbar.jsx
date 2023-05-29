@@ -351,12 +351,14 @@ const Navbar = () => {
                                                 </AccordionItemButton>
                                             </AccordionItemHeading>
                                             <AccordionItemPanel>
-                                                <ul>
-                                                    <li>Home 1 - Fashion</li>
-                                                    <li>Home 2 - Fashion</li>
-                                                    <li>Home 3 - Design</li>
-                                                    <li>Home 4 - Design</li>
-                                                </ul>
+                                                {home &&
+                                                    <ul>
+                                                        <li>Home 1 - Fashion</li>
+                                                        <li>Home 2 - Fashion</li>
+                                                        <li>Home 3 - Design</li>
+                                                        <li>Home 4 - Design</li>
+                                                    </ul>
+                                                }
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                     </Accordion>
@@ -366,7 +368,7 @@ const Navbar = () => {
                                             <AccordionItemHeading>
                                                 <AccordionItemButton>
                                                     <ul onClick={() => setShop((prev) => !prev)}>Shope
-                                                        {home ? (
+                                                        {shop ? (
                                                             <BsChevronUp />
                                                         ) : (
                                                             <FiChevronDown />
@@ -375,23 +377,23 @@ const Navbar = () => {
                                                 </AccordionItemButton>
                                             </AccordionItemHeading>
                                             <AccordionItemPanel>
-                                            <ul>
-                                                <li className='firstt' style={{color: "black"}}>Shop pages</li>
-                                                <li>Full witdh</li>
-                                                <li>Full witdh with category menu</li>
-                                                <li>Full witdh with big products</li>
-                                                <li>Fixed witdh</li>
-                                                <li>Fixed witdh & sidebar</li>
-                                                <li>Fixed witdh & masonry layout</li>
-                                                <li>Subcatagerios</li>
-                                            </ul>
-                                            
-                                            <ul>
-                                                <li className='firstt' style={{color: "black"}}>Product pages</li>
-                                                <li>Product with sticky info</li>
-                                                <li>Product with background</li>
-                                                <li>Product standart</li>
-                                            </ul>
+                                                <ul>
+                                                    <li className='firstt' style={{ color: "black" }}>Shop pages</li>
+                                                    <li>Full witdh</li>
+                                                    <li>Full witdh with category menu</li>
+                                                    <li>Full witdh with big products</li>
+                                                    <li>Fixed witdh</li>
+                                                    <li>Fixed witdh & sidebar</li>
+                                                    <li>Fixed witdh & masonry layout</li>
+                                                    <li>Subcatagerios</li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li className='firstt' style={{ color: "black" }}>Product pages</li>
+                                                    <li>Product with sticky info</li>
+                                                    <li>Product with background</li>
+                                                    <li>Product standart</li>
+                                                </ul>
 
                                             </AccordionItemPanel>
                                         </AccordionItem>
@@ -402,7 +404,7 @@ const Navbar = () => {
                                             <AccordionItemHeading>
                                                 <AccordionItemButton>
                                                     <ul onClick={() => setIcon((prev) => !prev)}>Icons
-                                                        {home ? (
+                                                        {icon ? (
                                                             <BsChevronUp />
                                                         ) : (
                                                             <FiChevronDown />
@@ -410,13 +412,23 @@ const Navbar = () => {
                                                     </ul>
                                                 </AccordionItemButton>
                                             </AccordionItemHeading>
-                                            <AccordionItemPanel>
-                                                <ul>
-                                                    <li>Home 1 - Fashion</li>
-                                                    <li>Home 2 - Fashion</li>
-                                                    <li>Home 3 - Design</li>
-                                                    <li>Home 4 - Design</li>
-                                                </ul>
+                                            <AccordionItemPanel style={{ display: "grid", gridTemplateColumns: "auto auto", marginLeft: "30px" }}>
+                                                {icon &&
+                                                    <>
+                                                        <h3><div><GiTrousers className='iconss' /></div><div className='ml'>Trousers</div></h3>
+                                                        <h3><div><GiSleevelessJacket className='iconss' /></div><div className='ml'>Jackets</div></h3>
+                                                        <h3><div><TbShirtSport className='iconss' /></div><div className='ml'>T-Shirts</div></h3>
+                                                        <h3><div><GiPoloShirt className='iconss' /></div><div className='ml'>Pullovers</div></h3>
+                                                        <h3><div><BsEraserFill className='iconss' /></div><div className='ml'>Scarfs</div></h3>
+                                                        <h3><div><GiUnderwearShorts className='iconss' /></div><div className='ml'>Shorts</div></h3>
+                                                        <h3><div><GiShorts className='iconss' /></div><div className='ml'>Underwear</div></h3>
+                                                        <h3><div><BsWatch className='iconss' /></div><div className='ml'>Watches</div></h3>
+                                                        <h3><div><GiMonclerJacket className='iconss' /></div><div className='ml'>Trousers</div></h3>
+                                                        <h3><div><BsFillBagFill className='iconss' /></div><div className='ml'>Bags</div></h3>
+                                                        <h3><div><GiBilledCap className='iconss' /></div><div className='ml'>TrouCapssers</div></h3>
+                                                        <h3><div><AiOutlineAppstoreAdd className='iconss' /></div><div className='ml'>Accessories</div></h3>
+                                                    </>
+                                                }
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                     </Accordion>
@@ -426,7 +438,7 @@ const Navbar = () => {
                                             <AccordionItemHeading>
                                                 <AccordionItemButton>
                                                     <ul onClick={() => setPages((prev) => !prev)}>Pages
-                                                        {home ? (
+                                                        {pages ? (
                                                             <BsChevronUp />
                                                         ) : (
                                                             <FiChevronDown />
@@ -435,12 +447,70 @@ const Navbar = () => {
                                                 </AccordionItemButton>
                                             </AccordionItemHeading>
                                             <AccordionItemPanel>
-                                                <ul>
-                                                    <li>Home 1 - Fashion</li>
-                                                    <li>Home 2 - Fashion</li>
-                                                    <li>Home 3 - Design</li>
-                                                    <li>Home 4 - Design</li>
-                                                </ul>
+                                                {pages &&
+                                                    <>
+                                                        <b style={{ marginLeft: "33px" }}>Homepage</b>
+                                                        <ul>
+                                                            <li>Home 1 - Fashion</li>
+                                                            <li>Home 2 - Fashion</li>
+                                                            <li>Home 3 - Design</li>
+                                                            <li>Home 4 - Design</li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <b>Category</b>
+                                                            <li>Full width</li>
+                                                            <li>Full width with category menu</li>
+                                                            <li>Full width with big products</li>
+                                                            <li>Fixed width</li>
+                                                            <li>Fixed width & sidebar</li>
+                                                            <li>Fixed width & masonry layout</li>
+                                                            <li>Subcategories</li>
+                                                        </ul>
+
+                                                        <b style={{ marginLeft: "33px" }}>Order process</b>
+                                                        <ul>
+                                                            <li >Shopping cart</li>
+                                                            <li >Checkout - Five steps</li>
+                                                            <li>Checkout - Single-page</li>
+                                                            <li>Checkout - confirmed</li>
+                                                            <li>Wishlist</li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <b>Product</b>
+                                                            <li>Product with sticky info</li>
+                                                            <li>Product with background</li>
+                                                            <li>Product standard</li>
+                                                        </ul>
+
+                                                        <b style={{ marginLeft: "33px" }}>Blog</b>
+                                                        <ul>
+                                                            <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li>Blog</li></Link>
+                                                            <Link onClick={() => setPages((prev) => !prev)} to="/blog" className='link'><li>Blog - Masonry</li></Link>
+                                                            <li >Post</li>
+                                                        </ul>
+
+                                                        <b style={{ marginLeft: "33px" }}>Pages</b>
+                                                        <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li id='ll'>About - Company </li></Link>
+                                                        <Link onClick={() => setPages((prev) => !prev)} to="/about" className='link'><li id='ll'>About v.2 - Person </li></Link>
+                                                        <li id='ll'>F.A.Q.</li>
+                                                        <Link onClick={() => setPages((prev) => !prev)} to="/contact" className='link'><li id='ll'>Contact</li></Link>
+                                                        <li id='ll'>Privacy policy</li>
+
+
+                                                        <ul>
+                                                            <b>Customer</b>
+                                                            <li>Login/sign up</li>
+                                                            <li>Orders</li>
+                                                            <li>Order detail </li>
+                                                            <li>Order tracking </li>
+                                                            <li>Addresses </li>
+                                                            <li>Profile </li>
+                                                            <li>Wishlist </li>
+                                                        </ul>
+                                                    </>
+                                                }
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                     </Accordion>
@@ -450,7 +520,7 @@ const Navbar = () => {
                                             <AccordionItemHeading>
                                                 <AccordionItemButton>
                                                     <ul onClick={() => setDocs((prev) => !prev)}>Docs
-                                                        {home ? (
+                                                        {docs ? (
                                                             <BsChevronUp />
                                                         ) : (
                                                             <FiChevronDown />
