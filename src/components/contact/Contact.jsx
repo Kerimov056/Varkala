@@ -39,7 +39,7 @@ const Contact = () => {
 
             <div id='ResContact'>
                 <div>
-                    <img src='https://fugue4thought.files.wordpress.com/2017/04/maarten-deckers-227224.jpg?w=1920&h=768&crop=1'></img>
+                    <img src='https://scontent.fgyd20-1.fna.fbcdn.net/v/t39.30808-6/347392571_1231416974207781_5325285134184450863_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=sMHBLPID-U4AX_6zh7C&_nc_ht=scontent.fgyd20-1.fna&oh=00_AfAGTtKBKd3KQQ20eXomYpqifEF4b4WPuIT0BCUT57JnWg&oe=6479AF7E'></img>
                     <div>
                         <h1>Contact</h1>
                     </div>
