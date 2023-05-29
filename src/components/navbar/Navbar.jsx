@@ -3,6 +3,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import './navbar.scss'
 import { Link } from "react-router-dom";
 import { FaFacebookF } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { AiOutlineHeart } from 'react-icons/ai';
@@ -64,6 +65,9 @@ const Navbar = () => {
     ]
 
     // const[open, setOpen] = useState()
+
+    const [burger, setBurger] = useState(false)
+
 
     const [home, setHome] = useState(false)
     const [shop, setShop] = useState(false)
@@ -332,11 +336,17 @@ const Navbar = () => {
                         <AccordionItem>
                             <AccordionItemHeading>
                                 <AccordionItemButton>
-                                    <div><GiHamburgerMenu id='bst' /></div>
+                                    <div onClick={() => setBurger((prev) => !prev)}>
+                                    {burger ? (<FaTimes style={{width: "25px", height: "25px"}}/>)
+                                        :(<GiHamburgerMenu id='bst' />)
+                                    }    
+                                    </div>
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel className='resPanel'>
-                                <div>
+                             { burger && 
+                             <>
+                                   <div>
                                     <Accordion>
                                         <AccordionItem>
                                             <AccordionItemHeading>
@@ -548,6 +558,8 @@ const Navbar = () => {
                                     </Accordion>
                                     <input type='search' placeholder='Search'></input><AiOutlineSearch id='sera' />
                                 </div>
+                             </>
+                             }
                             </AccordionItemPanel>
                         </AccordionItem>
                     </Accordion>
