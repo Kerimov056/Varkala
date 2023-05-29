@@ -1253,7 +1253,7 @@
     #biggest {
         margin-top: 90px;
         width: 333px;
-        height: 600px;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1261,26 +1261,25 @@
         &>div {
             width: 93%;
             height: 96%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: block;
 
             .biggest_text {
-                width: 100%;
+                margin-top: 90px;
+                width: 290px;
                 height: 100%;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                margin-right: 190px;
+                margin-left: 14px;
 
                 &>h1 {
-                    font-size: 29px;
+                    font-size: 39px;
                 }
 
                 &>h2{
-                    
+                    width: 100%;
+                    font-size: 31px;
+                }
+
+                &>button{
+                    letter-spacing: 2px;
                 }
             }
 
