@@ -14,7 +14,13 @@ const Home = () => {
 
   const [names, setNames] = useState(Homecart)
 
-  const filterName = (e) => {
+  const filterPrice = e => {
+    const search = e.target.value
+    const filterPrice = Homecart.filter(price => price.price.includes(search))
+    setPrice(filterPrice)
+  }
+
+  const filterName = e => {
     const search = e.target.value.toLowerCase()
     const filterName = Homecart.filter(names => names.name.toLowerCase().includes(search))
     setNames(filterName)
@@ -310,11 +316,11 @@ const Home = () => {
         <div className='carts_filter'>
           <input type="range" min={1} max={1000} onInput={change} />
           <h2>Price: {price}</h2>
-          <input type='search' onChange={(e) => filterName(e)}></input>
+          <input type='text' onChange={(e) => filterName(e)}></input>
         </div>
         <div className='Productll'>
           {
-            Homecart.filter(filterr =>{return filterr.price > parseInt(price, 0)}).map((product) => {
+            names.filter(filterr =>{return filterr.price > parseInt(price, 0)}).map((product) => {
               return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
             })
           }
