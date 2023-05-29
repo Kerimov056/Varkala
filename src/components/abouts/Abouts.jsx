@@ -43,18 +43,18 @@ const Abouts = () => {
             </div>
           </div>
 
-          <div className='started'>
+          <div id='ResY' className='started'>
             <div className='started_img'>
               <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/photo/raoul-ortega-2JtF6pYAOOI-unsplash.jpg'></img>
             </div>
-            <div className='started_text'>
+            <div  className='started_text'>
               <h2>HUMBLE BEGINNINGS</h2>
               <h1>We started as little</h1>
               <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</p>
             </div>
           </div>
 
-          <div className='grew'>
+          <div id='ResGrew' className='grew'>
             <div className='grew_text'>
               <h2>VARKALA TODAY</h2>
               <h1>And then we grew a bit</h1>

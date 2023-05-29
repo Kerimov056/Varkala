@@ -508,6 +508,34 @@
                 }
 
                 .varkala{
+                    margin-left: -20px;
+                    &>h2{
+                        font-size: 17px !important;
+                        white-space: nowrap;
+                    }
+
+                    &>h1{
+                        width: 200px;
+                        font-size: 42px !important;
+                        font-weight: 700;
+                    }
+
+                    &>p{
+                        width: 300px;
+                    }
+                }
+            }
+
+            .THEOLDTIMES{
+                margin-top: 140px;
+
+                .line{
+                    display: none;
+                }
+
+                .varkala{
+                    margin-left: -20px;
+
                     &>h2{
                         font-size: 17px !important;
                         white-space: nowrap;
@@ -519,6 +547,84 @@
                         font-weight: 700;
                     }
                 }
+            }
+
+            #ResY{
+                width: 319px;
+                height: auto;
+                display: block;
+
+                .started_img{
+                    width: 100%;
+                    height: 500px;
+                    margin-left: -26px;
+
+                    &>img{
+                        width: 99%;
+                        height: 100%;
+                    }
+                }
+
+                .started_text{
+                    margin-left: -20px;
+                    &>h2{
+                        font-size: 17px !important;
+                        white-space: pre-wrap;
+                        font-weight: 600;
+                    }
+
+                    &>h1{
+                        width: 200px;
+                        font-size: 34px !important;
+                        font-weight: 700;
+                        white-space: nowrap;
+                    }
+
+                    &>p{
+                        width: 300px;
+                    }
+                }
+                margin-bottom: 300px;
+            }
+
+            #ResGrew{
+                width: 319px;
+                height: auto;
+                display: block;
+
+                .grew_text{
+                    margin-left: -20px;
+                    &>h2{
+                        font-size: 17px !important;
+                        white-space: pre-wrap;
+                        font-weight: 600;
+                    }
+
+                    &>h1{
+                        width: 200px;
+                        font-size: 34px !important;
+                        font-weight: 700;
+                        white-space: nowrap;
+                    }
+
+                    &>p{
+                        width: 300px;
+                    }
+                }
+
+                .grew_img{
+                    width: 100%;
+                    height: 500px;
+                    margin-left: -26px;
+
+                    &>img{
+                        width: 99%;
+                        height: 100%;
+                    }
+                }
+
+                
+                margin-bottom: 300px;
             }
         }
     }
