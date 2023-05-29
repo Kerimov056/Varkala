@@ -14,6 +14,7 @@ import { HiChevronUp } from 'react-icons/hi';
 import { GoChevronDown } from 'react-icons/go';
 import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import { BsBasket } from 'react-icons/bs';
 
 const ProductCart = ({ id, imgurl, name, price }) => {
 
@@ -43,7 +44,7 @@ const ProductCart = ({ id, imgurl, name, price }) => {
         <>
             <div className="mehsul">
                 <div className="mehsul_up">
-                    <div>
+                    <div className='mms'>
                         <img src={imgurl} alt="Product" />
                         <div id='addTToo' data-aos="fade-up" className="addToCart">
                             <div>
@@ -54,6 +55,10 @@ const ProductCart = ({ id, imgurl, name, price }) => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className='ResMMS'>
+                        <span><BsBasket /></span>
+                        <span><AiOutlineHeart /><AiOutlineFullscreen onClick={() => setOpen(true)}/></span>
                     </div>
                 </div>
                 <div className="mehsul_low">
