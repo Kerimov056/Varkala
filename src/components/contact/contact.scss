@@ -339,6 +339,7 @@ label {
         position: relative;
 
         &>div {
+            z-index: -99;
             position: relative;
             display: inline-block;
             width: 100%;
@@ -370,6 +371,7 @@ label {
     }
 
     .contact {
+        z-index: -99;
         width: 333px;
         height: auto;
         display: flex;
@@ -391,21 +393,25 @@ label {
     }
 
     .contact_two {
+        z-index: -99;
         margin-top: 10px;
         width: 333px;
         height: auto;
         display: block;
 
         .map {
+            z-index: -199;
             width: 333px;
             height: 500px;
         }
 
         .city {
+            z-index: -99;
             display: none;
         }
 
         #ResponCartss {
+            z-index: -99;
             display: flex;
             flex-direction: column;
             margin-left: 0px;
@@ -416,6 +422,7 @@ label {
     }
 
     .ResponCaart {
+        z-index: -99;
         width: 313px;
         height: auto;
         display: flex;
@@ -439,6 +446,7 @@ label {
 
 
     .logIn {
+        z-index: -99;
         width: 333px;
         height: auto;
         display: flex;

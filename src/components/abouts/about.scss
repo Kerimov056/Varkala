@@ -481,3 +481,45 @@
         }
     }
 }
+
+
+
+// Responsive
+
+@media (min-width: 280px) and (max-width: 750px) {
+
+    .about{
+        width: 333px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 400px;
+        
+        &>div{
+            width: 93%;
+            height: auto;
+            display: block;
+
+            .aboutUS{
+                display: block;
+
+                .line{
+                    display: none;
+                }
+
+                .varkala{
+                    &>h2{
+                        font-size: 17px !important;
+                        white-space: nowrap;
+                    }
+
+                    &>h1{
+                        width: 200px;
+                        font-size: 42px !important;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
