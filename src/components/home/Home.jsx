@@ -240,6 +240,35 @@ const Home = () => {
         </div>
       </div>
 
+      <div className='ResTime'>
+        <div>
+          <h2>DEAL OF THE WEEK</h2>
+          <h1>Black and white Nordegg chairs</h1>
+          <p>$129.00</p><span>$79.00</span>
+          <button>%50 off</button>
+          <div>
+            <div>
+              <h4><Number n={220} /></h4>
+              <p>days</p>
+            </div>
+            <div>
+              <h4><Number1 n={220} /></h4>
+              <p>Hours</p>
+            </div>
+            <div>
+              <h4><Number2 n={220} /></h4>
+              <p>minutes</p>
+            </div>
+            <div>
+              <h4><Number3 n={220} /></h4>
+              <p>seconds</p>
+            </div>
+          </div>
+          <button>SHOP NOW</button>
+          <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair2-transparent.png'></img>
+        </div>
+      </div>
+
       <div className='Arrivals'>
         <div>
           <div className='Arrivals_info'>
