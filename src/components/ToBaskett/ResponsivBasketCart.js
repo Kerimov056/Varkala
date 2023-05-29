@@ -25,7 +25,7 @@ const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
                     <div>
                         <p>Price per item</p><span>${price}</span>
                     </div>
-                    <div>
+                    <div className='ResOtehers'>
                         <p>Quantity</p>
                         <div>
                             <p onClick={() => removeFromCart(id)}>-</p>
@@ -33,7 +33,7 @@ const ResponsivBasketCart = ({ id, imgurl, name, price }) => {
                             <p onClick={() => addToCart(id)}>+</p>
                         </div>
                     </div>
-                    <div>
+                    <div className='ResOtehers'>
                         <p>Total price</p><span>${getTotalAmount}</span>
                     </div>
                 </div>

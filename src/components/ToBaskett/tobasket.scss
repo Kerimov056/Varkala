@@ -396,6 +396,23 @@ p {
                 margin-top: 50px;
                 width: 30px;
                 height: 30px;
+
+            }
+        }
+
+        .ResponProduc_low{
+            width: 298px;
+            height: 170px;
+            display: block;
+
+            &>div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .ResOtehers{
+                margin-top: -10px;
             }
         }
     }
