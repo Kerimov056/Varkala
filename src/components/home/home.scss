@@ -930,15 +930,67 @@
                         margin-top: 5px;
                         margin-left: -20px;
 
+                       &>div{
+
                         &>h3 {
                             color: black;
-                            font-size: 14px;
+                            font-size: 10px;
+                            font-weight: 600;
                         }
+                       }
                     }
                 }
             
-                .Norwegg{
-                    margin-top: 270px;
+                .Norwegg {
+                    margin-top: 100px;
+                    width: 333px;
+                    height: auto;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+    
+                    .Norwegg_text {
+                        margin-top: -160px;
+                        margin-left: -50px;
+    
+                        &>div {
+                            width: 34%;
+                            height: 100%;
+                            margin-left: 50px;
+    
+                            &>h1 {
+                                font-size: 30px;
+                                color: black;
+                                font-weight: 700;
+                            }
+    
+                            &>p {
+                             display: none;
+                            }
+    
+                            &>h3 {
+                                display: none;
+                            }
+                        }
+                        display: none;
+                    }
+    
+                    .Norwegg_img {
+                        margin-top: 7px;
+                        z-index: -90;
+                        width: 90%;
+                        height: auto;
+    
+                        &>img {
+                            width: 80%;
+                            height: 70%;
+                            object-fit: cover;
+                        }
+                    }
+    
+                    &:hover {
+                        scale: 1.02;
+                    }
                 }
             }
         }
