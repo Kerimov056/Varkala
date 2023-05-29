@@ -342,13 +342,32 @@
     justify-content: start;
 
     .carts_filter{
+        margin-top: 20px;
         width: 20%;
         height: auto;
         margin-left: -90px;
         display: block;
 
         input{
-            width: 120px;
+            width: 130px;
+            height: 30px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+
+        }
+
+        #xett{
+            width: 160px;
+            margin-left: -16px;
+        }
+
+        .FilterSearch{
+            margin-left: -20px;
+            &>svg{
+                width: 22px;
+                height: 22px;
+            }
         }
     }
     .Productll{

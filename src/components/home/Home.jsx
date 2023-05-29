@@ -1,11 +1,14 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import './home.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import { useSpring, animated } from "react-spring"
 import ProducCart from './ProducCart';
 import { Homecart } from '../Helpers/Homecart'
+import { AiOutlineSearch } from 'react-icons/ai';
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
 
- 
+
+
 
 
 const Home = () => {
@@ -26,9 +29,9 @@ const Home = () => {
     setNames(filterName)
   }
 
-    const change = (e) => {
-        setPrice(e.target.value);
-    }
+  const change = (e) => {
+    setPrice(e.target.value);
+  }
 
   function Number({ n }) {
     const { number } = useSpring({
@@ -313,14 +316,27 @@ const Home = () => {
 
 
       <div className='carts'>
-        <div className='carts_filter'>
-          <input type="range" min={1} max={1000} onInput={change} />
-          <h2>Price: {price}</h2>
-          <input type='text' onChange={(e) => filterName(e)}></input>
-        </div>
+        <Accordion allowZeroExpanded>
+          <AccordionItem>
+            <AccordionItemHeading>
+              <AccordionItemButton>
+                <div>Filter</div>
+              </AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <div className='carts_filter'>
+                <input type="range" min={1} max={1000} onInput={change} />
+                <h3>Price: {price}</h3>
+                <hr id='xett' />
+                <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
+                <span className='FilterSearch'><AiOutlineSearch /></span>
+              </div>
+            </AccordionItemPanel>
+          </AccordionItem>
+        </Accordion>
         <div className='Productll'>
           {
-            names.filter(filterr =>{return filterr.price > parseInt(price, 0)}).map((product) => {
+            names.filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
               return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
             })
           }
