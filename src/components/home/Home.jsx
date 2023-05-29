@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './home.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import { useSpring, animated } from "react-spring"
@@ -303,7 +303,7 @@ const Home = () => {
         </div>
         <div>
           {
-            Homecart.map((product) => {
+            Homecart.filter(filterr =>{return filterr.price > parseInt(price, 0)}).map((product) => {
               return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
             })
           }
