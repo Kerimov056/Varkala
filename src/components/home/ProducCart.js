@@ -58,7 +58,7 @@ const ProductCart = ({ id, imgurl, name, price }) => {
                     </div>
                     <div className='ResMMS'>
                         <span><BsBasket /></span>
-                        <span><AiOutlineHeart /><AiOutlineFullscreen onClick={() => setOpen(true)}/></span>
+                        <span id='restwi'><AiOutlineHeart /><AiOutlineFullscreen onClick={() => setOpen(true)}/></span>
                     </div>
                 </div>
                 <div className="mehsul_low">

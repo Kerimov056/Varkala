@@ -1159,7 +1159,7 @@
             margin-bottom: 50px;
             margin-right: 90px;
             column-gap: 20px;
-            row-gap: 40px;
+            row-gap: 70px;
         }
     }
 
@@ -1167,8 +1167,8 @@
     //product cart
 
     .mehsul {
-        width: 130px;
-        height: 200px;
+        width: 140px;
+        height: 230px;
         margin-bottom: 20px;
     
         .mehsul_up {
@@ -1190,6 +1190,12 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                #restwi{
+                   &>svg{
+                    margin-left: 5px;
+                   }
+                }
             }
         }
     
@@ -1201,23 +1207,29 @@
             flex-direction: column;
     
             &>h4 {
-                margin-top: 2px;
+                margin-top: -10px;
                 width: 100%;
                 font-size: 15px;
                 color: black;
                 font-weight: 600;
-                margin-bottom: 30px;
+                margin-left: 0;
+                display: inline;
+                
             }
     
             &>div {
+                margin-top: -5px;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-    
-               
+                
+                &>span{
+                    &>svg{
+                        color: #bcac76;
+                    }
+                }
             }
-            
         }
     }
 }
