@@ -295,6 +295,7 @@
                         font-weight: -200;
                         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                         word-spacing: 3px;
+                        color: #444545;
                     }
 
                     &>h2{
@@ -701,6 +702,7 @@
                 .samsa_low{
                     display: block;
                     &>div{
+                        width: 318px;
                         display: block;
                         &>h5{
                             font-size: 32px;
@@ -710,8 +712,18 @@
             }
 
             .team{
-                display: none;
+                display: block;
+
+                .line{
+                    display: none;
+                }
+
+                .ourteam{
+                    display: block;
+                    
+                }
             }
         }
+        margin-bottom: 500px;
     }
 }
