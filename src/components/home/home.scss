@@ -856,12 +856,13 @@
         }
     }
 }
+
 //Responsive div none
-.ResTime{
+.ResTime {
     display: none;
 }
 
-.ResMMS{
+.ResMMS {
     display: none;
 }
 
@@ -909,7 +910,7 @@
                 }
             }
 
-            .twoimg{
+            .twoimg {
                 margin-top: 70px;
                 width: 333px;
                 height: auto;
@@ -917,37 +918,37 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            
-                .Furniture{
+
+                .Furniture {
                     margin-left: 30px;
                     width: 100%;
                     height: auto;
-            
-                    .Furniture_img{
-                        width: 90%;    
+
+                    .Furniture_img {
+                        width: 90%;
                         height: 70%;
-            
-                        &>img{
+
+                        &>img {
                             width: 100%;
                             height: 90%;
                         }
                     }
-            
-                    .Furniture_text{
+
+                    .Furniture_text {
                         margin-top: 5px;
                         margin-left: -20px;
 
-                       &>div{
+                        &>div {
 
-                        &>h3 {
-                            color: black;
-                            font-size: 10px;
-                            font-weight: 600;
+                            &>h3 {
+                                color: black;
+                                font-size: 10px;
+                                font-weight: 600;
+                            }
                         }
-                       }
                     }
                 }
-            
+
                 .Norwegg {
                     margin-top: 20px;
                     width: 333px;
@@ -955,46 +956,46 @@
                     display: flex;
                     justify-content: end;
                     align-items: center;
-    
+
                     .Norwegg_text {
-                      width: 40%;
-                      margin-top: 100px;
-    
+                        width: 40%;
+                        margin-top: 100px;
+
                         &>div {
                             width: 34%;
                             height: 100%;
                             margin-left: 50px;
-    
+
                             &>h1 {
                                 font-size: 30px;
                                 color: black;
                                 font-weight: 600;
                             }
-    
+
                             &>p {
-                             display: none;
+                                display: none;
                             }
-    
+
                             &>h3 {
                                 display: none;
                             }
                         }
                     }
-    
+
                     .Norwegg_img {
                         margin-left: 10px;
                         margin-top: 7px;
                         z-index: -90;
                         width: 60%;
                         height: auto;
-    
+
                         &>img {
                             width: 95%;
                             height: 100%;
                             object-fit: cover;
                         }
                     }
-    
+
                     &:hover {
                         scale: 1.02;
                     }
@@ -1002,33 +1003,33 @@
             }
         }
 
-        .ResNorwegg{
+        .ResNorwegg {
             width: 333px;
             height: auto;
             display: flex;
             justify-content: space-around;
             align-items: center;
 
-            .Norwegg_text{
-               display: none;
+            .Norwegg_text {
+                display: none;
             }
 
-           #fff{
-            width: 200px !important; 
-            margin-right: 35px;
+            #fff {
+                width: 200px !important;
+                margin-right: 35px;
 
-            &>img{
-                width: 100% !important;
+                &>img {
+                    width: 100% !important;
+                }
             }
-           }
         }
     }
 
-    .time{
+    .time {
         display: none;
     }
 
-    .ResTime{
+    .ResTime {
         width: 333px;
         height: auto;
         display: flex;
@@ -1036,35 +1037,37 @@
         align-items: center;
         background-color: #b5cde7;
 
-        &>div{
+        &>div {
             width: 92%;
             height: auto;
             display: block;
 
-            &>h2{
+            &>h2 {
                 color: #dc3545;
                 font-size: 18px;
                 font-weight: 600;
                 letter-spacing: 3px;
             }
-            
-            &>h1{
+
+            &>h1 {
                 margin-top: 20px;
                 font-size: 40px;
                 font-weight: 700;
             }
 
-            &>p{
+            &>p {
                 margin-top: 20px;
-                .onespan{
+
+                .onespan {
                     text-decoration: line-through;
                 }
-                &>span{
+
+                &>span {
                     margin-right: 20px;
                 }
             }
 
-            .ResELL{
+            .ResELL {
                 margin-top: 20px;
                 text-align: center;
                 background-color: #dc3545;
@@ -1078,7 +1081,7 @@
                 font-weight: 700;
             }
 
-            &>div{
+            &>div {
                 margin-top: 40px;
                 width: 100%;
                 height: 200px;
@@ -1089,10 +1092,10 @@
                 align-items: center;
             }
 
-            #ResShop{
+            #ResShop {
                 margin-top: 30px;
                 text-align: center;
-                background:none;
+                background: none;
                 padding: 6px 9px;
                 width: 150px;
                 height: 44px;
@@ -1103,7 +1106,7 @@
                 letter-spacing: 4px;
             }
 
-            &>img{
+            &>img {
                 margin-top: 30px;
                 width: 300px;
                 height: 460px;
@@ -1111,7 +1114,7 @@
         }
     }
 
-    .Arrivals{
+    .Arrivals {
         margin-top: 60px;
         width: 333px;
         height: auto;
@@ -1119,26 +1122,28 @@
         display: block;
         margin-left: -20px;
 
-        &>div{
+        &>div {
             width: 93%;
             height: auto;
 
-            .produtss{
+            .produtss {
                 width: 100%;
                 display: block;
-                &>ul{
+
+                &>ul {
                     display: grid;
                     grid-template-columns: auto auto auto auto;
-                    &>li{
+
+                    &>li {
                         font-size: 15px;
                         font-weight: 600;
                     }
                 }
 
-                &>div{
+                &>div {
                     margin-left: 50px;
                 }
-               
+
             }
         }
     }
@@ -1149,7 +1154,7 @@
         height: auto;
         display: flex;
         justify-content: center;
-    
+
         &>div {
             width: 90%;
             height: auto;
@@ -1170,42 +1175,43 @@
         width: 140px;
         height: 230px;
         margin-bottom: 20px;
-    
+
         .mehsul_up {
             width: 100%;
             height: 85%;
             position: relative;
-    
-            .mms{
+
+            .mms {
                 width: 100%;
                 height: 115%;
-                #addTToo{
+
+                #addTToo {
                     display: none;
                 }
             }
 
-            .ResMMS{
+            .ResMMS {
                 width: 100%;
                 height: 15%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                #restwi{
-                   &>svg{
-                    margin-left: 5px;
-                   }
+                #restwi {
+                    &>svg {
+                        margin-left: 5px;
+                    }
                 }
             }
         }
-    
+
         .mehsul_low {
             width: 100%;
             height: 15%;
             margin-top: 70px;
             display: flex;
             flex-direction: column;
-    
+
             &>h4 {
                 margin-top: -10px;
                 width: 100%;
@@ -1214,25 +1220,49 @@
                 font-weight: 600;
                 margin-left: 0;
                 display: inline;
-                
+
             }
-    
+
             &>div {
                 margin-top: -5px;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                
-                &>span{
-                    &>svg{
+
+                .qiymet{
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+
+                .star{
+
+                    &>svg {
+                        visibility: visible;
                         color: #bcac76;
+                        display: inline;
+                        width: 14px;
+                        z-index: 100;
+                        height: 14px;
                     }
                 }
             }
         }
     }
+
+    #biggest{
+        width: 333px;
+        height: 500px;
+        text-align: center;
+        &>div{
+
+            &>h1{
+                font-size: 19px;
+            }
+
+            &>img{
+                display: none;
+            }
+        }
+    }
 }
-
-
-
