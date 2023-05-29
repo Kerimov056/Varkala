@@ -356,4 +356,24 @@ label {
         }
         margin-bottom: 100px;
     }
+
+    .contact{
+        width: 333px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>div{
+           display: block;
+            text-align: center;
+
+            &>div{
+                margin-top: 20px;
+                width: 90%;
+                height: auto;
+            }
+        }
+        margin-bottom: 50px;
+    }
 }
