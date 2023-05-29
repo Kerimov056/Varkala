@@ -37,6 +37,15 @@ const Contact = () => {
                 </div>
             </div>
 
+            <div id='ResContact'>
+                <div>
+                    <img src='https://fugue4thought.files.wordpress.com/2017/04/maarten-deckers-227224.jpg?w=1920&h=768&crop=1'></img>
+                    <div>
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+            </div>
+
             <div className='contact'>
                 <div>
                     <div>

@@ -306,14 +306,53 @@ label {
     height: 100px;
 }
 
+//Responsive div none
 
+#ResContact{
+    display: none;
+}
 
+//Responsive
 
+@media (min-width: 280px) and (max-width: 750px){
 
+    .blog{
+        display: none;
+    }
 
-// .altline{
-//     width: 100%;
-//     height: 1px;
-//     background-color: #202020;
-//     color: #202020;
-// }
+    #ResContact{
+        display: block;
+        z-index: 99;
+        width: 333px;
+        height: 360px;
+        position: relative;
+
+        &>div{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+
+            &>img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &>div{
+                margin-bottom: 200px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                text-align: center;
+
+                &>h1{
+                    font-size: 23px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        margin-bottom: 100px;
+    }
+}
