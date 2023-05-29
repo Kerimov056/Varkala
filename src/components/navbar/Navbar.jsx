@@ -328,7 +328,7 @@ const Navbar = () => {
                         <AiOutlineHeart />
                         <Link to='toBasket' style={{ color: "black", width: "24px", height: "30px", marginLeft: "12px" }} ><BsBasket style={{ width: "25px", height: "25px" }} /></Link>
                     </div>
-                    <Accordion>
+                    <Accordion >
                         <AccordionItem>
                             <AccordionItemHeading>
                                 <AccordionItemButton>
@@ -529,12 +529,20 @@ const Navbar = () => {
                                                 </AccordionItemButton>
                                             </AccordionItemHeading>
                                             <AccordionItemPanel>
-                                                <ul>
-                                                    <li>Home 1 - Fashion</li>
-                                                    <li>Home 2 - Fashion</li>
-                                                    <li>Home 3 - Design</li>
-                                                    <li>Home 4 - Design</li>
-                                                </ul>
+                                                {docs &&
+                                                    <>
+                                                        <ul>
+                                                            <li>Introduction</li>
+                                                            <li>Directory structure</li>
+                                                            <li>Gulp</li>
+                                                            <li>Customizing CSS</li>
+                                                            <li>Creadits</li>
+                                                            <li>Changelog</li>
+                                                            <li>Bootstrap</li>
+                                                            <li>Theme</li>
+                                                        </ul>
+                                                    </>
+                                                }
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                     </Accordion>
