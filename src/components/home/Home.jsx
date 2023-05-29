@@ -244,8 +244,8 @@ const Home = () => {
         <div>
           <h2>DEAL OF THE WEEK</h2>
           <h1>Black and white Nordegg chairs</h1>
-          <p>$129.00</p><span>$79.00</span>
-          <button>%50 off</button>
+          <p><span className='onespan'>$129.00</span><span>$79.00</span></p>
+          <button  className='ResELL'>%50 off</button>
           <div>
             <div>
               <h4><Number n={220} /></h4>
@@ -264,7 +264,7 @@ const Home = () => {
               <p>seconds</p>
             </div>
           </div>
-          <button>SHOP NOW</button>
+          <button id='ResShop'>SHOP NOW</button>
           <img src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair2-transparent.png'></img>
         </div>
       </div>
