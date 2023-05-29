@@ -355,7 +355,7 @@ const Navbar = () => {
                                                     <ul>
                                                         <li>Home 1 - Fashion</li>
                                                         <li>Home 2 - Fashion</li>
-                                                        <li>Home 3 - Design</li>
+                                                        <Link id='Reshome' to="/"><li>Home 3 - Design</li></Link>
                                                         <li>Home 4 - Design</li>
                                                     </ul>
                                                 }

@@ -514,7 +514,7 @@ li{
         .resPanel{
             position: absolute;
             &>div{
-                background-color: rgb(171, 0, 0);
+                background-color: rgb(255, 255, 255);
                 margin-top: 10px;
                 margin-left: -300px;
                 width: 333px;
@@ -540,7 +540,9 @@ li{
             }
         }
     }
-    
+    #Reshome{
+        text-decoration: none;
+    }
     #ll{
         margin-left: 33px;
     }
