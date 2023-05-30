@@ -344,11 +344,14 @@ const Home = () => {
                 <input type="range" min={1} max={1000} onInput={change} />
                 <h4>Price: {price}</h4>
                 <hr id='xett' />
-                <div style={{display : "block"}}>
+                <div>
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
-                  <button onClick={()=> setCategory((prev)=>!prev)}>Category {category ? (<FiChevronDown/>):(<FiChevronUp/>)}</button>
                 </div>
+                  <button id='categ' onClick={()=> setCategory((prev)=>!prev)}>Category {category ? (<FiChevronDown/>):(<FiChevronUp/>)}</button>
+                  {category && <div className='categoryFilter'>
+                    
+                  </div>}
               </div>
             </AccordionItemPanel>
           </AccordionItem>
