@@ -65,8 +65,8 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                     <h4>{name}</h4>
                     <div>
                         <span className="qiymet">${price}</span>
-                        <span className='update'>{category}</span>
-                        <span className='update'>{color}</span>
+                        <span id='visible' className='update'>{category}</span>
+                        <span id='visible' className='update'>{color}</span>
                         <span data-aos="fade-up" id='ssttaarr' className="star">
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />
@@ -197,7 +197,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                                 </div>
                                 <div className='popEnd_low'>
                                     <h1>Category: <span>{category}</span></h1>
-                                    <h1>Color:<span>{color}</span></h1>
+                                    <h1>Color: <span>{color}</span></h1>
                                 </div>
                             </div>
                         </div>

@@ -572,11 +572,21 @@
                 font-size: 19px;
             }
 
+            .update{
+                font-weight: 500;
+                font-size: 14px;
+                visibility: hidden;
+            }
+
             .star {
                 visibility: hidden;
             }
         }
 
+    }
+
+    &:hover #visible {
+        visibility: visible;
     }
 
     &:hover #ssttaarr {
