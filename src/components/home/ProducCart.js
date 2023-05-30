@@ -65,8 +65,8 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                     <h4>{name}</h4>
                     <div>
                         <span className="qiymet">${price}</span>
-                        <span style={{fontWeight: "500"}}>{category}</span>
-                        <span style={{fontWeight: "500"}}>{color}</span>
+                        <span className='update'>{category}</span>
+                        <span className='update'>{color}</span>
                         <span data-aos="fade-up" id='ssttaarr' className="star">
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />
