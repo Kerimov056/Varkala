@@ -325,8 +325,8 @@ label {
 
 //Responsive
 
-@media (min-width: 280px) and (max-width: 750px) {
-
+@media (min-width: 250px) and (max-width: 750px) {
+ 
     .blog {
         display: none;
     }
@@ -334,7 +334,7 @@ label {
     #ResContact {
         display: block;
         z-index: -99;
-        width: 333px;
+        width: 400px;
         height: 360px;
         position: relative;
 
@@ -346,7 +346,7 @@ label {
             height: 100%;
 
             &>img {
-                width: 100%;
+                width: 83%;
                 height: 100%;
                 object-fit: cover;
             }
@@ -372,7 +372,7 @@ label {
 
     .contact {
         z-index: -99;
-        width: 333px;
+        width: 400px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -395,13 +395,13 @@ label {
     .contact_two {
         z-index: -99;
         margin-top: 10px;
-        width: 333px;
+        width: 360px;
         height: auto;
         display: block;
 
         .map {
             z-index: -199;
-            width: 333px;
+            width: 360px;
             height: 500px;
         }
 
@@ -447,7 +447,7 @@ label {
 
     .logIn {
         z-index: -99;
-        width: 333px;
+        width: 360px;
         height: auto;
         display: flex;
         justify-content: center;

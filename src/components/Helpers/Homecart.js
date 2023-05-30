@@ -3,6 +3,7 @@ export const Homecart = [
         img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair.jpg",
         name: "Norwegg Chair",
         price: 121.00,
+        category: "Table",
     },
     {   id: 2,
         img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book.jpg",

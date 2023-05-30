@@ -1,7 +1,7 @@
 // import React from 'react'
 // import Modal from 'react-modal';
 
-// const Yoxla = () => {
+// const Yoxla = ({img, name}) => {
 //   return (
 //     <>
 //          <Modal
@@ -39,7 +39,7 @@
 
 //                         <div className='pop_right'>
 //                             <div className='mehsul_info'>
-//                                 <h1>Push-up Jeans</h1>
+//                                 <h1>{name}</h1>
 //                                 <div>
 //                                     <div className='mehsul_info_price'>
 //                                         <h2>$65.00</h2>

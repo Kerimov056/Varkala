@@ -16,7 +16,7 @@ import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsBasket } from 'react-icons/bs';
 
-const ProductCart = ({ id, imgurl, name, price }) => {
+const ProductCart = ({ id, imgurl, name, price, category }) => {
 
     useEffect(() => {
         AOS.init({
@@ -58,13 +58,14 @@ const ProductCart = ({ id, imgurl, name, price }) => {
                     </div>
                     <div className='ResMMS'>
                         <span><BsBasket /></span>
-                        <span id='restwi'><AiOutlineHeart /><AiOutlineFullscreen onClick={() => setOpen(true)}/></span>
+                        <span id='restwi'><AiOutlineHeart /><AiOutlineFullscreen onClick={() => setOpen(true)} /></span>
                     </div>
                 </div>
                 <div className="mehsul_low">
                     <h4>{name}</h4>
                     <div>
                         <span className="qiymet">${price}</span>
+                        <span style={{fontWeight: "500"}}>{category}</span>
                         <span data-aos="fade-up" id='ssttaarr' className="star">
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />
@@ -100,7 +101,7 @@ const ProductCart = ({ id, imgurl, name, price }) => {
                     <div>
                         <div className='pop_left'>
                             <div className='pop_left_img'>
-                                <img src={img} alt="Selected Image"></img>
+                                <img src={imgurl} alt="Selected Image"></img>
                             </div>
                             <div className='pop_left_imgs'>
                                 <img onClick={() => changeImg('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg')} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-1-gray.jpg' alt="Thumbnail 1"></img>
@@ -113,10 +114,10 @@ const ProductCart = ({ id, imgurl, name, price }) => {
 
                         <div className='pop_right'>
                             <div className='mehsul_info'>
-                                <h1>Push-up Jeans</h1>
+                                <h1>{name}</h1>
                                 <div>
                                     <div className='mehsul_info_price'>
-                                        <h2>$65.00</h2>
+                                        <h2>${price}</h2>
                                         <p>$90.00</p>
                                     </div>
                                     <div className='mehsul_info_star'>
@@ -194,7 +195,7 @@ const ProductCart = ({ id, imgurl, name, price }) => {
                                     <b><FaFacebookF /><AiOutlineTwitter /></b>
                                 </div>
                                 <div className='popEnd_low'>
-                                    <h1>Category: <span>Jeans</span></h1>
+                                    <h1>Category: <span>{category}</span></h1>
                                     <h1>Tags:<span>Leisure, Elegant</span></h1>
                                 </div>
                             </div>

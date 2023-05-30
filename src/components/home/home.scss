@@ -938,14 +938,14 @@
 @media (min-width: 280px) and (max-width: 750px) {
 
     #ResCoursel {
-        width: 333px;
+        width: 400px;
         height: 140px;
     }
 
     .CHOICES {
         z-index: -99;
         margin-top: 70px;
-        width: 333px;
+        width: 400px;
         height: auto;
         display: flex;
         justify-content: start;
@@ -979,7 +979,7 @@
 
             .twoimg {
                 margin-top: 70px;
-                width: 333px;
+                width: 400px;
                 height: auto;
                 display: flex;
                 flex-direction: column;
@@ -1018,7 +1018,7 @@
 
                 .Norwegg {
                     margin-top: 20px;
-                    width: 333px;
+                    width: 400px;
                     height: auto;
                     display: flex;
                     justify-content: end;
@@ -1071,7 +1071,7 @@
         }
 
         .ResNorwegg {
-            width: 333px;
+            width: 400px;
             height: auto;
             display: flex;
             justify-content: space-around;
@@ -1097,7 +1097,7 @@
     }
 
     .ResTime {
-        width: 333px;
+        width: 400px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -1183,7 +1183,7 @@
 
     .Arrivals {
         margin-top: 60px;
-        width: 333px;
+        width: 400px;
         height: auto;
         margin-bottom: 100px;
         display: block;
@@ -1217,7 +1217,7 @@
 
     .carts {
         margin-top: -70px;
-        width: 333px;
+        width: 400px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -1319,7 +1319,7 @@
 
     #biggest {
         margin-top: 90px;
-        width: 333px;
+        width: 400px;
         height: 500px;
         display: flex;
         justify-content: center;
@@ -1349,7 +1349,7 @@
                     letter-spacing: 2px;
                 }
             }
-
+            
             &>img {
                 display: none;
             }
