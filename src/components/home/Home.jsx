@@ -348,9 +348,14 @@ const Home = () => {
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-                  <button id='categ' onClick={()=> setCategory((prev)=>!prev)}>Category {category ? (<FiChevronDown/>):(<FiChevronUp/>)}</button>
-                  {category && <div className='categoryFilter'>
-                    
+                  <button id='categ' onClick={()=> setCategory((prev)=>!prev)}>Category {category ? (<FiChevronUp/>):(<FiChevronDown/>)}</button>
+                  {category && <div data-aos="fade-right" className='categoryFilter'>
+                    <ul>
+                      <li>Table</li>
+                      <li>Book</li>
+                      <li>Hour</li>
+                      <li>Basket</li>
+                    </ul>
                   </div>}
               </div>
             </AccordionItemPanel>

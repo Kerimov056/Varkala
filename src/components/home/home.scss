@@ -435,7 +435,20 @@
 
         }
     }
+    .categoryFilter{
+        margin-left: 0;
+        width: 140px;
+        height: auto;
+        background-color: #bcac76;
 
+        &>ul{
+            &>li{
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
 
     .Productll {
         // margin-left: 95px;
