@@ -29,28 +29,26 @@ const Home = () => {
 
   const [price, setPrice] = useState(1)
 
-  const [names, setNames] = useState(Homecart)
-
-  const [category, setCategory] = useState(false)
-
-  const [byTip, setByTip] = useState("All")
 
   const filterPrice = e => {
     const search = e.target.value
     const filterPrice = Homecart.filter(price => price.price.includes(search))
     setPrice(filterPrice)
   }
-  const FilterTip = e => {
-    const search = e.target.value
-    const filtertip = Homecart.filter(tip => tip.category.includes(search))
-    setByTip(filtertip)
-  }
+
 
   const filterName = e => {
     const search = e.target.value.toLowerCase()
     const filterName = Homecart.filter(names => names.name.toLowerCase().includes(search))
-    setNames(filterName)
+    setFillter(filterName)
   }
+
+
+  const [fillter, setFillter] = useState(Homecart)
+
+  const [selected, setSelected] = useState([]);
+
+ 
 
   const change = (e) => {
     setPrice(e.target.value);
@@ -347,7 +345,7 @@ const Home = () => {
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel data-aos="zoom-in-down">
-              <div  className='carts_filter'>
+              <div className='carts_filter'>
                 <input type="range" min={1} max={1000} onInput={change} />
                 <h4>Price: {price}</h4>
                 <hr id='xett' />
@@ -355,26 +353,16 @@ const Home = () => {
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-                  <button style={{backgroundColor: category===true ? "black": "white"}}
-                  id='categ' onClick={()=> setCategory((prev)=>!prev)} onChange={(e) => FilterTip(e)}>
-                  {byTip} {category ? (<FiChevronUp/>):(<FiChevronDown/>)}</button>
-                  {category && <div data-aos="fade-right" className='categoryFilter'>
-                    <ul>
-                      <li onClick={()=>{ setByTip("All"); setCategory(false)}}>All</li>
-                      <li onClick={()=>{setByTip("Table"); setCategory(false)}}>Table</li>
-                      <li onClick={()=>{setByTip("Book"); setCategory(false)}}>Book</li>
-                      <li onClick={()=>{setByTip("Hour"); setCategory(false)}}>Hour</li>
-                      <li onClick={()=>{setByTip("Basket"); setCategory(false)}}>Basket</li>
-                    </ul>
-                  </div>}
+               
+               
               </div>
             </AccordionItemPanel>
           </AccordionItem>
         </Accordion>
         <div className='Productll'>
           {
-            names.filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
-              return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} category={product.category} color={product.color}/>
+            fillter.filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
+              return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} category={product.category} color={product.color} />
             })
           }
         </div>
