@@ -339,7 +339,7 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 
     #accordion {
         width: 13%;
@@ -395,8 +395,6 @@
                     display: inline-block;
                 }
 
-                button {}
-
                 .FilterSearch {
                     margin-left: 20px;
                     display: inline-block;
@@ -410,22 +408,22 @@
                 }
             }
 
-            #categ{
+            #categ {
                 margin-top: 20px;
                 display: flex;
-                padding: 5px 15px;
+                padding: 5px 20px;
                 font-size: 20px;
                 font-weight: 600;
                 color: #bcac76;
                 background-color: white;
                 border: 1px solid #bcac76;
 
-                &:hover{
+                &:hover {
                     background-color: black;
                     color: #bcac76;
                 }
 
-                &>svg{
+                &>svg {
                     margin-top: 7px;
                     margin-left: 10px;
                     width: 20px;
@@ -435,23 +433,28 @@
 
         }
     }
-    .categoryFilter{
-        margin-left: 0;
+
+    .categoryFilter {
         width: 140px;
         height: auto;
-        background-color: #bcac76;
+        background-color: #000000;
 
-        &>ul{
-            &>li{
+        &>ul {
+            &>li {
+                margin-left: -27px;
                 margin-top: 10px;
                 font-size: 18px;
                 font-weight: 600;
+                color: #bcac76;
+
+                &:hover{
+                    color: rgb(255, 255, 255);
+                }
             }
         }
     }
 
     .Productll {
-        // margin-left: 95px;
         width: 80%;
         height: auto;
         display: grid;

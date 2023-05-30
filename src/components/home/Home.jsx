@@ -33,10 +33,17 @@ const Home = () => {
 
   const [category, setCategory] = useState(false)
 
+  const [byTip, setByTip] = useState("All")
+
   const filterPrice = e => {
     const search = e.target.value
     const filterPrice = Homecart.filter(price => price.price.includes(search))
     setPrice(filterPrice)
+  }
+  const FilterTip = e => {
+    const search = e.target.value
+    const filtertip = Homecart.filter(tip => tip.category.includes(search))
+    setByTip(filtertip)
   }
 
   const filterName = e => {
@@ -348,13 +355,16 @@ const Home = () => {
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-                  <button id='categ' onClick={()=> setCategory((prev)=>!prev)}>Category {category ? (<FiChevronUp/>):(<FiChevronDown/>)}</button>
+                  <button style={{backgroundColor: category===true ? "black": "white"}}
+                  id='categ' onClick={()=> setCategory((prev)=>!prev)} onChange={(e) => FilterTip(e)}>
+                  {byTip} {category ? (<FiChevronUp/>):(<FiChevronDown/>)}</button>
                   {category && <div data-aos="fade-right" className='categoryFilter'>
                     <ul>
-                      <li>Table</li>
-                      <li>Book</li>
-                      <li>Hour</li>
-                      <li>Basket</li>
+                      <li onClick={()=>{ setByTip("All"); setCategory(false)}}>All</li>
+                      <li onClick={()=>{setByTip("Table"); setCategory(false)}}>Table</li>
+                      <li onClick={()=>{setByTip("Book"); setCategory(false)}}>Book</li>
+                      <li onClick={()=>{setByTip("Hour"); setCategory(false)}}>Hour</li>
+                      <li onClick={()=>{setByTip("Basket"); setCategory(false)}}>Basket</li>
                     </ul>
                   </div>}
               </div>
