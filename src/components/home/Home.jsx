@@ -30,11 +30,11 @@ const Home = () => {
   const [price, setPrice] = useState(1)
 
 
-  const filterPrice = e => {
-    const search = e.target.value
-    const filterPrice = Homecart.filter(price => price.price.includes(search))
-    setPrice(filterPrice)
-  }
+  // const filterPrice = e => {
+  //   const search = e.target.value
+  //   const filterPrice = Homecart.filter(price => price.price.includes(search))
+  //   setPrice(filterPrice)
+  // }
 
 
   const filterName = e => {
@@ -44,13 +44,13 @@ const Home = () => {
   }
 
 
-  const [fillter, setFillter] = useState(Homecart)
+  const [filter, setFilter] = useState(Homecart)
 
   const [selected, setSelected] = useState([]);
 
   const CategoryFilter = (e, category) => {
-    const isChecked =e.target.checked  //demeli burda
-    if(isChecked){
+    const isChecked =e.target.checked  //demeli burda catagoriya gore secdik ve onu
+    if(isChecked){                    //uyguladig
       setSelected((prev)=> [...prev,category])
     }
     else{
@@ -58,6 +58,15 @@ const Home = () => {
     }
   }
 
+  const filterHomeCart = () => {
+    if(selected.length === 0){
+      return Homecart
+    }
+    else{
+      const filtirHomeCart = Homecart.filter((item)=> selected.includes(item.category))
+      return 
+    }
+  }
 
 
   const change = (e) => {
