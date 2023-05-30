@@ -97,11 +97,13 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                     }
                 }}
             >
+
                 <div className='popup'>
                     <button onClick={() => setOpen(false)} className='exit'>X</button>
                     <div>
                         <div className='pop_left'>
                             <div className='pop_left_img'>
+                                {/* <img src={img} alt="Selected Image"></img> */}
                                 <ReactImageMagnify {...{
                                     smallImage: {
                                         alt: 'Wristwatch by Ted Baker London',
