@@ -48,7 +48,17 @@ const Home = () => {
 
   const [selected, setSelected] = useState([]);
 
- 
+  const CategoryFilter = (e, category) => {
+    const isChecked =e.target.checked  //demeli burda
+    if(isChecked){
+      setSelected((prev)=> [...prev,category])
+    }
+    else{
+      setSelected((prev)=> prev.filter((selectedCategory)=> selectedCategory !==category))
+    }
+  }
+
+
 
   const change = (e) => {
     setPrice(e.target.value);
@@ -353,8 +363,17 @@ const Home = () => {
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-               
-               
+                <div>
+                    {
+                      Homecart.map((item)=>
+                      <label key={item.id}>
+                        <input type='checkbox' checked={selected.includes(item.category)}
+                          onChange={(e) => CategoryFilter(e,item.category)}
+                        />{item.category}
+                      </label>
+                      )
+                    }
+                </div>
               </div>
             </AccordionItemPanel>
           </AccordionItem>
