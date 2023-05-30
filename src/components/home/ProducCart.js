@@ -32,7 +32,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
 
     const [open, setOpen] = useState(false);
     const [img, setImg] = useState(imgurl);
-    
+
     const [size, setSize] = useState(false)
 
     const [olcu, setOlcu] = useState('SMALL')
@@ -80,7 +80,6 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
             </div>
 
 
-
             <Modal
                 isOpen={open}
                 onRequestClose={() => setOpen(false)}
@@ -103,7 +102,22 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                     <div>
                         <div className='pop_left'>
                             <div className='pop_left_img'>
-                                <img src={img} alt="Selected Image"></img>
+                                <ReactImageMagnify {...{
+                                    smallImage: {
+                                        alt: 'Wristwatch by Ted Baker London',
+                                        isFluidWidth: true,
+                                        src: img
+                                    },
+                                    largeImage: {
+                                        src: img,
+                                        width: 1200,
+                                        height: 1800
+                                    },
+                                    enlargedImageContainerDimensions: {
+                                        width: '116%',
+                                        height: '88%'
+                                    }
+                                }} />
                             </div>
                             <div className='pop_left_imgs'>
                                 <img onClick={() => changeImg(imgurl)} src={imgurl} alt="Thumbnail 1"></img>
