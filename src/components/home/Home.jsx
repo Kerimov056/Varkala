@@ -13,8 +13,6 @@ import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, Ac
 
 
 
-
-
 const Home = () => {
 
   useEffect(() => {
@@ -27,58 +25,51 @@ const Home = () => {
   }, []);
 
 
+  //filtirlemis cartlari datani yigmaq ucun olan State //------
+  const [filter, setFilter] = useState(Homecart)
+  //-------------------------------------
+
+  //Price'a gore filterleme //---------
   const [price, setPrice] = useState(1)
-
-
-  const filterPrice = e => {
-    const search = e.target.value
-    const filterPrice = Homecart.filter(price => price.price.includes(search))
-    setPrice(filterPrice)
-  }
-
-
-  const filterName = e => {
-    const search = e.target.value.toLowerCase()
-    const filterName = Homecart.filter(names => names.name.toLowerCase().includes(search))
-    setFillter(filterName)
-  }
-
-
-  const [fillter, setFillter] = useState(Homecart)
-
-  const [selected, setSelected] = useState([]);
-
-
-  const handleCheckboxChange = (e, category) => {
-    const isChecked = e.target.checked;
-    if (isChecked) {
-      setSelected((prevSelected) => [...prevSelected, category]);
-    } else {
-      setSelected((prevSelected) =>
-        prevSelected.filter((selectedCategory) => selectedCategory !== category)
-      );
-    }
-  };
-
-
-  const filteredData = () => {
-    if (selected.length === 0) {
-      setFillter(Homecart)
-    } else {
-      const a = Homecart.filter((item) => selected.includes(item.category));
-      setFillter(a)
-    }
-  };
-
-  // const filterCategory = e => {
-  //   const search = e.target.value.toLowerCase()
-  //   const filterCateg = Homecart.filter(tip => tip.category.toLowerCase().includes(search))
-  //   setFillter(filterCateg)
-  // }
-
   const change = (e) => {
     setPrice(e.target.value);
   }
+  //---------------------------
+
+  //name gore filter etmek search mentiq ile //--------
+  const filterName = e => {
+    const search = e.target.value.toLowerCase()
+    const filterName = Homecart.filter(names => names.name.toLowerCase().includes(search))
+    setFilter(filterName)
+  }
+  //---------------------------
+
+
+  //checkbox'la catageroya gore filter islemi etmek //---------
+  const [selected, setSelected] = useState([]);
+
+  const CategoryFilter = (e, category) => {
+    const isChecked =e.target.checked  //demeli burda catagoriya gore secdik ve onu
+    if(isChecked){                    //uyguladig
+      setSelected((prev)=> [...prev, category])
+    }
+    else{
+      setSelected((prev)=> prev.filter((selectedCategory)=> selectedCategory !==category))
+    }
+  }
+
+  const filterHomeCart = () => {
+    if(selected.length === 0){
+      return Homecart
+    }
+    else{
+      return  Homecart.filter((item)=> selected.includes(item.category))
+       
+    }
+  }
+  //---------------------------------------
+
+  
 
   function Number({ n }) {
     const { number } = useSpring({
@@ -379,38 +370,24 @@ const Home = () => {
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-                <div>
-                  {Homecart.map((item) => (
-                    <label key={item.id}>
-                      <input
-                        type="checkbox"
-                        checked={selected.includes(item.category)}
-                        onChange={(e) => handleCheckboxChange(e, item.category)}
-                      />
-                      {item.category}
-                    </label>
-                  ))}
+                <div style={{display: "block"}}>
+                    {
+                      Homecart.map((item)=>
+                      <label key={item.id}>
+                        <input type='checkbox' checked={selected.includes(item.category)}
+                          onChange={(e) => CategoryFilter(e, item.category)}
+                        />{item.category}
+                      </label>
+                      )
+                    }
                 </div>
-                {/* <input type='text' onChange={(e) => filterCategory(e)} placeholder='Search Category'></input> */}
-                {/* <button style={{ backgroundColor: category === true ? "black" : "white" }}
-                  id='categ' onClick={() => setCategory((prev) => !prev)} onChange={FilterTip}>
-                  {byTip} {category ? (<FiChevronUp />) : (<FiChevronDown />)}</button>
-                {category && <div data-aos="fade-right" className='categoryFilter'>
-                  <ul>
-                    <li onClick={() => { setByTip("All"); setCategory(false) }}>All</li>
-                    <li onClick={() => { setByTip("Table"); setCategory(false) }}>Table</li>
-                    <li onClick={() => { setByTip("Book"); setCategory(false) }}>Book</li>
-                    <li onClick={() => { setByTip("Hour"); setCategory(false) }}>Hour</li>
-                    <li onClick={() => { setByTip("Basket"); setCategory(false) }}>Basket</li>
-                  </ul>
-                </div>} */}
               </div>
             </AccordionItemPanel>
           </AccordionItem>
         </Accordion>
         <div className='Productll'>
           {
-            fillter.filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
+            filterHomeCart().filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
               return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} category={product.category} color={product.color} />
             })
           }
