@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import './home.scss';
 import Modal from 'react-modal';
+import ReactImageMagnify from 'react-image-magnify';
 import { ShopContext } from '../content/ShopC'
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -14,7 +14,7 @@ const BsketCart = ({id,imgurl,name,price,category,color}) => {
                 <h4>{name}</h4>
                 <p className='sizeL'>Size: Large</p>
                 <p>Category: {category}</p>
-                <p>Colour: {color}</p>
+                <p>Color: {color}</p>
             </div>
             <span className='oneSpan'>${price}</span>
             <p onClick={() => removeFromCart(id)}>-</p>
