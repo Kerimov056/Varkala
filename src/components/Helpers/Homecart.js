@@ -24,7 +24,7 @@ export const Homecart = [
         category: "Table",
     },
     {   id: 5,
-        img: ["https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWLmo-29uo3rb-qNqnWrPtfIwPdhST8ijJVTlhs7Pr_PRvMDgn"],
+        img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock.jpg",
         name: "Clock",
         price: 12.00,
         category: "Hour",
