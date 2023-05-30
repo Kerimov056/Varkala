@@ -13,8 +13,6 @@ import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, Ac
 
 
 
-
-
 const Home = () => {
 
   useEffect(() => {
@@ -27,25 +25,27 @@ const Home = () => {
   }, []);
 
 
+  //filtirlemis cartlari datani yigmaq ucun olan State //------
+  const [filter, setFilter] = useState(Homecart)
+  //-------------------------------------
+
+  //Price'a gore filterleme //---------
   const [price, setPrice] = useState(1)
+  const change = (e) => {
+    setPrice(e.target.value);
+  }
+  //---------------------------
 
-
-  // const filterPrice = e => {
-  //   const search = e.target.value
-  //   const filterPrice = Homecart.filter(price => price.price.includes(search))
-  //   setPrice(filterPrice)
-  // }
-
-
+  //name gore filter etmek search mentiq ile //--------
   const filterName = e => {
     const search = e.target.value.toLowerCase()
     const filterName = Homecart.filter(names => names.name.toLowerCase().includes(search))
-    setFillter(filterName)
+    setFilter(filterName)
   }
+  //---------------------------
 
 
-  const [filter, setFilter] = useState(Homecart)
-
+  //checkbox'la catageroya gore filter islemi etmek //---------
   const [selected, setSelected] = useState([]);
 
   const CategoryFilter = (e, category) => {
@@ -64,14 +64,12 @@ const Home = () => {
     }
     else{
       const filtirHomeCart = Homecart.filter((item)=> selected.includes(item.category))
-      return 
+      return setFilter(filtirHomeCart)
     }
   }
+  //---------------------------------------
 
-
-  const change = (e) => {
-    setPrice(e.target.value);
-  }
+  
 
   function Number({ n }) {
     const { number } = useSpring({
@@ -389,7 +387,7 @@ const Home = () => {
         </Accordion>
         <div className='Productll'>
           {
-            fillter.filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
+            filter.filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
               return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} category={product.category} color={product.color} />
             })
           }
