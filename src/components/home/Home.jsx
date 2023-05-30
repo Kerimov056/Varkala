@@ -5,6 +5,8 @@ import { useSpring, animated } from "react-spring"
 import ProducCart from './ProducCart';
 import { Homecart } from '../Helpers/Homecart'
 import { AiOutlineSearch } from 'react-icons/ai';
+import { FiChevronDown } from 'react-icons/fi';
+import { FiChevronUp } from 'react-icons/fi';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion";
@@ -28,6 +30,8 @@ const Home = () => {
   const [price, setPrice] = useState(1)
 
   const [names, setNames] = useState(Homecart)
+
+  const [category, setCategory] = useState(false)
 
   const filterPrice = e => {
     const search = e.target.value
@@ -328,7 +332,7 @@ const Home = () => {
 
 
       <div className='carts'>
-        <Accordion allowZeroExpanded>
+        <Accordion id='accordion' allowZeroExpanded>
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
@@ -340,9 +344,10 @@ const Home = () => {
                 <input type="range" min={1} max={1000} onInput={change} />
                 <h4>Price: {price}</h4>
                 <hr id='xett' />
-                <div>
+                <div style={{display : "block"}}>
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
+                  <button onClick={()=> setCategory((prev)=>!prev)}>Category {category ? (<FiChevronDown/>):(<FiChevronUp/>)}</button>
                 </div>
               </div>
             </AccordionItemPanel>
