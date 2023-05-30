@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './tobasket.scss'
 import { ShopContext } from '../content/ShopC'  
 
-const BsketCart = ({id,imgurl,name,price,category}) => {
+const BsketCart = ({id,imgurl,name,price,category,color}) => {
 
   const {cartItems,addToCart,removeFromCart,updateCartItemCount,checkout} = useContext(ShopContext)
 
@@ -14,7 +14,7 @@ const BsketCart = ({id,imgurl,name,price,category}) => {
                 <h4>{name}</h4>
                 <p className='sizeL'>Size: Large</p>
                 <p>Category: {category}</p>
-                <p>Colour: Green</p>
+                <p>Colour: {color}</p>
             </div>
             <span className='oneSpan'>${price}</span>
             <p onClick={() => removeFromCart(id)}>-</p>

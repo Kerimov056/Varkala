@@ -16,7 +16,7 @@ import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsBasket } from 'react-icons/bs';
 
-const ProductCart = ({ id, imgurl, name, price, category }) => {
+const ProductCart = ({ id, imgurl, name, price, category, color }) => {
 
     useEffect(() => {
         AOS.init({
@@ -66,6 +66,7 @@ const ProductCart = ({ id, imgurl, name, price, category }) => {
                     <div>
                         <span className="qiymet">${price}</span>
                         <span style={{fontWeight: "500"}}>{category}</span>
+                        <span style={{fontWeight: "500"}}>{color}</span>
                         <span data-aos="fade-up" id='ssttaarr' className="star">
                             <AiFillStar style={{ color: "#bcac76" }} />
                             <AiFillStar style={{ color: "#bcac76" }} />
@@ -196,7 +197,7 @@ const ProductCart = ({ id, imgurl, name, price, category }) => {
                                 </div>
                                 <div className='popEnd_low'>
                                     <h1>Category: <span>{category}</span></h1>
-                                    <h1>Tags:<span>Leisure, Elegant</span></h1>
+                                    <h1>Color:<span>{color}</span></h1>
                                 </div>
                             </div>
                         </div>

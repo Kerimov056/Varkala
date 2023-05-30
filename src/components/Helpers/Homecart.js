@@ -4,7 +4,7 @@ export const Homecart = [
         name: "Norwegg Chair",
         price: 121.00,
         category: "Table",
-        color: "green",
+        color: "Green",
     },
     {   id: 2,
         img: "https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book.jpg",
