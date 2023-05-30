@@ -351,7 +351,7 @@ const Home = () => {
         <div className='Productll'>
           {
             names.filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
-              return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} category={product.category}/>
+              return <ProducCart id={product.id} imgurl={product.img[0]} name={product.name} price={product.price} category={product.category}/>
             })
           }
         </div>
