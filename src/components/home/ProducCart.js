@@ -104,7 +104,7 @@ const ProductCart = ({ id, imgurl, name, price, category }) => {
                                 <img src={img} alt="Selected Image"></img>
                             </div>
                             <div className='pop_left_imgs'>
-                                <img onClick={() => changeImg(imgurl)} src={imgurl[1]} alt="Thumbnail 1"></img>
+                                <img onClick={() => changeImg(imgurl)} src={imgurl} alt="Thumbnail 1"></img>
                                 <img onClick={() => changeImg('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-2-gray.jpg')} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-2-gray.jpg' alt="Thumbnail 2"></img>
                                 <img onClick={() => changeImg('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-3-gray.jpg')} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-3-gray.jpg' alt="Thumbnail 3"></img>
                                 <img onClick={() => changeImg('https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-4-gray.jpg')} src='https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/detail-4-gray.jpg' alt="Thumbnail 4"></img>

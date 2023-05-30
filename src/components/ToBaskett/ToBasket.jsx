@@ -44,7 +44,7 @@ const ToBasket = () => {
                                 {
                                     Homecart.map((product) => {
                                         if (cartItems[product.id] !== 0) {
-                                            return <BsketCart id={product.id} imgurl={product.img} name={product.name} price={product.price} />
+                                            return <BsketCart id={product.id} imgurl={product.img} name={product.name} price={product.price} category={product.category} />
                                         }
                                     })
                                 }
