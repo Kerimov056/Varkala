@@ -206,7 +206,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                                     </div>
                                 </div>
                                 <button onClick={() => addToCart(id)}><SlBasket /> ADD TO CART</button>
-                              <button><Link to='toBasket' id='popBasket'>Basket</Link></button>
+                                <button><Link to='toBasket' id='popBasket'>Basket</Link></button>
                             </div>
 
                             <div className='popEnd'>
