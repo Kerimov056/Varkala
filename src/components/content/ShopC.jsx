@@ -3,6 +3,8 @@ import { Homecart } from "../Helpers/Homecart";
 
 export const ShopContext = createContext(null);
 
+
+
 const getDefaultCart = () => {
     let cart = {};
     for (let i = 1; i < Homecart.length + 1; i++) {
@@ -10,6 +12,17 @@ const getDefaultCart = () => {
     }
     return cart;
 };
+
+const temaColor = {
+  black: {
+    backgroundColor: "black",
+    color: "white"
+  },
+  white: {
+    backgroundColor: "white",
+    color: "black"
+  }
+}
 
 // const cartFormLocalS = JSON.parse(localStorage.getItem("cartItems"))
 
@@ -27,6 +40,18 @@ export const ShopContextProvider = (props) => {
                 sum += 1;
             }
             return sum
+        }
+    }
+
+
+    const [deger, setDeger] = useState(temaColor.white)        //asdasdad
+
+    const change =() => {
+        if (temaColor.black === deger) {        //sadadad
+            setDeger(temaColor.white)
+        }
+        else {
+            setDeger(temaColor.black)
         }
     }
 
@@ -50,7 +75,7 @@ export const ShopContextProvider = (props) => {
                 totalAmount += cartItems[item] * itemInfo.price;
             }
         }
-        total+=totalAmount;
+        total += totalAmount;
         return total;
     }
 
@@ -94,7 +119,13 @@ export const ShopContextProvider = (props) => {
         paket,
         empty_basket,
         Total,
+        deger,
+        change,
+        temaColor,
     };
+
+    //=====================
+
 
     return (
         <ShopContext.Provider value={contextValue}>
