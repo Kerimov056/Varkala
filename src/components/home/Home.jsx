@@ -24,7 +24,7 @@ const Home = () => {
     AOS.refresh();
   }, []);
 
-
+  //color'a gore filtirleme //-------
   const [color, setColor] = useState([])
 
   const ColorFilter = (e, color) => {
@@ -46,7 +46,7 @@ const Home = () => {
       return filterHomeCart().filter((item) => color.includes(item.color))
     }
   }
-
+  //------------------------------------------------
 
 
   //filtirlemis cartlari datani yigmaq ucun olan State //------
@@ -396,7 +396,7 @@ const Home = () => {
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
                 <div className='checkbox'>
-                  <div data-aos="fade-right" id='checkboxCategory'>Product 
+                  <div data-aos="fade-up" id='checkboxCategory'>Product 
                     {
                       Homecart.map((item) =>
                         <label key={item.id}>

@@ -1283,10 +1283,14 @@
         margin-top: -70px;
         width: 400px;
         height: auto;
-        display: flex;
+        display: block;
         justify-content: center;
 
-        &>div {
+        #accordion{
+            width: 90%;
+        }
+
+        .Productll{
             width: 90%;
             height: auto;
             display: grid;
