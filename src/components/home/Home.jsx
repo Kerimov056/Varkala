@@ -395,8 +395,8 @@ const Home = () => {
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-                <div data-aos="fade-up" className='checkbox'>
-                  <div data-aos="fade-up" id='checkboxCategory'>Product 
+                <div className='checkbox'>
+                  <div data-aos="fade-right" id='checkboxCategory'>Product 
                     {
                       Homecart.map((item) =>
                         <label key={item.id}>
@@ -407,11 +407,11 @@ const Home = () => {
                       )
                     }
                   </div>
-                  <div data-aos="fade-up" id='checkboxColor'>Color
+                  <div data-aos="fade-left" id='checkboxColor'>Color
                     {
                       Homecart.map((item) =>
-                        <label  key={item.id}>
-                          <input style={{borderColor: item.color}} type='checkbox' checked={color.includes(item.color)}
+                        <label style={{color: item.color}} key={item.id}>
+                          <input type='checkbox' checked={color.includes(item.color)}
                             onChange={(e) => ColorFilter(e, item.color)}
                           />{item.color}
                         </label>
