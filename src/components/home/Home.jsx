@@ -58,9 +58,9 @@ const Home = () => {
     }
   }
 
-  const filterHomeCart = () => {
+  const filterHomeCart = () => { 
     if(selected.length === 0){
-      return Homecart
+      return filter
     }
     else{
       return  Homecart.filter((item)=> selected.includes(item.category))
