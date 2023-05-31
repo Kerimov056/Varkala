@@ -75,6 +75,51 @@ const Navbar = () => {
     const [pages, setPages] = useState(false)
     const [docs, setDocs] = useState(false)
 
+    // const close  = () => {
+    //     if(home==true){
+    //         setShop(false)
+    //         setIcon(false)
+    //         setPages(false)
+    //         setDocs(false)
+    //     }
+    // }
+
+
+    const HomeFunction = () => {
+        setHome(prev => !prev);
+        setShop(false)
+        setIcon(false)
+        setPages(false)
+        setDocs(false)
+    }
+    const ShopFunction = () => {
+        setShop(prev => !prev);
+        setHome(false)
+        setIcon(false)
+        setPages(false)
+        setDocs(false)
+    }
+    const IconsFunction = () => {
+        setIcon(prev => !prev);
+        setHome(false)
+        setShop(false)
+        setPages(false)
+        setDocs(false)
+    }
+    // const ShopFunction = () => {
+    //     setShop(prev => !prev);
+    //     setHome(false)
+    //     setIcon(false)
+    //     setPages(false)
+    //     setDocs(false)
+    // }
+    // const ShopFunction = () => {
+    //     setShop(prev => !prev);
+    //     setHome(false)
+    //     setIcon(false)
+    //     setPages(false)
+    //     setDocs(false)
+    // }
 
     return (
         <>
@@ -99,7 +144,7 @@ const Navbar = () => {
                     <div className='left2'>
                         <ul>
                             <li><Link to="/Varkala" className='link not'>Varkala</Link></li>
-                            <li onClick={() => setHome((prev) => !prev)}>Home
+                            <li onClick={HomeFunction}>Home
                                 {home ? (
                                     <BsChevronUp />
                                 ) : (
@@ -117,7 +162,7 @@ const Navbar = () => {
                                     </Link>
                                 ))}
                             </div>}
-                            <li onClick={() => setShop((prev) => !prev)}>Shop
+                            <li onClick={ShopFunction}>Shop
                                 {shop ? (
                                     <BsChevronUp />
                                 ) : (
@@ -153,7 +198,7 @@ const Navbar = () => {
                                     <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/kyle-loftus-596319-unsplash-cropped.jpg"></img>
                                 </div>
                             </div>}
-                            <li onClick={() => setIcon((prev) => !prev)}>Icons
+                            <li onClick={IconsFunction}>Icons
                                 {icon ? (
                                     <BsChevronUp />
                                 ) : (
