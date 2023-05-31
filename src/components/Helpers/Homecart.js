@@ -53,7 +53,7 @@ export const Homecart = [
         name: "Beige",
         price: 140.00,
         category: "Basket",
-        color: "Light Black",
+        color: "Black",
     },
    
 ]

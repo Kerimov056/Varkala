@@ -410,13 +410,27 @@
             }
 
             .checkbox{
+                margin-top: 29px;
                 display: flex;
                 width: 160px;
                 height: auto;
-                background-color: red;
+                background-color: rgb(255, 255, 255);
 
                 #checkboxCategory{
+                    width: 50%;
                     display: block;
+                    font-size: 20px;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                input{
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid wheat;
+                }
+                #checkboxColor{
+                    width: 50%;
+                    font-size: 20px;
+                    font-family: 'Times New Roman', Times, serif;
                 }
             }
 
