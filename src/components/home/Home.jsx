@@ -25,6 +25,30 @@ const Home = () => {
   }, []);
 
 
+  const [color, setColor] = useState([])
+
+  const ColorFilter = (e, color) => {
+    const iscolor = e.target.checked
+
+    if(iscolor){
+      setColor((prev)=>[...prev,color])
+    }
+    else{
+      setColor((prev)=>prev.filter((selectedColor)=> selectedColor!==color))
+    }
+  }
+
+  const filterColor = () => {
+    if(color.length === 0){
+      return filterHomeCart()
+    }
+    else{
+      return filterHomeCart().filter((item)=>color.includes(item.color))
+    }
+  }
+
+
+
   //filtirlemis cartlari datani yigmaq ucun olan State //------
   const [filter, setFilter] = useState(Homecart)
   //-------------------------------------
@@ -49,6 +73,7 @@ const Home = () => {
   const [selected, setSelected] = useState([]);
 
   const CategoryFilter = (e, category) => {
+
     const isChecked =e.target.checked  //demeli burda catagoriya gore secdik ve onu
     if(isChecked){                    //uyguladig
       setSelected((prev)=> [...prev, category])
@@ -366,11 +391,11 @@ const Home = () => {
                 <input type="range" min={1} max={1000} onInput={change} />
                 <h4>Price: {price}</h4>
                 <hr id='xett' />
-                <div>
+                <div className='nameSearch'>
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-                <div style={{display: "block"}}>
+                <div id='checkbox'>
                     {
                       Homecart.map((item)=>
                       <label key={item.id}>
@@ -381,13 +406,24 @@ const Home = () => {
                       )
                     }
                 </div>
+                <div id='checkbox'>
+                    {
+                      Homecart.map((item)=>
+                      <label key={item.id}>
+                        <input type='checkbox' checked={color.includes(item.color)}
+                          onChange={(e) => ColorFilter(e, item.color)}
+                        />{item.color}
+                      </label>
+                      )
+                    }
+                </div>
               </div>
             </AccordionItemPanel>
           </AccordionItem>
         </Accordion>
         <div className='Productll'>
           {
-            filterHomeCart().filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
+            filterColor().filter(filterr => { return filterr.price > parseInt(price, 0) }).map((product) => {
               return <ProducCart id={product.id} imgurl={product.img} name={product.name} price={product.price} category={product.category} color={product.color} />
             })
           }
