@@ -106,20 +106,20 @@ const Navbar = () => {
         setPages(false)
         setDocs(false)
     }
-    // const ShopFunction = () => {
-    //     setShop(prev => !prev);
-    //     setHome(false)
-    //     setIcon(false)
-    //     setPages(false)
-    //     setDocs(false)
-    // }
-    // const ShopFunction = () => {
-    //     setShop(prev => !prev);
-    //     setHome(false)
-    //     setIcon(false)
-    //     setPages(false)
-    //     setDocs(false)
-    // }
+    const PagesFunction = () => {
+        setPages(prev => !prev);
+        setHome(false)
+        setIcon(false)
+        setIcon(false)
+        setDocs(false)
+    }
+    const DocsFunction = () => {
+        setDocs(prev => !prev);
+        setHome(false)
+        setIcon(false)
+        setPages(false)
+        setPages(false)
+    }
 
     return (
         <>
@@ -226,7 +226,7 @@ const Navbar = () => {
                                     <h3>Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15!</h3>
                                 </div>
                             </div>}
-                            <li onClick={() => setPages((prev) => !prev)}>Pages
+                            <li onClick={PagesFunction}>Pages
                                 {pages ? (
                                     <BsChevronUp />
                                 ) : (
@@ -333,7 +333,7 @@ const Navbar = () => {
 
                                 </div>
                             </div>}
-                            <li onClick={() => setDocs((prev) => !prev)}>Docs
+                            <li onClick={DocsFunction}>Docs
                                 {docs ? (
                                     <BsChevronUp />
                                 ) : (
