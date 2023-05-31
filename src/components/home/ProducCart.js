@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import './home.scss';
 import Modal from 'react-modal';
+import { Link } from "react-router-dom";
 import ReactImageMagnify from 'react-image-magnify';
 import { ShopContext } from '../content/ShopC'
 import AOS from "aos";
@@ -205,6 +206,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                                     </div>
                                 </div>
                                 <button onClick={() => addToCart(id)}><SlBasket /> ADD TO CART</button>
+                              <button><Link to='toBasket' id='popBasket'>Basket</Link></button>
                             </div>
 
                             <div className='popEnd'>
