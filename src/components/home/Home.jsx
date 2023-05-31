@@ -30,20 +30,20 @@ const Home = () => {
   const ColorFilter = (e, color) => {
     const iscolor = e.target.checked
 
-    if(iscolor){
-      setColor((prev)=>[...prev,color])
+    if (iscolor) {
+      setColor((prev) => [...prev, color])
     }
-    else{
-      setColor((prev)=>prev.filter((selectedColor)=> selectedColor!==color))
+    else {
+      setColor((prev) => prev.filter((selectedColor) => selectedColor !== color))
     }
   }
 
   const filterColor = () => {
-    if(color.length === 0){
+    if (color.length === 0) {
       return filterHomeCart()
     }
-    else{
-      return filterHomeCart().filter((item)=>color.includes(item.color))
+    else {
+      return filterHomeCart().filter((item) => color.includes(item.color))
     }
   }
 
@@ -74,27 +74,27 @@ const Home = () => {
 
   const CategoryFilter = (e, category) => {
 
-    const isChecked =e.target.checked  //demeli burda catagoriya gore secdik ve onu
-    if(isChecked){                    //uyguladig
-      setSelected((prev)=> [...prev, category])
+    const isChecked = e.target.checked  //demeli burda catagoriya gore secdik ve onu
+    if (isChecked) {                    //uyguladig
+      setSelected((prev) => [...prev, category])
     }
-    else{
-      setSelected((prev)=> prev.filter((selectedCategory)=> selectedCategory !==category))
+    else {
+      setSelected((prev) => prev.filter((selectedCategory) => selectedCategory !== category))
     }
   }
 
-  const filterHomeCart = () => { 
-    if(selected.length === 0){
+  const filterHomeCart = () => {
+    if (selected.length === 0) {
       return filter
     }
-    else{
-      return  filter.filter((item)=> selected.includes(item.category))
-       
+    else {
+      return filter.filter((item) => selected.includes(item.category))
+
     }
   }
   //---------------------------------------
 
-  
+
 
   function Number({ n }) {
     const { number } = useSpring({
@@ -395,27 +395,29 @@ const Home = () => {
                   <input type='text' onChange={(e) => filterName(e)} placeholder='Search Name'></input>
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
-                <div id='checkbox'>
+                <div className='checkbox'>
+                  <div id='checkboxCategory'>
                     {
-                      Homecart.map((item)=>
-                      <label key={item.id}>
-                        <input type='checkbox' checked={selected.includes(item.category)}
-                          onChange={(e) => CategoryFilter(e, item.category)}
-                        />{item.category}
-                      </label>
+                      Homecart.map((item) =>
+                        <label key={item.id}>
+                          <input type='checkbox' checked={selected.includes(item.category)}
+                            onChange={(e) => CategoryFilter(e, item.category)}
+                          />{item.category}
+                        </label>
                       )
                     }
-                </div>
-                <div id='checkbox'>
+                  </div>
+                  <div id='checkboxColor'>
                     {
-                      Homecart.map((item)=>
-                      <label key={item.id}>
-                        <input type='checkbox' checked={color.includes(item.color)}
-                          onChange={(e) => ColorFilter(e, item.color)}
-                        />{item.color}
-                      </label>
+                      Homecart.map((item) =>
+                        <label key={item.id}>
+                          <input type='checkbox' checked={color.includes(item.color)}
+                            onChange={(e) => ColorFilter(e, item.color)}
+                          />{item.color}
+                        </label>
                       )
                     }
+                  </div>
                 </div>
               </div>
             </AccordionItemPanel>
