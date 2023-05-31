@@ -1110,7 +1110,7 @@
                             &>h3 {
                                 display: none;
                             }
-                        }
+                           }
                     }
 
                     .Norwegg_img {
@@ -1283,14 +1283,29 @@
         margin-top: -70px;
         width: 400px;
         height: auto;
-        display: block;
+        display: block !important;
         justify-content: center;
 
-        #accordion{
+        #accordion {
             width: 90%;
+            display: block;
+            margin-left: 100px;
+
+            .FilterAccor{
+                display: block;
+
+                &>button{
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+
+                .carts_filter{
+                    display: block;
+                }
+            }
         }
 
-        .Productll{
+        .Productll {
             width: 90%;
             height: auto;
             display: grid;
