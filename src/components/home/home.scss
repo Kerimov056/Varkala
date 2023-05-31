@@ -343,6 +343,7 @@
 
     #accordion {
         width: 13%;
+        margin-left: -90px;
 
         .FilterAccor {
             margin-top: 20px;
@@ -408,48 +409,16 @@
                 }
             }
 
-            #checkbox{
-                margin-top: 20px;
-                width: 130px;
+            .checkbox{
+                display: flex;
+                width: 160px;
                 height: auto;
-                background-color: #bd0000;
-                display: block;
+                background-color: red;
 
-                input{
-                    width: 42px;
-                    height: 22px;
+                #checkboxCategory{
+                    display: block;
                 }
-
-                label{
-                    font-size: 22px;
-                    font-weight: 600;
-                    margin-bottom: 3px;
-                }
-                
             }
-
-            // #categ {
-            //     margin-top: 20px;
-            //     display: flex;
-            //     padding: 5px 20px;
-            //     font-size: 20px;
-            //     font-weight: 600;
-            //     color: #bcac76;
-            //     background-color: white;
-            //     border: 1px solid #bcac76;
-
-            //     &:hover {
-            //         background-color: black;
-            //         color: #bcac76;
-            //     }
-
-            //     &>svg {
-            //         margin-top: 7px;
-            //         margin-left: 10px;
-            //         width: 20px;
-            //         height: 20px;
-            //     }
-            // }
 
         }
     }

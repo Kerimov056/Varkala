@@ -396,7 +396,7 @@ const Home = () => {
                   <span className='FilterSearch'><AiOutlineSearch /></span>
                 </div>
                 <div className='checkbox'>
-                  <div id='checkboxCategory'>
+                  <div id='checkboxCategory'>Product 
                     {
                       Homecart.map((item) =>
                         <label key={item.id}>
@@ -407,7 +407,7 @@ const Home = () => {
                       )
                     }
                   </div>
-                  <div id='checkboxColor'>
+                  <div id='checkboxColor'>Color
                     {
                       Homecart.map((item) =>
                         <label key={item.id}>
