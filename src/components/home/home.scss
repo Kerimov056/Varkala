@@ -898,17 +898,28 @@
                     color: white;
                     letter-spacing: 3px;
                     font-weight: 600;
+                    margin-left: 10px;
 
                     &>svg {
+                        margin-top: -4px;
                         margin-right: 15px;
                         color: white;
+                        width: 19px;
+                        height: 19px;
                     }
 
-                    #popBasket{
+                    #popBasket {
                         color: white;
                         font-weight: 600;
                         text-decoration: none;
                         font-size: 21px;
+
+                        &>svg {
+                            margin-top: -7px;
+                            margin-right: 15px;
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
             }
@@ -1117,7 +1128,7 @@
                             &>h3 {
                                 display: none;
                             }
-                           }
+                        }
                     }
 
                     .Norwegg_img {
@@ -1298,15 +1309,15 @@
             display: block;
             margin-left: 100px;
 
-            .FilterAccor{
+            .FilterAccor {
                 display: block;
 
-                &>button{
+                &>button {
                     padding-left: 40px;
                     padding-right: 40px;
                 }
 
-                .carts_filter{
+                .carts_filter {
                     display: block;
                 }
             }

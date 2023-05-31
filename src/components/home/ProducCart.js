@@ -109,7 +109,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                                     smallImage: {
                                         alt: 'Wristwatch by Ted Baker London',
                                         isFluidWidth: true,
-                                        src: img
+                                        src: img,
                                     },
                                     largeImage: {
                                         src: img,
@@ -206,7 +206,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                                     </div>
                                 </div>
                                 <button onClick={() => addToCart(id)}><SlBasket /> ADD TO CART</button>
-                                <button><Link to='toBasket' id='popBasket'>Basket</Link></button>
+                                <button ><Link to='toBasket' id='popBasket'><BsBasket/>Basket</Link></button>
                             </div>
 
                             <div className='popEnd'>
