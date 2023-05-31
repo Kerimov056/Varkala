@@ -63,7 +63,7 @@ const Home = () => {
       return filter
     }
     else{
-      return  Homecart.filter((item)=> selected.includes(item.category))
+      return  filter.filter((item)=> selected.includes(item.category))
        
     }
   }
