@@ -42,7 +42,7 @@ export const ShopContextProvider = (props) => {
             return sum
         }
     }
-
+    
 
     const [deger, setDeger] = useState(temaColor.white)        //asdasdad
 
@@ -79,9 +79,14 @@ export const ShopContextProvider = (props) => {
         return total;
     }
 
+    const [heartt, setHeartt] = useState([])
+
+    const addHeart = (itemId) => {
+        setHeartt((prev)=> ({...prev, [itemId]: prev[itemId]+1}));
+    }
+
     const addToCart = (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-        console.log(itemId);
     };
 
     const removeFromCart = (itemId) => {
@@ -122,6 +127,7 @@ export const ShopContextProvider = (props) => {
         deger,
         change,
         temaColor,
+        addHeart,
     };
 
     //=====================

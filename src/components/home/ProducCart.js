@@ -29,9 +29,11 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
         AOS.refresh();
     }, []);
 
-    const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
+    const { cartItems, addHeart, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
 
     const [open, setOpen] = useState(false);
+    const [heart, setHeart] = useState(false);
+
     const [img, setImg] = useState(imgurl);
 
     const [size, setSize] = useState(false)
@@ -41,6 +43,12 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
     const changeImg = (src) => {
         setImg(src);
     };
+
+
+    const twoFunction = () => {
+        setHeart(prev=>!prev)
+        addHeart(id)
+    }
 
     return (
         <>
@@ -52,8 +60,8 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                             <div>
                                 <h4>Add to cart</h4>
                                 <div>
-                                    <span><AiOutlineHeart /></span>
-                                    <span className="add"><AiOutlineFullscreen onClick={() => setOpen(true)} /></span>
+                                    <span><AiOutlineHeart style={{color: heart === true ?  "red": "black"}} onClick={twoFunction} /></span>
+                                    <span className="add"><AiOutlineFullscreen onClick={() => setOpen((prev)=> !prev)} /></span>
                                 </div>
                             </div>
                         </div>

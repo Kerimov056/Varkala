@@ -21,7 +21,7 @@ const ToBasket = () => {
         AOS.refresh();
     }, []);
 
-    const { cartItems, getTotalAmount, empty_basket,Total } = useContext(ShopContext);
+    const { cartItems, getTotalAmount, empty_basket, Total } = useContext(ShopContext);
 
     const FullSum = Total()
     const total = getTotalAmount()
