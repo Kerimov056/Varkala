@@ -82,8 +82,9 @@ export const ShopContextProvider = (props) => {
     const [heartt, setHeartt] = useState([])
 
     const addHeart = (itemId) => {
-        setHeartt((prev)=> ({...prev, [itemId]: prev[itemId]+1}));
+        setHeartt((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     }
+    // setHeartt((prev) => ({ ...prev, [itemId]: (prev[itemId] || 0) + 1 }));
 
     const addToCart = (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -128,6 +129,7 @@ export const ShopContextProvider = (props) => {
         change,
         temaColor,
         addHeart,
+        heartt,
     };
 
     //=====================

@@ -1,0 +1,37 @@
+
+
+.heart{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -99;
+
+    &>div{
+        width: 80%;
+        height: auto;
+        display: block;
+        z-index: -99;
+
+        &>h1{
+            font-size: 25px;
+            font-weight: 650;
+            color: black;
+
+            &>span{
+                color: #bcac76;
+            }
+        }
+
+        &>div{
+            width: 100%;
+            display: grid;
+            gap: 12px;
+            justify-content: start;
+            align-items: start;
+
+        }
+    }
+}
