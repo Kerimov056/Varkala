@@ -23,6 +23,7 @@ function App() {
             <Route path='/about' element={<Abouts />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/toBasket' element={<ToBasket />} />
+            <Route path='/heart' element={<Heart />} />
           </Routes>
           <Fouter />
         </Router>

@@ -359,7 +359,7 @@ const Navbar = () => {
                     <span><input type="search" placeholder='   Search' /><AiOutlineSearch /></span>
                     <div className='right2'>
                         <span><BsPerson /></span>
-                        <span><AiOutlineHeart /></span>
+                        <span><Link to='heart'><AiOutlineHeart style={{color: "black", width: "24px", height: "24px" }}/></Link></span>
                         <span><Link to='toBasket'><BsBasket style={{ color: "black", width: "24px", height: "24px" }} /></Link></span>
                         <span><GiHamburgerMenu /></span>
                     </div>
