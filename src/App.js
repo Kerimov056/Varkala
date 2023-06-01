@@ -9,6 +9,7 @@ import Fouter from './components/fouter/Fouter'
 import Contact from './components/contact/Contact';
 import ToBasket from './components/ToBaskett/ToBasket';
 import {ShopContextProvider} from './components/content/ShopC'
+import Heart from './components/heart/Heart';
 
 function App() {
   return (
