@@ -83,7 +83,7 @@ export const ShopContextProvider = (props) => {
         return total;
     }
 
-    const [heartt, setHeartt] = useState([])
+    const [heartt, setHeartt] = useState([])  
     
 
     const addHeart = (itemId) => {

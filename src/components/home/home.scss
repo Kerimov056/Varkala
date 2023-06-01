@@ -899,7 +899,7 @@
                     color: white;
                     letter-spacing: 3px;
                     font-weight: 600;
-                    margin-left: 10px;
+                    margin-left: 20px;
 
                     &>svg {
                         margin-top: -4px;
@@ -1331,7 +1331,7 @@
             grid-template-columns: auto auto;
             gap: 4px;
             margin-bottom: 50px;
-            margin-right: 90px;
+            margin-left: 23px;
             column-gap: 20px;
             row-gap: 70px;
         }
@@ -1341,6 +1341,7 @@
     //product cart
 
     .mehsul {
+        z-index: -100;
         width: 140px;
         height: 230px;
         margin-bottom: 20px;

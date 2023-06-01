@@ -191,7 +191,7 @@
     #ResBlog{
         display: block;
         z-index: -99;
-        width: 333px;
+        width: 400px;
         height: 600px;
         position: relative;
 
@@ -231,7 +231,7 @@
     }
 
     .carts {
-        z-index: -99;
+        z-index: -999;
         width: 100%;
         height: auto;
         display: flex;
@@ -239,6 +239,7 @@
     
         .carts_in {
             margin-top: 100px;
+            margin-left: 50px;
             width: 80%;
             height: auto;
     
@@ -255,12 +256,13 @@
     }
 
     .low{
+        margin-top: 30px;
         width: 333px;
         height: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: -190px !important;
+        margin-left: -170px !important;
 
         button {
             padding: 10px ;
@@ -303,6 +305,5 @@
             }
             // display: none;
         }
-        margin-top: -30px;
     }
 }

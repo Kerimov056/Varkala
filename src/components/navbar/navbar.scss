@@ -444,7 +444,7 @@ li{
 @media (min-width: 280px) and (max-width: 750px) {
 
     .navbar{
-        width: 334px;
+        width: 400px;
         height: 50px;
         display: flex;
         justify-content: start;
@@ -477,7 +477,7 @@ li{
         display: none;
     }
     .responsiv{
-        width: 340px;
+        width: 380px;
         height: 50px;
         background: none;
         display: flex;
@@ -512,12 +512,13 @@ li{
         }
 
         .resPanel{
+            margin-left: -40px;
             position: absolute;
             &>div{
                 background-color: rgb(255, 255, 255);
                 margin-top: 10px;
                 margin-left: -300px;
-                width: 333px;
+                width: 400px;
                 height: auto;
 
             }

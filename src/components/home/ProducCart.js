@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import './home.scss';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Modal from 'react-modal';
 import { Link } from "react-router-dom";
 import ReactImageMagnify from 'react-image-magnify';
@@ -23,8 +25,8 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
     useEffect(() => {
         AOS.init({
             offset: 30,
-            duration: 2200,
-            delay: 1500,
+            duration: 2000,
+            delay: 1300,
         });
         AOS.refresh();
     }, []);
@@ -44,11 +46,17 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
         setImg(src);
     };
 
+    const someFunctiion = () => {
+        addToCart(id)
+        notify()
+    }
 
     const twoFunction = () => {
-        setHeart(prev=>!prev)
+        setHeart(prev => !prev)
         addHeart(id)
     }
+
+    const notify = () => toast("Added to cart");
 
     return (
         <>
@@ -60,8 +68,8 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                             <div>
                                 <h4>Add to cart</h4>
                                 <div>
-                                    <span><AiOutlineHeart style={{color: heart === true ?  "red": "black"}} onClick={twoFunction} /></span>
-                                    <span className="add"><AiOutlineFullscreen onClick={() => setOpen((prev)=> !prev)} /></span>
+                                    <span><AiOutlineHeart style={{ color: heart === true ? "red" : "black" }} onClick={twoFunction} /></span>
+                                    <span className="add"><AiOutlineFullscreen onClick={() => setOpen((prev) => !prev)} /></span>
                                 </div>
                             </div>
                         </div>
@@ -214,8 +222,20 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                                         <GoChevronDown onClick={() => removeFromCart(id)} className='asd' />
                                     </div>
                                 </div>
-                                <button onClick={() => addToCart(id)}><SlBasket /> ADD TO CART</button>
-                                <button ><Link to='toBasket' id='popBasket'><BsBasket/>Basket</Link></button>
+                                <button onClick={someFunctiion}><SlBasket /> ADD TO CART</button>
+                                <ToastContainer
+                                    position="top-center"
+                                    autoClose={1000}
+                                    hideProgressBar={false}
+                                    newestOnTop={false}
+                                    closeOnClick
+                                    rtl={false}
+                                    pauseOnFocusLoss
+                                    draggable
+                                    pauseOnHover
+                                    theme="light"
+                                />
+                                <button ><Link to='toBasket' id='popBasket'><BsBasket />Basket</Link></button>
                             </div>
 
                             <div className='popEnd'>

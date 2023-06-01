@@ -346,7 +346,7 @@ label {
             height: 100%;
 
             &>img {
-                width: 83%;
+                width: 93%;
                 height: 100%;
                 object-fit: cover;
             }
@@ -384,7 +384,7 @@ label {
 
             &>div {
                 margin-top: 20px;
-                width: 90%;
+                width: 93%;
                 height: auto;
             }
         }
@@ -401,7 +401,7 @@ label {
 
         .map {
             z-index: -199;
-            width: 360px;
+            width: 376px;
             height: 500px;
         }
 
@@ -411,6 +411,7 @@ label {
         }
 
         #ResponCartss {
+            width: 376px;
             z-index: -99;
             display: flex;
             flex-direction: column;

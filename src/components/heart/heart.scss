@@ -1,19 +1,19 @@
 
 
 .heart{
+    z-index: -99;
     margin-top: 100px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -99;
 
     &>div{
         width: 80%;
         height: auto;
         display: block;
-        z-index: -99;
+        // z-index: -99;
 
         &>h1{
             font-size: 25px;

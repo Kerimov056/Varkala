@@ -311,7 +311,8 @@ p {
 
 @media (min-width: 280px) and (max-width: 750px){
     .tobasket{
-        width: 333px;
+        z-index: -99;
+        width: 400px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -321,6 +322,7 @@ p {
             height: auto;
 
             #ResOne{
+                z-index: -99;
                 width: 100%;
                 height: auto;
                 display: block;
@@ -343,6 +345,7 @@ p {
             }
 
             .cart_in{
+                z-index: -99;
                 width: 100%;
                 height: auto;
                 display: block;
