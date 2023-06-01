@@ -28,7 +28,8 @@
         &>div{
             width: 100%;
             display: grid;
-            gap: 12px;
+            grid-template-columns: auto auto auto auto;
+            gap: 56px;
             justify-content: start;
             align-items: start;
 

@@ -14,24 +14,28 @@ const getDefaultCart = () => {
 };
 
 const temaColor = {
-  black: {
-    backgroundColor: "black",
-    color: "white"
-  },
-  white: {
-    backgroundColor: "white",
-    color: "black"
-  }
+    black: {
+        backgroundColor: "black",
+        color: "white"
+    },
+    white: {
+        backgroundColor: "white",
+        color: "black"
+    }
 }
 
-// const cartFormLocalS = JSON.parse(localStorage.getItem("cartItems"))
 
 export const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
-    // useEffect(()=> {
-    //     localStorage.setItem("cartItems",JSON.stringify(cartItems))
-    // },[cartItems])
+    useEffect(() => {
+        const data = window.localStorage.getItem('cartItems');
+        setCartItems(JSON.parse(data))
+    },[])
+
+    useEffect(() => {
+        window.localStorage.setItem('cartItems', JSON.stringify(cartItems))
+    }, [cartItems])
 
     const paket = () => {
         let sum = 0
@@ -42,11 +46,11 @@ export const ShopContextProvider = (props) => {
             return sum
         }
     }
-    
+
 
     const [deger, setDeger] = useState(temaColor.white)        //asdasdad
 
-    const change =() => {
+    const change = () => {
         if (temaColor.black === deger) {        //sadadad
             setDeger(temaColor.white)
         }
@@ -80,11 +84,11 @@ export const ShopContextProvider = (props) => {
     }
 
     const [heartt, setHeartt] = useState([])
+    
 
     const addHeart = (itemId) => {
-        setHeartt((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+        setHeartt(itemId);
     }
-    // setHeartt((prev) => ({ ...prev, [itemId]: (prev[itemId] || 0) + 1 }));
 
     const addToCart = (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -127,7 +131,7 @@ export const ShopContextProvider = (props) => {
         Total,
         deger,
         change,
-        temaColor,
+        temaColor,      
         addHeart,
         heartt,
     };

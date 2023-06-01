@@ -23,8 +23,8 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
     useEffect(() => {
         AOS.init({
             offset: 30,
-            duration: 500,
-            delay: 260,
+            duration: 2200,
+            delay: 1500,
         });
         AOS.refresh();
     }, []);
@@ -52,7 +52,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
 
     return (
         <>
-            <div className="mehsul">
+            <div data-aos="fade-down-right" className="mehsul">
                 <div className="mehsul_up">
                     <div className='mms'>
                         <img src={imgurl} alt="Product" />
