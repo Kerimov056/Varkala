@@ -20,6 +20,8 @@ import { AiFillStar } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsBasket } from 'react-icons/bs';
 
+//resss
+
 const ProductCart = ({ id, imgurl, name, price, category, color }) => {
 
     useEffect(() => {
@@ -114,7 +116,7 @@ const ProductCart = ({ id, imgurl, name, price, category, color }) => {
                     }
                 }}
             >
-
+                    
                 <div className='popup'>
                     <button onClick={() => setOpen(false)} className='exit'>X</button>
                     <div>
